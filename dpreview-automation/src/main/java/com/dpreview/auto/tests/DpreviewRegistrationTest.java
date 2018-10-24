@@ -54,7 +54,7 @@ public class DpreviewRegistrationTest extends BaseTest {
 		Thread.sleep(2000);
 		
 		dpreviewRegistrationPage.createYourDpreviewAccount().clickGoButton();
-
+		
+		driver.close();
 	}
-	
 }

@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite2" verbose="1">
+
+	<test name="Login process">
+		<classes>
+			<class name="com.dpreview.auto.tests.DpreviewLoginTest"></class>
+			
+			
+			<!--
+			
+			<class name="com.dpreview.auto.tests.DpreviewUserViewProfileTest"></class>
+			<class name="com.dpreview.auto.tests.DpreviewLogoutTest"></class>
+			<class name="com.dpreview.auto.tests.DpreviewUserSettingsTest"></class>
+			
+			  -->
+			
+		</classes>
+	</test>
+
+</suite>
+
+
+
+
+ 
+

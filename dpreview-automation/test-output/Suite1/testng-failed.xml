@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test thread-count="5" name="Registration process(failed)">
+    <classes>
+      <class name="com.dpreview.auto.tests.DpreviewRegistrationTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="registrationProcessTest"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.dpreview.auto.tests.DpreviewRegistrationTest -->
+    </classes>
+  </test> <!-- Registration process(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
