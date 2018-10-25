@@ -21,13 +21,13 @@ import org.openqa.selenium.support.events.WebDriverEventListener;
 
 import org.testng.Assert;
 
-
 import com.dpreview.auto.infra.pages.DpreviewLoginPage;
 
 
 public class DpreviewLoginTest extends BaseTest {
 	
-	// @Test // (dataProvider = "csvParamsProvider")
+	/*
+	@Test // (dataProvider = "csvParamsProvider")
 	public void loginTest(String loginEmail, String loginPassword) { // DpreviewLoginResult expectedLoginResult) {
 		
 		browseToUrl(MainConfig.baseUrl);
@@ -36,9 +36,11 @@ public class DpreviewLoginTest extends BaseTest {
 		DpreviewSignInPage dpreviewSignInPage = dpreviewHomePage.clickSigninButton();
 		
 	}
-	// 
+	*/
 
-	@Test(description = "Validation of the Login page", priority = 0)
+	// ------------------------- Testing the validation of the Login page ------------------------------------------------------------------
+	
+	@Test(description = "Testing the validation of the Login page", priority = 0)
 	public void loginPageTest() {
 
 		browseToUrl(MainConfig.baseUrl);
@@ -51,6 +53,8 @@ public class DpreviewLoginTest extends BaseTest {
 		driver.findElement(By.cssSelector(".userTools > a:nth-child(1)")).click();
 	}
 
+	// ------------------------- Testing the login process with valid details --------------------------------------------------------------
+	
 	@Test(description = "Typing the login details", priority = 1)
 	public void loginDetails1() throws Exception {
 
@@ -79,6 +83,8 @@ public class DpreviewLoginTest extends BaseTest {
 		dpreviewLoginPage.clickSigninButton(); 
 	}
 	
+	// ------------------------- Testing the Settings of the logged user ------------------------------------------------------------------
+	
 	@Test(description = "The user enters to the settings section", priority = 2)
 	public void enterSettingsTest() {
 		
@@ -103,7 +109,7 @@ public class DpreviewLoginTest extends BaseTest {
 	@Test(description = "The user sets the desired settings of his profile", priority = 3)
 	public void userSettingsTest() {
 		
-		// --------------------- Testing the user settings ----------------------------------------
+		// --------------------- Testing the user settings --------------------------------------------------------------------------------
 		
 		WebElement location = driver.findElement(By.xpath("//*[@id='userSettingsCountry']"));
 		WebElement profession = driver.findElement(By.name("profession"));
