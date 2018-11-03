@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
     <line>
       <![CDATA[Browsing to URL: https://www.dpreview.com]]>
@@ -14,10 +14,10 @@
       <![CDATA[*** On page: Dpreview login page]]>
     </line>
     <line>
-      <![CDATA[Write 'eagle15@yahoo.com' to element: Email input (By.id: ap_email)]]>
+      <![CDATA[Write 'eagle15e2000@yahoo.com' to element: Email input (By.id: ap_email)]]>
     </line>
     <line>
-      <![CDATA[Write 'AlphaBlondie' to element: Password input (By.id: ap_password)]]>
+      <![CDATA[Write 'JazzMusic73!' to element: Password input (By.id: ap_password)]]>
     </line>
     <line>
       <![CDATA[Click on element: Keep me signed in (By.id: remember_me_learn_more_link)]]>
@@ -32,89 +32,49 @@
       <![CDATA[Click on element: Sign in button (By.id: signInSubmit)]]>
     </line>
     <line>
-      <![CDATA[Not on the expected page: DPReview Home Page]]>
+      <![CDATA[Element is visible: Search box (By.className: searchBox)]]>
+    </line>
+    <line>
+      <![CDATA[Element is visible: 'GO' button (By.className: submitBtn)]]>
+    </line>
+    <line>
+      <![CDATA[Element is visible: Light mode (By.cssSelector: span.option:nth-child(1))]]>
+    </line>
+    <line>
+      <![CDATA[Element is visible: Dark mode (By.cssSelector: span.option:nth-child(2))]]>
+    </line>
+    <line>
+      <![CDATA[*** On page: DPReview Home Page]]>
+    </line>
+    <line>
+      <![CDATA[Scrolled to Element By.name: userSettingsGallerySafetyLevelModerate (By.name: userSettingsGallerySafetyLevelModerate)]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="76620" started-at="2018-10-25T22:08:27Z" finished-at="2018-10-25T22:09:43Z">
+  <suite name="Default suite" duration-ms="63753" started-at="2018-11-03T22:47:44Z" finished-at="2018-11-03T22:48:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="76620" started-at="2018-10-25T22:08:27Z" finished-at="2018-10-25T22:09:43Z">
-      <class name="com.dpreview.auto.tests.DpreviewLoginWrongDetailsTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginWrongDetailsTest@4f787b]" name="beforeClass" is-config="true" duration-ms="846" started-at="2018-10-25T22:08:27Z" finished-at="2018-10-25T22:08:28Z">
+    <test name="Default test" duration-ms="63753" started-at="2018-11-03T22:47:44Z" finished-at="2018-11-03T22:48:48Z">
+      <class name="com.dpreview.auto.tests.DpreviewLoginTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="beforeClass" is-config="true" duration-ms="1190" started-at="2018-11-03T22:47:45Z" finished-at="2018-11-03T22:47:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginWrongDetailsTest@4f787b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-10-25T22:08:28Z" finished-at="2018-10-25T22:08:28Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-03T22:47:46Z" finished-at="2018-11-03T22:47:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginPageTest()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginWrongDetailsTest@4f787b]" name="loginPageTest" duration-ms="15002" started-at="2018-10-25T22:08:28Z" description="Testing the validation of the Login page" finished-at="2018-10-25T22:08:43Z">
+        <test-method status="PASS" signature="loginPageTest()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="loginPageTest" duration-ms="19573" started-at="2018-11-03T22:47:46Z" description="Testing the validation of the Login page" finished-at="2018-11-03T22:48:05Z">
           <reporter-output>
             <line>
               <![CDATA[Browsing to URL: https://www.dpreview.com]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginPageTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginWrongDetailsTest@4f787b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-10-25T22:08:43Z" finished-at="2018-10-25T22:08:43Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-03T22:48:05Z" finished-at="2018-11-03T22:48:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="FAIL" signature="loginDetails1()[pri:1, instance:com.dpreview.auto.tests.DpreviewLoginWrongDetailsTest@4f787b]" name="loginDetails1" duration-ms="60562" started-at="2018-10-25T22:08:43Z" description="Typing wrong login details" finished-at="2018-10-25T22:09:43Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.className: searchBox (tried for 25 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: searchBox (tried for 25 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-at com.dpreview.auto.infra.web.ActionBot.waitForElementToBeVisible(ActionBot.java:49)
-at com.dpreview.auto.infra.pages.AbstractPage.assertInPage(AbstractPage.java:32)
-at com.dpreview.auto.infra.pages.AbstractPage.<init>(AbstractPage.java:25)
-at com.dpreview.auto.infra.pages.DpreviewHomePage.<init>(DpreviewHomePage.java:17)
-at com.dpreview.auto.infra.pages.DpreviewLoginPage.clickSigninButton(DpreviewLoginPage.java:49)
-at com.dpreview.auto.tests.DpreviewLoginWrongDetailsTest.loginDetails1(DpreviewLoginWrongDetailsTest.java:57)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.className: searchBox
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'SPEARHEAD-PC', ip: '169.254.29.20', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-at java.util.Optional.orElseThrow(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="loginDetails1()[pri:1, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="loginDetails1" duration-ms="38858" started-at="2018-11-03T22:48:05Z" description="Typing the login details" finished-at="2018-11-03T22:48:44Z">
           <reporter-output>
             <line>
               <![CDATA[Element is visible: Email input (By.id: ap_email)]]>
@@ -126,10 +86,10 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
               <![CDATA[*** On page: Dpreview login page]]>
             </line>
             <line>
-              <![CDATA[Write 'eagle15@yahoo.com' to element: Email input (By.id: ap_email)]]>
+              <![CDATA[Write 'eagle15e2000@yahoo.com' to element: Email input (By.id: ap_email)]]>
             </line>
             <line>
-              <![CDATA[Write 'AlphaBlondie' to element: Password input (By.id: ap_password)]]>
+              <![CDATA[Write 'JazzMusic73!' to element: Password input (By.id: ap_password)]]>
             </line>
             <line>
               <![CDATA[Click on element: Keep me signed in (By.id: remember_me_learn_more_link)]]>
@@ -144,23 +104,62 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
               <![CDATA[Click on element: Sign in button (By.id: signInSubmit)]]>
             </line>
             <line>
-              <![CDATA[Not on the expected page: DPReview Home Page]]>
+              <![CDATA[Element is visible: Search box (By.className: searchBox)]]>
+            </line>
+            <line>
+              <![CDATA[Element is visible: 'GO' button (By.className: submitBtn)]]>
+            </line>
+            <line>
+              <![CDATA[Element is visible: Light mode (By.cssSelector: span.option:nth-child(1))]]>
+            </line>
+            <line>
+              <![CDATA[Element is visible: Dark mode (By.cssSelector: span.option:nth-child(2))]]>
+            </line>
+            <line>
+              <![CDATA[*** On page: DPReview Home Page]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginDetails1 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginWrongDetailsTest@4f787b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-10-25T22:08:43Z" finished-at="2018-10-25T22:08:43Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-03T22:48:05Z" finished-at="2018-11-03T22:48:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginWrongDetailsTest@4f787b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-10-25T22:09:43Z" finished-at="2018-10-25T22:09:43Z">
+        <test-method status="PASS" signature="enterSettingsTest()[pri:2, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="enterSettingsTest" duration-ms="2594" started-at="2018-11-03T22:48:44Z" description="The user enters to the settings section" finished-at="2018-11-03T22:48:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterSettingsTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-03T22:48:44Z" finished-at="2018-11-03T22:48:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-03T22:48:44Z" finished-at="2018-11-03T22:48:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginWrongDetailsTest@4f787b]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-10-25T22:09:43Z" finished-at="2018-10-25T22:09:43Z">
+        <test-method status="PASS" signature="userSettingsTest()[pri:3, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="userSettingsTest" duration-ms="1394" started-at="2018-11-03T22:48:47Z" description="The user sets the desired settings of his profile" finished-at="2018-11-03T22:48:48Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.name: userSettingsGallerySafetyLevelModerate (By.name: userSettingsGallerySafetyLevelModerate)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userSettingsTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-03T22:48:47Z" finished-at="2018-11-03T22:48:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-03T22:48:47Z" finished-at="2018-11-03T22:48:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-03T22:48:48Z" finished-at="2018-11-03T22:48:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.dpreview.auto.tests.DpreviewLoginWrongDetailsTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-03T22:48:48Z" finished-at="2018-11-03T22:48:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.dpreview.auto.tests.DpreviewLoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

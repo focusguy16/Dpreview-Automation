@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dpreview.auto.tests.DpreviewLoginWrongDetailsTest">
+      <class name="com.dpreview.auto.tests.DpreviewLoginTest">
         <methods>
           <include name="beforeClass"/>
-          <include name="loginDetails1"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
+          <include name="userSettingsTest"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.dpreview.auto.tests.DpreviewLoginWrongDetailsTest -->
+      </class> <!-- com.dpreview.auto.tests.DpreviewLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

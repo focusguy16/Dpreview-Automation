@@ -9,11 +9,14 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 
 import com.dpreview.auto.infra.config.MainConfig;
 import com.dpreview.auto.infra.pages.DpreviewHomePage;
 import com.dpreview.auto.infra.pages.DpreviewSignInPage;
+import com.dpreview.auto.infra.reports.Reports;
 import com.dpreview.auto.infra.utils.AssertUtils;
+import com.dpreview.auto.infra.web.By2;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -113,7 +116,9 @@ public class DpreviewLoginTest extends BaseTest {
 		
 		WebElement location = driver.findElement(By.xpath("//*[@id='userSettingsCountry']"));
 		WebElement profession = driver.findElement(By.name("profession"));
-		WebElement newsSubscription = driver.findElement(By.id("userSettingsSubscribeToNewsletter"));
+		WebElement newsSubscription = driver.findElement(By.xpath("//*[@id='userSettingsSubscribeToNewsletter']"));
+		WebElement website = driver.findElement(By.name("website"));
+		WebElement galleryViewingSafetyLevel = driver.findElement(By.id("userSettingsGallerySafetyLevelModerate"));
 		
 		// --------------------- Setting the user location ----------------------------------------
 		
@@ -133,12 +138,32 @@ public class DpreviewLoginTest extends BaseTest {
 		
 		profession.sendKeys("QA Engineer");
 		
-		// --------------------- Newsletter Subscription -------------------------------------------
+		// --------------------- Setting the web site input ---------------------------------------
 		
 		Actions action4 = new Actions(driver);
-		action4.moveToElement(newsSubscription).build().perform();
+		action4.moveToElement(website).build().perform();
 		
-		driver.findElement(By.id("userSettingsSubscribeToNewsletter")).click();
+		driver.findElement(By.name("website"));
+		
+		website.sendKeys("https://www.linkedin.com/in/daniel-harel-b3a96414/");
+		
+		driver.findElement(By.id("userSettingsGallerySafetyLevelModerate"));
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", galleryViewingSafetyLevel);
+        Reports.report("Scrolled to Element " + By.name("userSettingsGallerySafetyLevelModerate") + " (" + By.name("userSettingsGallerySafetyLevelModerate") + ")");
+        
+		
+		// --------------------- Home page Personalization ----------------------------------------- 
+		
+		Actions action5 = new Actions(driver);
+		action5.moveToElement(galleryViewingSafetyLevel).build().perform();
+		
+		
+		// --------------------- Newsletter Subscription -------------------------------------------
+		
+		Actions action6 = new Actions(driver);
+		action6.moveToElement(newsSubscription).build().perform();
+		
+		driver.findElement(By.xpath("//*[@id='userSettingsSubscribeToNewsletter']")).click();
 		
 	}
 }
