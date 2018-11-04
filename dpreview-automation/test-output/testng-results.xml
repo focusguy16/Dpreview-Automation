@@ -50,31 +50,31 @@
       <![CDATA[Scrolled to Element By.name: userSettingsGallerySafetyLevelModerate (By.name: userSettingsGallerySafetyLevelModerate)]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="63753" started-at="2018-11-03T22:47:44Z" finished-at="2018-11-03T22:48:48Z">
+  <suite name="Default suite" duration-ms="60639" started-at="2018-11-04T18:47:24Z" finished-at="2018-11-04T18:48:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="63753" started-at="2018-11-03T22:47:44Z" finished-at="2018-11-03T22:48:48Z">
+    <test name="Default test" duration-ms="60639" started-at="2018-11-04T18:47:24Z" finished-at="2018-11-04T18:48:25Z">
       <class name="com.dpreview.auto.tests.DpreviewLoginTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="beforeClass" is-config="true" duration-ms="1190" started-at="2018-11-03T22:47:45Z" finished-at="2018-11-03T22:47:46Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="beforeClass" is-config="true" duration-ms="1793" started-at="2018-11-04T18:47:24Z" finished-at="2018-11-04T18:47:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-03T22:47:46Z" finished-at="2018-11-03T22:47:46Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-04T18:47:26Z" finished-at="2018-11-04T18:47:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginPageTest()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="loginPageTest" duration-ms="19573" started-at="2018-11-03T22:47:46Z" description="Testing the validation of the Login page" finished-at="2018-11-03T22:48:05Z">
+        <test-method status="PASS" signature="loginPageTest()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="loginPageTest" duration-ms="22901" started-at="2018-11-04T18:47:26Z" description="Testing the validation of the Login page" finished-at="2018-11-04T18:47:49Z">
           <reporter-output>
             <line>
               <![CDATA[Browsing to URL: https://www.dpreview.com]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginPageTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-03T22:48:05Z" finished-at="2018-11-03T22:48:05Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-04T18:47:49Z" finished-at="2018-11-04T18:47:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="loginDetails1()[pri:1, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="loginDetails1" duration-ms="38858" started-at="2018-11-03T22:48:05Z" description="Typing the login details" finished-at="2018-11-03T22:48:44Z">
+        <test-method status="PASS" signature="loginDetails1()[pri:1, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="loginDetails1" duration-ms="31909" started-at="2018-11-04T18:47:49Z" description="Typing the login details" finished-at="2018-11-04T18:48:21Z">
           <reporter-output>
             <line>
               <![CDATA[Element is visible: Email input (By.id: ap_email)]]>
@@ -120,42 +120,42 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginDetails1 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-03T22:48:05Z" finished-at="2018-11-03T22:48:05Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-04T18:47:49Z" finished-at="2018-11-04T18:47:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="enterSettingsTest()[pri:2, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="enterSettingsTest" duration-ms="2594" started-at="2018-11-03T22:48:44Z" description="The user enters to the settings section" finished-at="2018-11-03T22:48:47Z">
+        <test-method status="PASS" signature="enterSettingsTest()[pri:2, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="enterSettingsTest" duration-ms="2133" started-at="2018-11-04T18:48:21Z" description="The user enters to the settings section" finished-at="2018-11-04T18:48:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterSettingsTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-03T22:48:44Z" finished-at="2018-11-03T22:48:44Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-04T18:48:21Z" finished-at="2018-11-04T18:48:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-03T22:48:44Z" finished-at="2018-11-03T22:48:44Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-04T18:48:21Z" finished-at="2018-11-04T18:48:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="userSettingsTest()[pri:3, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="userSettingsTest" duration-ms="1394" started-at="2018-11-03T22:48:47Z" description="The user sets the desired settings of his profile" finished-at="2018-11-03T22:48:48Z">
+        <test-method status="PASS" signature="userSettingsTest()[pri:3, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="userSettingsTest" duration-ms="1758" started-at="2018-11-04T18:48:23Z" description="The user sets the desired settings of his profile" finished-at="2018-11-04T18:48:25Z">
           <reporter-output>
             <line>
               <![CDATA[Scrolled to Element By.name: userSettingsGallerySafetyLevelModerate (By.name: userSettingsGallerySafetyLevelModerate)]]>
             </line>
           </reporter-output>
         </test-method> <!-- userSettingsTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-03T22:48:47Z" finished-at="2018-11-03T22:48:47Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-04T18:48:23Z" finished-at="2018-11-04T18:48:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-03T22:48:47Z" finished-at="2018-11-03T22:48:47Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-04T18:48:23Z" finished-at="2018-11-04T18:48:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-03T22:48:48Z" finished-at="2018-11-03T22:48:48Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="afterClass" is-config="true" duration-ms="1" started-at="2018-11-04T18:48:25Z" finished-at="2018-11-04T18:48:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-03T22:48:48Z" finished-at="2018-11-03T22:48:48Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewLoginTest@4f787b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-04T18:48:25Z" finished-at="2018-11-04T18:48:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

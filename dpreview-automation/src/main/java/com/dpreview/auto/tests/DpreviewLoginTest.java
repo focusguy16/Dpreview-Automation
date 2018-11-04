@@ -119,6 +119,7 @@ public class DpreviewLoginTest extends BaseTest {
 		WebElement newsSubscription = driver.findElement(By.xpath("//*[@id='userSettingsSubscribeToNewsletter']"));
 		WebElement website = driver.findElement(By.name("website"));
 		WebElement galleryViewingSafetyLevel = driver.findElement(By.id("userSettingsGallerySafetyLevelModerate"));
+		WebElement saveChanges = driver.findElement(By.id("settingsFormSubmitButton"));
 		
 		// --------------------- Setting the user location ----------------------------------------
 		
@@ -162,8 +163,14 @@ public class DpreviewLoginTest extends BaseTest {
 		
 		Actions action6 = new Actions(driver);
 		action6.moveToElement(newsSubscription).build().perform();
-		
+				
 		driver.findElement(By.xpath("//*[@id='userSettingsSubscribeToNewsletter']")).click();
 		
+		// --------------------- Saving the settings changes ---------------------------------------
+		
+		Actions action7 = new Actions(driver);
+		action7.moveToElement(saveChanges).build().perform();
+		
+		driver.findElement(By.id("settingsFormSubmitButton")).click();
 	}
 }
