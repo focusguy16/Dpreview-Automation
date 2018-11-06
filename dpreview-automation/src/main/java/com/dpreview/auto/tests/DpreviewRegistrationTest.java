@@ -31,11 +31,11 @@ public class DpreviewRegistrationTest extends BaseTest {
 	}
 
 	@Test (description = "Testing the registration process" , priority = 1)
-	public void registrationProcessTest() throws Exception {    // (String minChars) 
+	public void registrationProcessTest() throws Exception { 
 		
-		String yourName = "";
-		String emailAddress = "";
-		String yourPassword = "";
+		String yourName = "RetroCamFan";
+		String emailAddress = "focusguy@walla.com";
+		String yourPassword = "HelloCameraWorld!";
 		String passwordCheck = "";
 		
 		DpreviewRegistrationPage dpreviewRegistrationPage = new DpreviewRegistrationPage(driver);
