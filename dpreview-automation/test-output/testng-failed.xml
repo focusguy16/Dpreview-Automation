@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [02.login]">
+  <test thread-count="5" name="Adding Gear(failed)">
     <classes>
-      <class name="com.dpreview.auto.tests.DpreviewRegistrationTest">
+      <class name="com.dpreview.auto.tests.DpreviewAddingGearListTest">
         <methods>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
-          <include name="registrationProcessTest"/>
           <include name="afterClass"/>
+          <include name="addingGearList"/>
         </methods>
-      </class> <!-- com.dpreview.auto.tests.DpreviewRegistrationTest -->
+      </class> <!-- com.dpreview.auto.tests.DpreviewAddingGearListTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Adding Gear(failed) -->
+</suite> <!-- Failed suite [02.login] -->

@@ -79,7 +79,7 @@ public abstract class BaseTest {
 		
 		if (password != minChars) {
 			
-			System.out.println("The password must be minimum: " + minChars + "charachters");
+			System.out.println("The password must be minimum: " + minChars + "characters");
 		}
 		return password;
 	}

@@ -1,27 +1,24 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="02.login" verbose="1">
-
 	<test name="Login process">
 		<classes>
 			<class name="com.dpreview.auto.tests.DpreviewLoginTest"></class>
-			
-			
-			<!--
-			
-			<class name="com.dpreview.auto.tests.DpreviewUserViewProfileTest"></class>
-			<class name="com.dpreview.auto.tests.DpreviewLogoutTest"></class>
-			<class name="com.dpreview.auto.tests.DpreviewUserSettingsTest"></class>
-			
-			  -->
-			
 		</classes>
 	</test>
 
+	<test name="Adding Gear">
+		<classes>
+			<class name="com.dpreview.auto.tests.DpreviewAddingGearListTest"></class>
+		</classes>
+	</test>
 </suite>
 
 
 
 
- 
 
+
+<!-- <class name="com.dpreview.auto.tests.DpreviewUserViewProfileTest"></class> 
+	<class name="com.dpreview.auto.tests.DpreviewLogoutTest"></class> <class 
+	name="com.dpreview.auto.tests.DpreviewUserSettingsTest"></class> -->
