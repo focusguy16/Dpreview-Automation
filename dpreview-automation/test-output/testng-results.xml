@@ -1,59 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
     <line>
       <![CDATA[Browsing to URL: https://www.dpreview.com]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18425" started-at="2018-11-07T08:10:06Z" finished-at="2018-11-07T08:10:25Z">
+  <suite name="Default suite" duration-ms="23923" started-at="2018-11-07T14:33:52Z" finished-at="2018-11-07T14:34:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18425" started-at="2018-11-07T08:10:06Z" finished-at="2018-11-07T08:10:25Z">
+    <test name="Default test" duration-ms="23923" started-at="2018-11-07T14:33:52Z" finished-at="2018-11-07T14:34:16Z">
       <class name="com.dpreview.auto.tests.DpreviewFeedbackTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="beforeClass" is-config="true" duration-ms="1817" started-at="2018-11-07T08:10:06Z" finished-at="2018-11-07T08:10:08Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="beforeClass" is-config="true" duration-ms="1717" started-at="2018-11-07T14:33:52Z" finished-at="2018-11-07T14:33:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-07T08:10:08Z" finished-at="2018-11-07T08:10:08Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-07T14:33:54Z" finished-at="2018-11-07T14:33:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="homePage()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="homePage" duration-ms="14101" started-at="2018-11-07T08:10:08Z" description="Validating the home page" finished-at="2018-11-07T08:10:22Z">
+        <test-method status="PASS" signature="homePage()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="homePage" duration-ms="14423" started-at="2018-11-07T14:33:54Z" description="Validating the home page" finished-at="2018-11-07T14:34:08Z">
           <reporter-output>
             <line>
               <![CDATA[Browsing to URL: https://www.dpreview.com]]>
             </line>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-07T08:10:22Z" finished-at="2018-11-07T08:10:22Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-07T14:34:08Z" finished-at="2018-11-07T14:34:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="feedbackPageAccess()[pri:1, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="feedbackPageAccess" duration-ms="2167" started-at="2018-11-07T08:10:22Z" description="Accessing the Feedback page" finished-at="2018-11-07T08:10:25Z">
+        <test-method status="PASS" signature="feedbackPageAccess()[pri:1, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="feedbackPageAccess" duration-ms="2330" started-at="2018-11-07T14:34:08Z" description="Accessing the Feedback page" finished-at="2018-11-07T14:34:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feedbackPageAccess -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-07T08:10:22Z" finished-at="2018-11-07T08:10:22Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-07T14:34:08Z" finished-at="2018-11-07T14:34:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-07T08:10:25Z" finished-at="2018-11-07T08:10:25Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-07T14:34:11Z" finished-at="2018-11-07T14:34:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-07T08:10:25Z" finished-at="2018-11-07T08:10:25Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-07T14:34:11Z" finished-at="2018-11-07T14:34:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="feedbackForum()[pri:2, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="feedbackForum" duration-ms="207" started-at="2018-11-07T08:10:25Z" description="Opening the Feedback forum" finished-at="2018-11-07T08:10:25Z">
+        <test-method status="PASS" signature="feedbackForum()[pri:2, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="feedbackForum" duration-ms="1215" started-at="2018-11-07T14:34:11Z" description="Opening the Feedback forum" finished-at="2018-11-07T14:34:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feedbackForum -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-07T08:10:25Z" finished-at="2018-11-07T08:10:25Z">
+        <test-method status="PASS" signature="discussionsTab()[pri:3, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="discussionsTab" duration-ms="1257" started-at="2018-11-07T14:34:12Z" description="Discussions tab" finished-at="2018-11-07T14:34:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- discussionsTab -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-07T14:34:12Z" finished-at="2018-11-07T14:34:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-07T08:10:25Z" finished-at="2018-11-07T08:10:25Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-07T14:34:12Z" finished-at="2018-11-07T14:34:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-07T14:34:13Z" finished-at="2018-11-07T14:34:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="questionsTab()[pri:4, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="questionsTab" duration-ms="1531" started-at="2018-11-07T14:34:13Z" description="Questions tab" finished-at="2018-11-07T14:34:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- questionsTab -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-07T14:34:13Z" finished-at="2018-11-07T14:34:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-07T14:34:15Z" finished-at="2018-11-07T14:34:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-07T14:34:15Z" finished-at="2018-11-07T14:34:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="allThreadsTab()[pri:5, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="allThreadsTab" duration-ms="1215" started-at="2018-11-07T14:34:15Z" description="All threads tab" finished-at="2018-11-07T14:34:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allThreadsTab -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-07T14:34:16Z" finished-at="2018-11-07T14:34:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackTest@1caeb3e]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-07T14:34:16Z" finished-at="2018-11-07T14:34:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
