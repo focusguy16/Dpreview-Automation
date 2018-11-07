@@ -65,13 +65,14 @@ public class DpreviewFeedbackAndHelpTest extends BaseTest {
 		action.moveToElement(allThreadsTab).build().perform();
 		
 		driver.findElement(By.cssSelector("a.tab:nth-child(1)")).click();
-
+		
+		driver.close();
 	}
 	
 	// ------------------------------------------------- Discussions Tab ----------------------------------------
 	
 	@Test(description = "Discussions tab", priority = 3)
-	public void discussionsTab() {
+	public void discussionsTab() throws Exception {
 		
 		WebElement discussionsTab = driver.findElement(By.xpath("//*[@class='tab left discussion']"));
 		
@@ -79,13 +80,15 @@ public class DpreviewFeedbackAndHelpTest extends BaseTest {
 		action.moveToElement(discussionsTab).build().perform();
 		
 		driver.findElement(By.xpath("//*[@class='tab left discussion']")).click();
+		
+		Thread.sleep(5000);
 
 	}
 	
 	// --------------------------------------------------- Questions Tab ----------------------------------------
 	
 	@Test(description = "Questions tab", priority = 4)
-	public void questionsTab() {
+	public void questionsTab() throws Exception {
 		
 		WebElement questionsTab = driver.findElement(By.xpath("//*[@class='tab left question']"));
 		
@@ -93,7 +96,8 @@ public class DpreviewFeedbackAndHelpTest extends BaseTest {
 		action.moveToElement(questionsTab).build().perform();
 		
 		driver.findElement(By.xpath("//*[@class='tab left question']")).click();
-
+		
+		Thread.sleep(5000);
 	}
 
 }

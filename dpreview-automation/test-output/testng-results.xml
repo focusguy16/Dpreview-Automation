@@ -1,99 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
   <reporter-output>
     <line>
       <![CDATA[Browsing to URL: https://www.dpreview.com]]>
     </line>
     <line>
-      <![CDATA[Scrolled to Element By.xpath: //*[@class='label']//*[@class='header'] (By.xpath: //*[@class='label']//*[@class='header'])]]>
+      <![CDATA[Browsing to URL: https://www.dpreview.com]]>
     </line>
     <line>
-      <![CDATA[Scrolled to Element By.xpath: //*[@class='label']//*[@class='header'] (By.xpath: //*[@class='label']//*[@class='header'])]]>
+      <![CDATA[Browsing to URL: https://www.dpreview.com]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="81346" started-at="2018-11-07T21:14:42Z" finished-at="2018-11-07T21:16:04Z">
+  <suite name="03.feedback" duration-ms="28858" started-at="2018-11-07T21:48:38Z" finished-at="2018-11-07T21:49:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="81346" started-at="2018-11-07T21:14:42Z" finished-at="2018-11-07T21:16:04Z">
-      <class name="com.dpreview.auto.tests.DpreviewFeedbackSending">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackSending@1caeb3e]" name="beforeClass" is-config="true" duration-ms="1786" started-at="2018-11-07T21:14:42Z" finished-at="2018-11-07T21:14:44Z">
+    <test name="Feedback process" duration-ms="28858" started-at="2018-11-07T21:48:38Z" finished-at="2018-11-07T21:49:07Z">
+      <class name="com.dpreview.auto.tests.DpreviewFeedbackSendingTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackSendingTest@1fdc050]" name="beforeClass" is-config="true" duration-ms="1788" started-at="2018-11-07T21:48:38Z" finished-at="2018-11-07T21:48:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackSending@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-07T21:14:44Z" finished-at="2018-11-07T21:14:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="homePage()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackSending@1caeb3e]" name="homePage" duration-ms="63671" started-at="2018-11-07T21:14:44Z" description="Validating the home page" finished-at="2018-11-07T21:15:48Z">
+        <test-method status="PASS" signature="homePage()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackSendingTest@1fdc050]" name="homePage" duration-ms="14981" started-at="2018-11-07T21:48:40Z" description="Validating the home page" finished-at="2018-11-07T21:48:55Z">
           <reporter-output>
             <line>
               <![CDATA[Browsing to URL: https://www.dpreview.com]]>
             </line>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackSending@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-07T21:15:48Z" finished-at="2018-11-07T21:15:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="feedbackPageAccess()[pri:1, instance:com.dpreview.auto.tests.DpreviewFeedbackSending@1caeb3e]" name="feedbackPageAccess" duration-ms="5173" started-at="2018-11-07T21:15:48Z" description="Accessing the Feedback page" finished-at="2018-11-07T21:15:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feedbackPageAccess -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackSending@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-07T21:15:48Z" finished-at="2018-11-07T21:15:48Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackSendingTest@1fdc050]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-07T21:48:40Z" finished-at="2018-11-07T21:48:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackSending@1caeb3e]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-07T21:15:53Z" finished-at="2018-11-07T21:15:53Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackSendingTest@1fdc050]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-07T21:48:55Z" finished-at="2018-11-07T21:48:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackSending@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-07T21:15:53Z" finished-at="2018-11-07T21:15:53Z">
+      </class> <!-- com.dpreview.auto.tests.DpreviewFeedbackSendingTest -->
+      <class name="com.dpreview.auto.tests.DpreviewFeedbackAndHelpThreadsScrollingTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackAndHelpThreadsScrollingTest@3a8624]" name="beforeClass" is-config="true" duration-ms="2028" started-at="2018-11-07T21:49:01Z" finished-at="2018-11-07T21:49:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="scrollToContactingUs()[pri:2, instance:com.dpreview.auto.tests.DpreviewFeedbackSending@1caeb3e]" name="scrollToContactingUs" duration-ms="10091" started-at="2018-11-07T21:15:53Z" finished-at="2018-11-07T21:16:03Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="homePage()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackAndHelpThreadsScrollingTest@3a8624]" name="homePage" duration-ms="2036" started-at="2018-11-07T21:49:03Z" description="Validating the home page" finished-at="2018-11-07T21:49:05Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:17805
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SPEARHEAD-PC', ip: '192.168.17.102', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:17805
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SPEARHEAD-PC', ip: '192.168.17.102', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+at com.dpreview.auto.tests.BaseTest.browseToUrl(BaseTest.java:63)
+at com.dpreview.auto.tests.DpreviewFeedbackAndHelpThreadsScrollingTest.homePage(DpreviewFeedbackAndHelpThreadsScrollingTest.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:17805
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+... 29 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+at java.net.PlainSocketImpl.connect(Unknown Source)
+at java.net.SocksSocketImpl.connect(Unknown Source)
+at java.net.Socket.connect(Unknown Source)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
             <line>
-              <![CDATA[Scrolled to Element By.xpath: //*[@class='label']//*[@class='header'] (By.xpath: //*[@class='label']//*[@class='header'])]]>
+              <![CDATA[Browsing to URL: https://www.dpreview.com]]>
             </line>
           </reporter-output>
-        </test-method> <!-- scrollToContactingUs -->
-        <test-method status="PASS" signature="scrollToYourEmail()[pri:3, instance:com.dpreview.auto.tests.DpreviewFeedbackSending@1caeb3e]" name="scrollToYourEmail" duration-ms="67" started-at="2018-11-07T21:16:03Z" finished-at="2018-11-07T21:16:03Z">
+        </test-method> <!-- homePage -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackAndHelpThreadsScrollingTest@3a8624]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-07T21:49:03Z" finished-at="2018-11-07T21:49:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackAndHelpThreadsScrollingTest@3a8624]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-07T21:49:07Z" finished-at="2018-11-07T21:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.dpreview.auto.tests.DpreviewFeedbackAndHelpThreadsScrollingTest -->
+      <class name="com.dpreview.auto.tests.DpreviewFeedbackAndHelpTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackAndHelpTest@1ce4f0a]" name="beforeClass" is-config="true" duration-ms="1831" started-at="2018-11-07T21:48:55Z" finished-at="2018-11-07T21:48:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackAndHelpTest@1ce4f0a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-07T21:48:57Z" finished-at="2018-11-07T21:48:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="homePage()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackAndHelpTest@1ce4f0a]" name="homePage" duration-ms="2046" started-at="2018-11-07T21:48:57Z" description="Validating the home page" finished-at="2018-11-07T21:48:59Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:17805
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SPEARHEAD-PC', ip: '192.168.17.102', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:17805
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SPEARHEAD-PC', ip: '192.168.17.102', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+at com.dpreview.auto.tests.BaseTest.browseToUrl(BaseTest.java:63)
+at com.dpreview.auto.tests.DpreviewFeedbackAndHelpTest.homePage(DpreviewFeedbackAndHelpTest.java:23)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:17805
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+... 29 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+at java.net.PlainSocketImpl.connect(Unknown Source)
+at java.net.SocksSocketImpl.connect(Unknown Source)
+at java.net.Socket.connect(Unknown Source)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
             <line>
-              <![CDATA[Scrolled to Element By.xpath: //*[@class='label']//*[@class='header'] (By.xpath: //*[@class='label']//*[@class='header'])]]>
+              <![CDATA[Browsing to URL: https://www.dpreview.com]]>
             </line>
           </reporter-output>
-        </test-method> <!-- scrollToYourEmail -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackSending@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-07T21:16:03Z" finished-at="2018-11-07T21:16:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackSending@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-07T21:16:03Z" finished-at="2018-11-07T21:16:03Z">
+        </test-method> <!-- homePage -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackAndHelpTest@1ce4f0a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-07T21:49:01Z" finished-at="2018-11-07T21:49:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="sendFeedback()[pri:4, instance:com.dpreview.auto.tests.DpreviewFeedbackSending@1caeb3e]" name="sendFeedback" duration-ms="360" started-at="2018-11-07T21:16:03Z" finished-at="2018-11-07T21:16:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sendFeedback -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackSending@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-07T21:16:03Z" finished-at="2018-11-07T21:16:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackSending@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-07T21:16:03Z" finished-at="2018-11-07T21:16:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackSending@1caeb3e]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-07T21:16:04Z" finished-at="2018-11-07T21:16:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.DpreviewFeedbackSending@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-07T21:16:04Z" finished-at="2018-11-07T21:16:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.dpreview.auto.tests.DpreviewFeedbackSending -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.dpreview.auto.tests.DpreviewFeedbackAndHelpTest -->
+    </test> <!-- Feedback process -->
+  </suite> <!-- 03.feedback -->
 </testng-results>

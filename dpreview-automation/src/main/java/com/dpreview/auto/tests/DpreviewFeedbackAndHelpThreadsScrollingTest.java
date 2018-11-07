@@ -97,6 +97,8 @@ public class DpreviewFeedbackAndHelpThreadsScrollingTest extends BaseTest {
         Reports.report("Scrolled to Element " + By.xpath("//*[@class='primaryInfo']//*[text()='Sort gear listing']") + " (" + By.xpath("//*[@class='primaryInfo']//*[text()='Sort gear listing']") + ")");
         
         Thread.sleep(10000);
+        
+        driver.close();
 	}
 
 }

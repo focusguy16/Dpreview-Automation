@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="03.feedback" verbose="1">
+
+	<test name="Feedback process">
+		<classes>
+			<class name="com.dpreview.auto.tests.DpreviewFeedbackSendingTest"></class>
+			<class name="com.dpreview.auto.tests.DpreviewFeedbackAndHelpTest"></class>
+			<class name="com.dpreview.auto.tests.DpreviewFeedbackAndHelpThreadsScrollingTest"></class>
+		</classes>
+	</test>
+
+</suite>

@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [03.feedback]">
+  <test thread-count="5" name="Feedback process(failed)">
     <classes>
-      <class name="com.dpreview.auto.tests.DpreviewFeedbackTest">
+      <class name="com.dpreview.auto.tests.DpreviewFeedbackAndHelpTest">
         <methods>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
-          <include name="allThreadsTab"/>
-          <include name="questionsTab"/>
           <include name="afterMethod"/>
-          <include name="discussionsTab"/>
+          <include name="homePage"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.dpreview.auto.tests.DpreviewFeedbackTest -->
+      </class> <!-- com.dpreview.auto.tests.DpreviewFeedbackAndHelpTest -->
+      <class name="com.dpreview.auto.tests.DpreviewFeedbackAndHelpThreadsScrollingTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="homePage"/>
+        </methods>
+      </class> <!-- com.dpreview.auto.tests.DpreviewFeedbackAndHelpThreadsScrollingTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Feedback process(failed) -->
+</suite> <!-- Failed suite [03.feedback] -->

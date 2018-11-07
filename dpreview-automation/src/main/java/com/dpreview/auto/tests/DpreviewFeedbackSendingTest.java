@@ -9,7 +9,11 @@ import org.testng.annotations.Test;
 import com.dpreview.auto.infra.config.MainConfig;
 import com.dpreview.auto.infra.reports.Reports;
 
-public class DpreviewFeedbackSending extends BaseTest {
+/*
+ * ************************************ This test is intended to check the Feedback sending process  *****************************************************
+ */
+
+public class DpreviewFeedbackSendingTest extends BaseTest {
 
 	@Test(description = "Validating the home page", priority = 0)
 	public void homePage() {
@@ -29,7 +33,7 @@ public class DpreviewFeedbackSending extends BaseTest {
 		driver.findElement(By.cssSelector(".tip")).click();
 	}
 
-	@Test(description = "", priority = 2)
+	@Test(description = "Scroll the page to Contact Us header", priority = 2)
 	public void scrollToContactingUs() throws Exception {
 
 		WebElement contactingUs = driver.findElement(By.xpath("//*[@class='label']//*[@class='header']"));
@@ -41,7 +45,7 @@ public class DpreviewFeedbackSending extends BaseTest {
 		Thread.sleep(10000);
 	}
 
-	@Test(description = "", priority = 3)
+	@Test(description = "Scroll the page to Your Email header", priority = 3)
 	public void scrollToYourEmail() {
 
 		WebElement yourEmail = driver.findElement(By.xpath("//*[@class='label']//*[@class='header']"));
@@ -52,7 +56,7 @@ public class DpreviewFeedbackSending extends BaseTest {
 
 	}
 	
-	@Test(description = "", priority = 4)
+	@Test(description = "Sending the feedback", priority = 4)
 	public void sendFeedback() {
 		
 		WebElement sendFeedback = driver.findElement(By.id("feedbackFormSubmitBtn"));
@@ -61,6 +65,8 @@ public class DpreviewFeedbackSending extends BaseTest {
 		action.moveToElement(sendFeedback).build().perform();
 		
 		driver.findElement(By.id("feedbackFormSubmitBtn")).click();
+		
+		driver.close();
 	}
 
 }
