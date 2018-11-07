@@ -11,19 +11,18 @@ import com.dpreview.auto.infra.config.MainConfig;
 import com.dpreview.auto.infra.reports.Reports;
 
 /*
- * ************************** This test is using the mouse right click context menu to open the Feedback and Help forum *****************************
+ * ***************** This test is checking the automated scrolling function of the threads which are found in the All threads tab in the forum *********** 
  */
 
-
-public class DpreviewFeedbackTest extends BaseTest {
-
+public class DpreviewFeedbackAndHelpThreadsScrollingTest extends BaseTest {
+	
 	@Test(description = "Validating the home page", priority = 0)
 	public void homePage() {
 
 		browseToUrl(MainConfig.baseUrl);
 
 	}
-
+	
 	@Test(description = "Accessing the Feedback page", priority = 1)
 	public void feedbackPageAccess() {
 
@@ -34,6 +33,8 @@ public class DpreviewFeedbackTest extends BaseTest {
 
 		driver.findElement(By.cssSelector(".tip")).click();
 	}
+	
+	// ------------------------ Running the Feedback and Help forum in a new browser page using the mouse right click context menu option ----------------
 
 	@Test(description = "Opening the Feedback forum", priority = 2)
 	public void feedbackForum() {
@@ -54,6 +55,7 @@ public class DpreviewFeedbackTest extends BaseTest {
 		driver.findElement(By.cssSelector(".forumHeader > h1:nth-child(3)")).click();
 	}
 	
+	// --------------------------------------- Scrolling the entire threads in the page from the All threads tab ----------------------------------------- 
 	
 	@Test(description = "Scrolling the page", priority = 3)
 	public void scrollPage() throws Exception {
@@ -95,49 +97,6 @@ public class DpreviewFeedbackTest extends BaseTest {
         Reports.report("Scrolled to Element " + By.xpath("//*[@class='primaryInfo']//*[text()='Sort gear listing']") + " (" + By.xpath("//*[@class='primaryInfo']//*[text()='Sort gear listing']") + ")");
         
         Thread.sleep(10000);
-	}
-	
-	
-	// ------------------------------------------------- All Threads Tab ----------------------------------------
-
-	@Test(description = "All threads tab", priority = 6)
-	public void allThreadsTab() {
-		
-		WebElement allThreadsTab = driver.findElement(By.cssSelector("a.tab:nth-child(1)"));
-		
-		Actions action = new Actions(driver);
-		action.moveToElement(allThreadsTab).build().perform();
-		
-		driver.findElement(By.cssSelector("a.tab:nth-child(1)")).click();
-
-	}
-	
-	// ------------------------------------------------- Discussions Tab ----------------------------------------
-	
-	@Test(description = "Discussions tab", priority = 4)
-	public void discussionsTab() {
-		
-		WebElement discussionsTab = driver.findElement(By.xpath("//*[@class='tab left discussion']"));
-		
-		Actions action = new Actions(driver);
-		action.moveToElement(discussionsTab).build().perform();
-		
-		driver.findElement(By.xpath("//*[@class='tab left discussion']")).click();
-
-	}
-	
-	// --------------------------------------------------- Questions Tab ----------------------------------------
-	
-	@Test(description = "Questions tab", priority = 5)
-	public void questionsTab() {
-		
-		WebElement questionsTab = driver.findElement(By.xpath("//*[@class='tab left question']"));
-		
-		Actions action = new Actions(driver);
-		action.moveToElement(questionsTab).build().perform();
-		
-		driver.findElement(By.xpath("//*[@class='tab left question']")).click();
-
 	}
 
 }
