@@ -20,8 +20,6 @@ public class DpreviewLoginWrongDetailsTest extends BaseTest {
 		
 		browseToUrl(MainConfig.baseUrl);
 		
-		// boolean importantMessage = false;
-		
 		WebElement loginLink = driver.findElement(By.cssSelector(".userTools > a:nth-child(1)"));
 		
 		Actions action = new Actions(driver);
@@ -65,8 +63,7 @@ public class DpreviewLoginWrongDetailsTest extends BaseTest {
 			
 			assertEquals(true, true); 
 			 
-			importantMessage.findElement(By.id("authportal-center-section")).isDisplayed();
-			// new DpreviewLoginPage(driver) != null;
+			importantMessage.findElement(By.id("authportal-center-section")).isEnabled();
 			
 			if (importantMessage != null) {
 				
@@ -77,19 +74,6 @@ public class DpreviewLoginWrongDetailsTest extends BaseTest {
 				System.out.println("The details are correct!");
 			}
 			
-			
-			/*
-			
-			if (dpreviewLoginPage != null) {
-				
-				System.out.println("The login details are correct.");
-			}
-			else {
-				
-				System.out.println("The login details are incorrect.");
-			}
-			
-			*/
 		}
 
 }
