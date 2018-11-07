@@ -148,7 +148,7 @@ public class DpreviewLoginTest extends BaseTest {
 		
 		website.sendKeys("https://www.linkedin.com/in/daniel-harel-b3a96414/");
 		
-		driver.findElement(By.id("userSettingsGallerySafetyLevelModerate"));
+		driver.findElement(By.id("userSettingsGallerySafetyLevelModerate"));  // *** Scrolling the page to the galleryViewingSafetyLevel element ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", galleryViewingSafetyLevel);
         Reports.report("Scrolled to Element " + By.name("userSettingsGallerySafetyLevelModerate") + " (" + By.name("userSettingsGallerySafetyLevelModerate") + ")");
         

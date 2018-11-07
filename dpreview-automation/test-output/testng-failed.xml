@@ -7,8 +7,10 @@
         <methods>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
-          <include name="feedbackForum"/>
+          <include name="allThreadsTab"/>
+          <include name="questionsTab"/>
           <include name="afterMethod"/>
+          <include name="discussionsTab"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.dpreview.auto.tests.DpreviewFeedbackTest -->
