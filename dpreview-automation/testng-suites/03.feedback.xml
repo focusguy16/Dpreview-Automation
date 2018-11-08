@@ -2,12 +2,28 @@
 
 <suite name="03.feedback" verbose="1">
 
-	<test name="Feedback process">
+	<test name="Feedback sending">
 		<classes>
-			<class name="com.dpreview.auto.tests.DpreviewFeedbackSendingTest"></class>
-			<class name="com.dpreview.auto.tests.DpreviewFeedbackAndHelpTest"></class>
-			<class name="com.dpreview.auto.tests.DpreviewFeedbackAndHelpThreadsScrollingTest"></class>
+			<class name="com.dpreview.auto.tests.DpreviewFeedbackSendingTest" />
+		</classes>
+	</test>
+
+	<test name="Feedback and Help">
+		<classes>
+			<class name="com.dpreview.auto.tests.DpreviewFeedbackAndHelpTest" />
+		</classes>
+	</test>
+
+	<test name="Feedback and Help threads">
+		<classes>
+			<class name="com.dpreview.auto.tests.DpreviewFeedbackAndHelpThreadsScrollingTest" />
 		</classes>
 	</test>
 
 </suite>
+
+<!--
+thread-count="2" parallel="tests"
+ -->
+ 
+ 

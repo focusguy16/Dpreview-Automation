@@ -15,12 +15,12 @@ public class DpreviewAddingGearListTest extends BaseTest {
 		
 		browseToUrl(MainConfig.overviewUrl);
 		
-		WebElement gearList = driver.findElement(By.cssSelector(".tabsContainer > a:nth-child(6)"));
+		WebElement gearList = driver.findElement(By.xpath("//*[@class='empty']//*[text()='Gear List']"));
 		
 		Actions action = new Actions(driver);
 		action.moveToElement(gearList).build().perform();
 		
-		driver.findElement(By.cssSelector(".tabsContainer > a:nth-child(6)")).click();
+		driver.findElement(By.xpath("//*[@class='empty']//*[text()='Gear List']")).click();
 	}
 
 }

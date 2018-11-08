@@ -3,13 +3,13 @@
 <suite name="02.login" verbose="1">
 	<test name="Login process">
 		<classes>
-			<class name="com.dpreview.auto.tests.DpreviewLoginTest"></class>
+			<class name="com.dpreview.auto.tests.T2_DpreviewLoginTest" />
 		</classes>
 	</test>
 
 	<test name="Adding Gear">
 		<classes>
-			<class name="com.dpreview.auto.tests.DpreviewAddingGearListTest"></class>
+			<class name="com.dpreview.auto.tests.T4_DpreviewMyRecentActivityTest" />
 		</classes>
 	</test>
 </suite>

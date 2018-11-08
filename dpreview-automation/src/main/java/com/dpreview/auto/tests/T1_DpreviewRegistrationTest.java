@@ -14,7 +14,7 @@ import com.dpreview.auto.infra.pages.DpreviewSearchResultsPage;
 
 import com.google.common.base.Throwables;
 
-public class DpreviewRegistrationTest extends BaseTest {
+public class T1_DpreviewRegistrationTest extends BaseTest {
 
 	@Test(description = "Validation of the registration page", priority = 0)
 	public void registrationPageTest() {

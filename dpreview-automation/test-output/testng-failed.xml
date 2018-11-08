@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [03.feedback]">
-  <test thread-count="5" name="Feedback process(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [02.login]">
+  <test thread-count="5" name="Adding Gear(failed)">
     <classes>
-      <class name="com.dpreview.auto.tests.DpreviewFeedbackAndHelpTest">
+      <class name="com.dpreview.auto.tests.T4_DpreviewMyRecentActivityTest">
         <methods>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-          <include name="homePage"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.dpreview.auto.tests.DpreviewFeedbackAndHelpTest -->
-      <class name="com.dpreview.auto.tests.DpreviewFeedbackAndHelpThreadsScrollingTest">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
+          <include name="userGearList"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
-          <include name="homePage"/>
         </methods>
-      </class> <!-- com.dpreview.auto.tests.DpreviewFeedbackAndHelpThreadsScrollingTest -->
+      </class> <!-- com.dpreview.auto.tests.T4_DpreviewMyRecentActivityTest -->
     </classes>
-  </test> <!-- Feedback process(failed) -->
-</suite> <!-- Failed suite [03.feedback] -->
+  </test> <!-- Adding Gear(failed) -->
+</suite> <!-- Failed suite [02.login] -->

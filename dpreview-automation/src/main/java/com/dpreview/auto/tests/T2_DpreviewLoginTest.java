@@ -27,7 +27,7 @@ import org.testng.Assert;
 import com.dpreview.auto.infra.pages.DpreviewLoginPage;
 
 
-public class DpreviewLoginTest extends BaseTest {
+public class T2_DpreviewLoginTest extends BaseTest {
 	
 	/*
 	@Test // (dataProvider = "csvParamsProvider")
@@ -90,8 +90,6 @@ public class DpreviewLoginTest extends BaseTest {
 	
 	@Test(description = "The user enters to the settings section", priority = 2)
 	public void enterSettingsTest() {
-		
-		// browseToUrl(MainConfig.baseUrl);
 		
 		WebElement userSettings = driver.findElement(By.id("mainUserBox"));
 		

@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import com.dpreview.auto.infra.config.MainConfig;
 import com.dpreview.auto.infra.pages.DpreviewLoginPage;
 
-public class DpreviewLoginWrongDetailsTest extends BaseTest {
+public class T3_DpreviewLoginWrongDetailsTest extends BaseTest {
 	
 	// ------------------------- Testing the validation of the Login page ------------------------------------------------------------------
 	
