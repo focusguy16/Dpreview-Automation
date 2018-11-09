@@ -7,11 +7,9 @@
         <methods>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
-          <include name="selectingSmartphoneReviews"/>
+          <include name="orderBy"/>
           <include name="afterMethod"/>
-          <include name="hoveringReviewsElement"/>
           <include name="afterClass"/>
-          <include name="loginDetails"/>
         </methods>
       </class> <!-- com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest -->
     </classes>

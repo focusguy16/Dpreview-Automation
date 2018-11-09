@@ -1,5 +1,7 @@
 package com.dpreview.auto.tests;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -74,8 +76,22 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 			action.moveToElement(smartphoneReviews).build().perform();
 			
 			driver.findElement(By.xpath("//*[@class='dropdownMenuContent']//*[text()='Smartphone reviews']")).isSelected();
+			driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
 			driver.findElement(By.xpath("//*[@class='dropdownMenuContent']//*[text()='Smartphone reviews']")).click();
+		}
+		
+		// --------------------- Testing the index order opening in the page ---------------------------------------------------------------
+		
+		@Test(description = "Ordering the items in the page", priority = 3)
+		public void orderBy() {
 			
+			WebElement orderBy = driver.findElement(By.xpath("//*[@class='reviewsOptionsNavigation']//*[text()='Order by brand']"));
+			
+			Actions action = new Actions(driver);
+			action.moveToElement(orderBy).build().perform();
+			
+			driver.findElement(By.xpath("//*[@class='reviewsOptionsNavigation']//*[text()='Order by brand']")).isSelected();
+			driver.findElement(By.xpath("//*[@class='reviewsOptionsNavigation']//*[text()='Order by brand']")).click();
 		}
 
 }
