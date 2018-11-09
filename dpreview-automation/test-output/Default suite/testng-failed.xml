@@ -3,15 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dpreview.auto.tests.T4_DpreviewUserSettingsTest">
+      <class name="com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest">
         <methods>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
-          <include name="userSettingsTest"/>
+          <include name="selectingSmartphoneReviews"/>
           <include name="afterMethod"/>
+          <include name="hoveringReviewsElement"/>
           <include name="afterClass"/>
+          <include name="loginDetails"/>
         </methods>
-      </class> <!-- com.dpreview.auto.tests.T4_DpreviewUserSettingsTest -->
+      </class> <!-- com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

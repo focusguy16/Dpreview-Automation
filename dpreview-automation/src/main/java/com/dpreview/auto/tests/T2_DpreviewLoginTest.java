@@ -1,31 +1,18 @@
 package com.dpreview.auto.tests;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 
 import com.dpreview.auto.infra.config.MainConfig;
-import com.dpreview.auto.infra.pages.DpreviewHomePage;
-import com.dpreview.auto.infra.pages.DpreviewSignInPage;
+import com.dpreview.auto.infra.pages.DpreviewLoginPage;
 import com.dpreview.auto.infra.reports.Reports;
-import com.dpreview.auto.infra.utils.AssertUtils;
-import com.dpreview.auto.infra.web.By2;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.events.WebDriverEventListener;
-
-import org.testng.Assert;
-
-import com.dpreview.auto.infra.pages.DpreviewLoginPage;
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class T2_DpreviewLoginTest extends BaseTest {
 	
@@ -135,6 +122,8 @@ public class T2_DpreviewLoginTest extends BaseTest {
 		
 		driver.findElements(By.name("profession"));
 		
+		// ################## Checking if the input already contains the user profession ####################
+		
 		profession.sendKeys("QA Engineer");
 		
 		// --------------------- Setting the web site input ---------------------------------------
@@ -143,6 +132,8 @@ public class T2_DpreviewLoginTest extends BaseTest {
 		action4.moveToElement(website).build().perform();
 		
 		driver.findElement(By.name("website"));
+		
+		// ############### Checking if the web site input already contains the user web site ################
 		
 		website.sendKeys("https://www.linkedin.com/in/daniel-harel-b3a96414/");
 		
@@ -170,5 +161,16 @@ public class T2_DpreviewLoginTest extends BaseTest {
 		action7.moveToElement(saveChanges).build().perform();
 		
 		driver.findElement(By.id("settingsFormSubmitButton")).click();
+		WebDriverWait wait = new WebDriverWait(driver, 5000);
+		wait.until(ExpectedConditions.urlContains("overview"));
+	}
+	
+	// ------------------------- Navigate to the Overview page -------------------------------------
+	
+	@Test(description = "Navigate to Overview page", priority = 4)
+	public void navigateToOverviewPage() {
+		
+		driver.navigate().to("https://www.dpreview.com/members/5763666202/overview");
+		
 	}
 }
