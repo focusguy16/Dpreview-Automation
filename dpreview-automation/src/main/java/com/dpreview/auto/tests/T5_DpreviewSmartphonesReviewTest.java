@@ -206,50 +206,50 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 	public void appleiPhoneXReviewPage1() throws Exception {
 
 		Thread.sleep(5000);
-		
+
 		WebElement appleiPhoneXimage = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Key Photographic / Video Specifications']"));
 		WebElement nextPage = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
 
 		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Key Photographic / Video Specifications']"));  // *** Scrolling to the key features of the iPhone X  ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", appleiPhoneXimage);
 		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Key Photographic / Video Specifications']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Key Photographic / Video Specifications']") + ")");
-		
+
 		Actions action = new Actions(driver);
 		action.moveToElement(nextPage).build().perform();
-		
+
 		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
 	}
-	
+
 	@Test(description = "iPhone X review - page 2", priority = 7)
 	public void appleiPhoneXReviewPage2() throws Exception {
-		
+
 		Thread.sleep(5000);
-		
+
 		WebElement handlingAndWorkflow = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));
 		WebElement lightroomCC = driver.findElement(By.cssSelector("td.imageSwapper:nth-child(1) > p:nth-child(1)"));
 		WebElement nextPage = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
-		
+
 		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));  // *** Scrolling to the Handling and workflow headline   ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", handlingAndWorkflow);
 		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']") + ")");
-		
+
 		Thread.sleep(5000);
-		
+
 		driver.findElement(By.cssSelector("td.imageSwapper:nth-child(1) > p:nth-child(1)"));  // *** Scrolling to the Lightroom CC image   ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", lightroomCC);
 		Reports.report("Scrolled to Element " + By.cssSelector("td.imageSwapper:nth-child(1) > p:nth-child(1)") + " (" + By.cssSelector("td.imageSwapper:nth-child(1) > p:nth-child(1)") + ")");
-		
+
 		Actions action = new Actions(driver);
 		action.moveToElement(nextPage).build().perform();
-		
+
 		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
 	}
-	
+
 	@Test(description = "iPhone X review - page 3", priority = 8)
 	public void appleiPhoneXReviewPage3() throws Exception {
-		
+
 		Thread.sleep(5000);
-		
+
 		WebElement portraitMode = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Portrait mode']"));
 		WebElement standardPortraitMode = driver.findElement(By.cssSelector("td.imageSwapper:nth-child(1)"));
 		WebElement panoramaMode = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Panorama mode']"));
@@ -258,6 +258,102 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		WebElement waterAndDustResistance = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='IP67 water and dust resistance rating']"));
 		WebElement hdrDisplay = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='HDR display and P3 color']"));
 		WebElement nextPage = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
+
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Portrait mode']"));  // *** Scrolling to the Portrait mode headline   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", portraitMode);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Portrait mode']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Portrait mode']") + ")");
+
+		Thread.sleep(5000);
+
+		driver.findElement(By.cssSelector("td.imageSwapper:nth-child(1)"));  // *** Scrolling to the standard portrait mode headline   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", standardPortraitMode);
+		Reports.report("Scrolled to Element " + By.cssSelector("td.imageSwapper:nth-child(1)") + " (" + By.cssSelector("td.imageSwapper:nth-child(1)") + ")");
+
+		Thread.sleep(5000);
+
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Panorama mode']"));  // *** Scrolling to the Panorama mode headline   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", panoramaMode);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Panorama mode']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Panorama mode']") + ")");
+
+		Thread.sleep(5000);
+
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='HDR images']"));  // *** Scrolling to the HDR images headline   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", hdrImages);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='HDR images']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='HDR images']") + ")");
+
+		Thread.sleep(5000);
+
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='DNG mode']"));  // *** Scrolling to the DNG mode headline   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", dngMode);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='DNG mode']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='DNG mode']") + ")");
+
+		Thread.sleep(5000);
+
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='IP67 water and dust resistance rating']"));  // *** Scrolling to the IP67 water and dust resistance headline   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", waterAndDustResistance);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='IP67 water and dust resistance rating']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='IP67 water and dust resistance rating']") + ")");
+
+		Thread.sleep(5000);
+
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='HDR display and P3 color']"));  // *** Scrolling to the HDR display mode   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", hdrDisplay);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='HDR display and P3 color']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='HDR display and P3 color']") + ")");
+
+		Actions action = new Actions(driver);
+		action.moveToElement(nextPage).build().perform();
+
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();	
+	}
+
+	@Test(description = "iPhone X review - page 4", priority = 9)
+	public void appleiPhoneXReviewPage4() throws Exception {
+
+		Thread.sleep(5000);
+
+		WebElement imageQuality = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Image quality']"));
+		WebElement jpegImageQuality = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='JPEG image quality - studio scene']"));
+		WebElement dayLight = driver.findElement(By.cssSelector(".active > p:nth-child(1)"));
+		WebElement daylightImageQuality = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Daylight image quality']"));
+		WebElement hdr = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='HDR']"));
+		WebElement portraitMode = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Portrait mode']"));
+		WebElement featuresSection = driver.findElement(By.cssSelector(".articleBody > p:nth-child(24) > a:nth-child(1)"));
+		WebElement selfies = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Selfies']"));
+		WebElement lowLight = driver.findElement(By.id("lowlight"));
+		// WebElement panoramaMode = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Panorama mode']"));
+		// WebElement hdrImages = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='JPEG image quality - studio scene']"));
+		// WebElement dngMode = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='DNG mode']"));
+		// WebElement waterAndDustResistance = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='IP67 water and dust resistance rating']"));
+		// WebElement nextPage = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
+		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Image quality']"));  // *** Scrolling to the Image quality headline   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", imageQuality);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Image quality']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Image quality']") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='JPEG image quality - studio scene']"));  // *** Scrolling to the JPEG image quality headline   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", jpegImageQuality);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='JPEG image quality - studio scene']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='JPEG image quality - studio scene']") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.cssSelector(".active > p:nth-child(1)"));  // *** Scrolling to the Daylight image  ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", dayLight);
+		Reports.report("Scrolled to Element " + By.cssSelector(".active > p:nth-child(1)") + " (" + By.cssSelector(".active > p:nth-child(1)") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Daylight image quality']"));  // *** Scrolling to the Daylight image quality headline   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", daylightImageQuality);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Daylight image quality']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Daylight image quality']") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='HDR']"));  // *** Scrolling to the HDR headline   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", hdr);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='HDR']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='HDR']") + ")");
+		
+		Thread.sleep(5000);
 		
 		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Portrait mode']"));  // *** Scrolling to the Portrait mode headline   ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", portraitMode);
@@ -265,44 +361,35 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		
 		Thread.sleep(5000);
 		
-		driver.findElement(By.cssSelector("td.imageSwapper:nth-child(1)"));  // *** Scrolling to the standard portrait mode headline   ***
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", standardPortraitMode);
-		Reports.report("Scrolled to Element " + By.cssSelector("td.imageSwapper:nth-child(1)") + " (" + By.cssSelector("td.imageSwapper:nth-child(1)") + ")");
+		driver.findElement(By.cssSelector(".articleBody > p:nth-child(24) > a:nth-child(1)"));  // *** Scrolling to the Features' section link   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", featuresSection);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > p:nth-child(24) > a:nth-child(1)") + " (" + By.cssSelector(".articleBody > p:nth-child(24) > a:nth-child(1)") + ")");
 		
 		Thread.sleep(5000);
 		
-		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Panorama mode']"));  // *** Scrolling to the Panorama mode headline   ***
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", panoramaMode);
-		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Panorama mode']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Panorama mode']") + ")");
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Selfies']"));  // *** Scrolling to the Selfies headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", selfies);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Selfies']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Selfies']") + ")");
 		
 		Thread.sleep(5000);
 		
-		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='HDR images']"));  // *** Scrolling to the HDR images headline   ***
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", hdrImages);
-		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='HDR images']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='HDR images']") + ")");
+		driver.findElement(By.id("lowlight"));  // *** Scrolling to the Low light headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", lowLight);
+		Reports.report("Scrolled to Element " + By.id("lowlight") + " (" + By.id("lowlight") + ")");
 		
 		Thread.sleep(5000);
-		
-		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='DNG mode']"));  // *** Scrolling to the DNG mode headline   ***
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", dngMode);
-		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='DNG mode']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='DNG mode']") + ")");
-		
-		Thread.sleep(5000);
-		
-		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='IP67 water and dust resistance rating']"));  // *** Scrolling to the IP67 water and dust resistance headline   ***
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", waterAndDustResistance);
-		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='IP67 water and dust resistance rating']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='IP67 water and dust resistance rating']") + ")");
-		
-		Thread.sleep(5000);
-		
-		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='HDR display and P3 color']"));  // *** Scrolling to the HDR display mode   ***
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", hdrDisplay);
-		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='HDR display and P3 color']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='HDR display and P3 color']") + ")");
-		
-		Actions action = new Actions(driver);
-		action.moveToElement(nextPage).build().perform();
-		
-		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
-		
+
+	}
+
+	@Test(description = "iPhone X review - page 5", priority = 10)
+	public void appleiPhoneXReviewPage5() {
+
+
+	}
+
+	@Test(description = "iPhone X review - page 6", priority = 11)
+	public void appleiPhoneXReviewPage6() {
+
+
 	}
 }
