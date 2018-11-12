@@ -9,7 +9,6 @@
           <include name="beforeMethod"/>
           <include name="orderBy"/>
           <include name="afterMethod"/>
-          <include name="hoveringReviewsElement"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest -->
