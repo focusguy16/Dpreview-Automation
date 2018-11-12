@@ -233,6 +233,8 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", handlingAndWorkflow);
 		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']") + ")");
 		
+		Thread.sleep(5000);
+		
 		driver.findElement(By.cssSelector("td.imageSwapper:nth-child(1) > p:nth-child(1)"));  // *** Scrolling to the Lightroom CC image   ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", lightroomCC);
 		Reports.report("Scrolled to Element " + By.cssSelector("td.imageSwapper:nth-child(1) > p:nth-child(1)") + " (" + By.cssSelector("td.imageSwapper:nth-child(1) > p:nth-child(1)") + ")");
@@ -248,14 +250,59 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		
 		Thread.sleep(5000);
 		
-		WebElement portraitMode = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));
-		WebElement standardPortraitMode = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));
-		WebElement panoramaMode = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));
-		WebElement hdrImages = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));
-		WebElement dngMode = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));
-		WebElement waterAndDustResistance = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));
-		WebElement hdrDisplay = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));
-		WebElement nextPage = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));
+		WebElement portraitMode = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Portrait mode']"));
+		WebElement standardPortraitMode = driver.findElement(By.cssSelector("td.imageSwapper:nth-child(1)"));
+		WebElement panoramaMode = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Panorama mode']"));
+		WebElement hdrImages = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='HDR images']"));
+		WebElement dngMode = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='DNG mode']"));
+		WebElement waterAndDustResistance = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='IP67 water and dust resistance rating']"));
+		WebElement hdrDisplay = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='HDR display and P3 color']"));
+		WebElement nextPage = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
+		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Portrait mode']"));  // *** Scrolling to the Portrait mode headline   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", portraitMode);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Portrait mode']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Portrait mode']") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.cssSelector("td.imageSwapper:nth-child(1)"));  // *** Scrolling to the standard portrait mode headline   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", standardPortraitMode);
+		Reports.report("Scrolled to Element " + By.cssSelector("td.imageSwapper:nth-child(1)") + " (" + By.cssSelector("td.imageSwapper:nth-child(1)") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Panorama mode']"));  // *** Scrolling to the Panorama mode headline   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", panoramaMode);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Panorama mode']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Panorama mode']") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='HDR images']"));  // *** Scrolling to the HDR images headline   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", hdrImages);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='HDR images']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='HDR images']") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='DNG mode']"));  // *** Scrolling to the DNG mode headline   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", dngMode);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='DNG mode']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='DNG mode']") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='IP67 water and dust resistance rating']"));  // *** Scrolling to the IP67 water and dust resistance headline   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", waterAndDustResistance);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='IP67 water and dust resistance rating']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='IP67 water and dust resistance rating']") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='HDR display and P3 color']"));  // *** Scrolling to the HDR display mode   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", hdrDisplay);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='HDR display and P3 color']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='HDR display and P3 color']") + ")");
+		
+		Actions action = new Actions(driver);
+		action.moveToElement(nextPage).build().perform();
+		
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
 		
 	}
 }
