@@ -87,7 +87,7 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 
 		WebDriverWait wait = new WebDriverWait(driver, 5000);
 		wait.until(ExpectedConditions.urlContains("mobilephones"));
-		
+
 		driver.navigate().to("https://www.dpreview.com/reviews?category=mobilephones");
 	}
 
@@ -100,9 +100,9 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 
 		Actions action = new Actions(driver);
 		action.moveToElement(orderBy).build().perform();
-		
+
 		driver.findElement(By.cssSelector("#reviewIndexOrder")).click();
-		
+
 		Select index = new Select(orderBy);
 		index.selectByIndex(2);
 
@@ -113,12 +113,12 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		for (WebElement webElement : listOptions) {
 			System.out.println("options - " + webElement.getText());
 		}
-		
+
 	}
-	
+
 	@Test(description = "Scrolling the page of the smart phones", priority = 4)
 	public void scrollPage() throws Exception {
-		
+
 		WebElement lgV30 = driver.findElement(By.xpath("//*[@class='name']//*[text()='LG V30 Review']"));
 		WebElement huawei_P9 = driver.findElement(By.xpath("//*[@class='name']//*[text()='Huawei P9 Review']"));
 		WebElement sonyXperia_M5 = driver.findElement(By.xpath("//*[@class='name']//*[text()='Sony Xperia M5 Review']"));
@@ -128,60 +128,134 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		WebElement nokiaLumia1520 = driver.findElement(By.xpath("//*[@class='name']//*[text()='Nokia Lumia 1520 Review']"));
 		WebElement samsungGalaxy_S4 = driver.findElement(By.xpath("//*[@class='name']//*[text()='Samsung Galaxy S4 Review']"));
 		WebElement nokiaLumia_920 = driver.findElement(By.xpath("//*[@class='name']//*[text()='Nokia Lumia 920 Review']"));
-		
+		WebElement reviewsAndPreviews = driver.findElement(By.xpath("//*[@id='mainContent']//*[text()='Reviews and previews']"));
+
 		driver.findElement(By.xpath("//*[@class='name']//*[text()='LG V30 Review']"));  // *** Scrolling the page to the LG V30 element ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", lgV30);
-        Reports.report("Scrolled to Element " + By.xpath("//*[@class='name']//*[text()='LG V30 Review']") + " (" + By.xpath("//*[@class='name']//*[text()='LG V30 Review']") + ")");
-        
-        Thread.sleep(5000);
-        
-        // WebDriverWait wait = new WebDriverWait(driver, 5000);
-		// wait.wait(1000, 0);
-        
-        driver.findElement(By.xpath("//*[@class='name']//*[text()='Huawei P9 Review']"));  // *** Scrolling the page to the Huawei P9 Review element ***
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='name']//*[text()='LG V30 Review']") + " (" + By.xpath("//*[@class='name']//*[text()='LG V30 Review']") + ")");
+
+		Thread.sleep(5000);
+
+		driver.findElement(By.xpath("//*[@class='name']//*[text()='Huawei P9 Review']"));  // *** Scrolling the page to the Huawei P9 Review element ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", huawei_P9);
-        Reports.report("Scrolled to Element " + By.xpath("//*[@class='name']//*[text()='Huawei P9 Review']") + " (" + By.xpath("//*[@class='name']//*[text()='Huawei P9 Review']") + ")");
-        
-        Thread.sleep(5000);
-        
-        driver.findElement(By.xpath("//*[@class='name']//*[text()='Sony Xperia M5 Review']"));  // *** Scrolling the page to the Sony Xperia M5 Review element ***
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='name']//*[text()='Huawei P9 Review']") + " (" + By.xpath("//*[@class='name']//*[text()='Huawei P9 Review']") + ")");
+
+		Thread.sleep(5000);
+
+		driver.findElement(By.xpath("//*[@class='name']//*[text()='Sony Xperia M5 Review']"));  // *** Scrolling the page to the Sony Xperia M5 Review element ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", sonyXperia_M5);
-        Reports.report("Scrolled to Element " + By.xpath("//*[@class='name']//*[text()='Sony Xperia M5 Review']") + " (" + By.xpath("//*[@class='name']//*[text()='Sony Xperia M5 Review']") + ")");
-        
-        Thread.sleep(5000);
-        
-        driver.findElement(By.xpath("//*[@class='name']//*[text()='Apple iPhone 6s Review']"));  // *** Scrolling the page to the Apple iPhone 6s Review element ***
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='name']//*[text()='Sony Xperia M5 Review']") + " (" + By.xpath("//*[@class='name']//*[text()='Sony Xperia M5 Review']") + ")");
+
+		Thread.sleep(5000);
+
+		driver.findElement(By.xpath("//*[@class='name']//*[text()='Apple iPhone 6s Review']"));  // *** Scrolling the page to the Apple iPhone 6s Review element ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", appleiPhone_6s);
-        Reports.report("Scrolled to Element " + By.xpath("//*[@class='name']//*[text()='Apple iPhone 6s Review']") + " (" + By.xpath("//*[@class='name']//*[text()='Apple iPhone 6s Review']") + ")");
-        
-        Thread.sleep(5000);
-        
-        driver.findElement(By.xpath("//*[@class='name']//*[text()='HTC One M9 Review']"));  // *** Scrolling the page to the HTC One M9 Review element ***
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='name']//*[text()='Apple iPhone 6s Review']") + " (" + By.xpath("//*[@class='name']//*[text()='Apple iPhone 6s Review']") + ")");
+
+		Thread.sleep(5000);
+
+		driver.findElement(By.xpath("//*[@class='name']//*[text()='HTC One M9 Review']"));  // *** Scrolling the page to the HTC One M9 Review element ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", htcOne_M9);
-        Reports.report("Scrolled to Element " + By.xpath("//*[@class='name']//*[text()='HTC One M9 Review']") + " (" + By.xpath("//*[@class='name']//*[text()='HTC One M9 Review']") + ")");
-        
-        Thread.sleep(5000);
-        
-        driver.findElement(By.xpath("//*[@class='name']//*[text()='Amazon Fire Phone Review']"));  // *** Scrolling the page to the Amazon Fire Phone Review element ***
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='name']//*[text()='HTC One M9 Review']") + " (" + By.xpath("//*[@class='name']//*[text()='HTC One M9 Review']") + ")");
+
+		Thread.sleep(5000);
+
+		driver.findElement(By.xpath("//*[@class='name']//*[text()='Amazon Fire Phone Review']"));  // *** Scrolling the page to the Amazon Fire Phone Review element ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", amazonFirePhone);
-        Reports.report("Scrolled to Element " + By.xpath("//*[@class='name']//*[text()='Amazon Fire Phone Review']") + " (" + By.xpath("//*[@class='name']//*[text()='Amazon Fire Phone Review']") + ")");
-        
-        Thread.sleep(5000);
-        
-        driver.findElement(By.xpath("//*[@class='name']//*[text()='Nokia Lumia 1520 Review']"));  // *** Scrolling the page to the Nokia Lumia 1520 Review element ***
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='name']//*[text()='Amazon Fire Phone Review']") + " (" + By.xpath("//*[@class='name']//*[text()='Amazon Fire Phone Review']") + ")");
+
+		Thread.sleep(5000);
+
+		driver.findElement(By.xpath("//*[@class='name']//*[text()='Nokia Lumia 1520 Review']"));  // *** Scrolling the page to the Nokia Lumia 1520 Review element ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", nokiaLumia1520);
-        Reports.report("Scrolled to Element " + By.xpath("//*[@class='name']//*[text()='Nokia Lumia 1520 Review']") + " (" + By.xpath("//*[@class='name']//*[text()='Nokia Lumia 1520 Review']") + ")");
-        
-        Thread.sleep(5000);
-        
-        driver.findElement(By.xpath("//*[@class='name']//*[text()='Samsung Galaxy S4 Review']"));  // *** Scrolling the page to the Samsung Galaxy S4 Review element ***
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='name']//*[text()='Nokia Lumia 1520 Review']") + " (" + By.xpath("//*[@class='name']//*[text()='Nokia Lumia 1520 Review']") + ")");
+
+		Thread.sleep(5000);
+
+		driver.findElement(By.xpath("//*[@class='name']//*[text()='Samsung Galaxy S4 Review']"));  // *** Scrolling the page to the Samsung Galaxy S4 Review element ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", samsungGalaxy_S4);
-        Reports.report("Scrolled to Element " + By.xpath("//*[@class='name']//*[text()='Samsung Galaxy S4 Review']") + " (" + By.xpath("//*[@class='name']//*[text()='Samsung Galaxy S4 Review']") + ")");
-        
-        Thread.sleep(5000);
-        
-        driver.findElement(By.xpath("//*[@class='name']//*[text()='Nokia Lumia 920 Review']"));  // *** Scrolling the page to the Nokia Lumia 920 Review Review element ***
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='name']//*[text()='Samsung Galaxy S4 Review']") + " (" + By.xpath("//*[@class='name']//*[text()='Samsung Galaxy S4 Review']") + ")");
+
+		Thread.sleep(5000);
+
+		driver.findElement(By.xpath("//*[@class='name']//*[text()='Nokia Lumia 920 Review']"));  // *** Scrolling the page to the Nokia Lumia 920 Review Review element ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", nokiaLumia_920);
-        Reports.report("Scrolled to Element " + By.xpath("//*[@class='name']//*[text()='Nokia Lumia 920 Review']") + " (" + By.xpath("//*[@class='name']//*[text()='Nokia Lumia 920 Review']") + ")");
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='name']//*[text()='Nokia Lumia 920 Review']") + " (" + By.xpath("//*[@class='name']//*[text()='Nokia Lumia 920 Review']") + ")");
+
+		Thread.sleep(5000);
+
+		driver.findElement(By.xpath("//*[@id='mainContent']//*[text()='Reviews and previews']"));  // *** Scrolling to the Head of the page element ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", reviewsAndPreviews);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@id='mainContent']//*[text()='Reviews and previews']") + " (" + By.xpath("//*[@id='mainContent']//*[text()='Reviews and previews']") + ")");
+	}
+
+	@Test(description = "iPhone X element", priority = 5)
+	public void appleiPhoneXElement() {
+
+		WebElement appleiPhoneX = driver.findElement(By.xpath("//*[@class='name']//*[text()='Apple iPhone X Review']"));
+
+		Actions action = new Actions(driver);
+		action.moveToElement(appleiPhoneX).build().perform();
+
+		driver.findElement(By.xpath("//*[@class='name']//*[text()='Apple iPhone X Review']")).click();
+		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
+		driver.get("https://www.dpreview.com/reviews/iphone-x-review");
+	}
+
+	@Test(description = "iPhone X review - page 1", priority = 6)
+	public void appleiPhoneXReviewPage1() throws Exception {
+
+		Thread.sleep(5000);
+		
+		WebElement appleiPhoneXimage = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Key Photographic / Video Specifications']"));
+		WebElement nextPage = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
+
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Key Photographic / Video Specifications']"));  // *** Scrolling to the key features of the iPhone X  ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", appleiPhoneXimage);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Key Photographic / Video Specifications']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Key Photographic / Video Specifications']") + ")");
+		
+		Actions action = new Actions(driver);
+		action.moveToElement(nextPage).build().perform();
+		
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
+	}
+	
+	@Test(description = "iPhone X review - page 2", priority = 7)
+	public void appleiPhoneXReviewPage2() throws Exception {
+		
+		Thread.sleep(5000);
+		
+		WebElement handlingAndWorkflow = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));
+		WebElement lightroomCC = driver.findElement(By.cssSelector("td.imageSwapper:nth-child(1) > p:nth-child(1)"));
+		WebElement nextPage = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
+		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));  // *** Scrolling to the Handling and workflow headline   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", handlingAndWorkflow);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']") + ")");
+		
+		driver.findElement(By.cssSelector("td.imageSwapper:nth-child(1) > p:nth-child(1)"));  // *** Scrolling to the Lightroom CC image   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", lightroomCC);
+		Reports.report("Scrolled to Element " + By.cssSelector("td.imageSwapper:nth-child(1) > p:nth-child(1)") + " (" + By.cssSelector("td.imageSwapper:nth-child(1) > p:nth-child(1)") + ")");
+		
+		Actions action = new Actions(driver);
+		action.moveToElement(nextPage).build().perform();
+		
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
+	}
+	
+	@Test(description = "iPhone X review - page 3", priority = 8)
+	public void appleiPhoneXReviewPage3() throws Exception {
+		
+		Thread.sleep(5000);
+		
+		WebElement portraitMode = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));
+		WebElement standardPortraitMode = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));
+		WebElement panoramaMode = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));
+		WebElement hdrImages = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));
+		WebElement dngMode = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));
+		WebElement waterAndDustResistance = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));
+		WebElement hdrDisplay = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));
+		WebElement nextPage = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Handling and workflow']"));
+		
 	}
 }
