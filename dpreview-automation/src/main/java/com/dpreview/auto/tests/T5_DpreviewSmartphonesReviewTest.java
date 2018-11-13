@@ -202,7 +202,7 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		driver.get("https://www.dpreview.com/reviews/iphone-x-review");
 	}
 
-	@Test(description = "iPhone X review - page 1", priority = 6)
+	@Test(description = "iPhone X review - page 1:Introduction", priority = 6)
 	public void appleiPhoneXReviewPage1() throws Exception {
 
 		Thread.sleep(5000);
@@ -220,7 +220,7 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
 	}
 
-	@Test(description = "iPhone X review - page 2", priority = 7)
+	@Test(description = "iPhone X review - page 2:Body and design", priority = 7)
 	public void appleiPhoneXReviewPage2() throws Exception {
 
 		Thread.sleep(5000);
@@ -245,7 +245,7 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
 	}
 
-	@Test(description = "iPhone X review - page 3", priority = 8)
+	@Test(description = "iPhone X review - page 3:Features", priority = 8)
 	public void appleiPhoneXReviewPage3() throws Exception {
 
 		Thread.sleep(5000);
@@ -305,7 +305,7 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();	
 	}
 
-	@Test(description = "iPhone X review - page 4", priority = 9)
+	@Test(description = "iPhone X review - page 4:Image quality", priority = 9)
 	public void appleiPhoneXReviewPage4() throws Exception {
 
 		Thread.sleep(5000);
@@ -320,9 +320,6 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		WebElement selfies = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Selfies']"));
 		WebElement lowLight = driver.findElement(By.id("lowlight"));
 		WebElement rawCapture = driver.findElement(By.cssSelector(".articleBody > h3:nth-child(42)"));
-		//WebElement dngCapture = driver.findElement(By.xpath("//*[@class='caption imageSwapper']//*[text()='ISO 25 | 1/10 sec | F1.8']"));
-		// WebElement dngMode = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='DNG mode']"));
-		// WebElement waterAndDustResistance = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='IP67 water and dust resistance rating']"));
 		WebElement nextPage = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
 		
 		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Image quality']"));  // *** Scrolling to the Image quality headline   ***
@@ -385,7 +382,7 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		
 		Thread.sleep(5000);
 		
-		driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));  // *** Scrolling to the DNG capture image ***
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));  // *** Scrolling to the Next page button ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", nextPage);
 		Reports.report("Scrolled to Element " + By.cssSelector("span.next > a:nth-child(1)") + " (" + By.cssSelector("span.next > a:nth-child(1)") + ")");
 		
@@ -397,17 +394,105 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
 	}
 
-	@Test(description = "iPhone X review - page 5", priority = 10)
-	public void appleiPhoneXReviewPage5() {
-
-
+	@Test(description = "iPhone X review - page 5:Video", priority = 10)
+	public void appleiPhoneXReviewPage5() throws Exception {
+		
+		WebElement video = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Video']"));
+		WebElement inUse = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='In use']"));
+		WebElement highQualityVideo = driver.findElement(By.cssSelector("div.caption:nth-child(8) > a:nth-child(1)"));
+		WebElement nextPage = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
+		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Video']"));  // *** Scrolling to the Video headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", video);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Video']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Video']") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='In use']"));  // *** Scrolling to the In use headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", inUse);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='In use']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='In use']") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.cssSelector("div.caption:nth-child(8) > a:nth-child(1)"));  // *** Scrolling to the High quality video link ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", highQualityVideo);
+		Reports.report("Scrolled to Element " + By.cssSelector("div.caption:nth-child(8) > a:nth-child(1)") + " (" + By.cssSelector("div.caption:nth-child(8) > a:nth-child(1)") + ")");
+		
+		Thread.sleep(5000);
+		
+		Actions action = new Actions(driver);
+		action.moveToElement(nextPage).build().perform();
+		
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
 	}
 
-	@Test(description = "iPhone X review - page 6", priority = 11)
-	public void appleiPhoneXReviewPage6() {
+	@Test(description = "iPhone X review - page 6:Conclusion", priority = 11)
+	public void appleiPhoneXReviewPage6() throws Exception {
 		
+		WebElement conclusion = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Conclusion']"));
+		WebElement overallConclusion = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Overall conclusion']"));
+		WebElement featuresAndOperation = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Features and operation']"));
+		WebElement image4832 = driver.findElement(By.xpath("//*[@class='image']//*[@href]//*[@id='standard']"));
+		WebElement imageQuality = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Image Quality']"));
+		WebElement preserveHighlights = driver.findElement(By.cssSelector(".articleBody > p:nth-child(17) > a:nth-child(2)"));
+		WebElement video = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Video']"));
+		WebElement theFinalWord = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='The final word']"));
+		WebElement summary = driver.findElement(By.xpath("//*[@class='productName']//*[text()='Apple iPhone X']"));
+		// WebElement inUse = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='In use']"));
 		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Conclusion']"));  // *** Scrolling to the Conclusion headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", conclusion);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Conclusion']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Conclusion']") + ")");
 		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Overall conclusion']"));  // *** Scrolling to the Overall conclusion headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", overallConclusion);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Overall conclusion']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Overall conclusion']") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Features and operation']"));  // *** Scrolling to the Features and operation headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", featuresAndOperation);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Features and operation']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Features and operation']") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//*[@class='image']//*[@href]//*[@id='standard']"));  // *** Scrolling to image 4832 ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", image4832);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='image']//*[@href]//*[@id='standard']") + " (" + By.xpath("//*[@class='image']//*[@href]//*[@id='standard']") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Image Quality']"));  // *** Scrolling to the Image quality headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", imageQuality);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Image Quality']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Image Quality']") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.cssSelector(".articleBody > p:nth-child(17) > a:nth-child(2)"));  // *** Scrolling to the Preserve highlights link ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", preserveHighlights);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > p:nth-child(17) > a:nth-child(2)") + " (" + By.cssSelector(".articleBody > p:nth-child(17) > a:nth-child(2)") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Video']"));  // *** Scrolling to the Video headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", video);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Video']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Video']") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='The final word']"));  // *** Scrolling to the The final word headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", theFinalWord);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='The final word']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='The final word']") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//*[@class='productName']//*[text()='Apple iPhone X']"));  // *** Scrolling to the the summary table ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", summary);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='productName']//*[text()='Apple iPhone X']") + " (" + By.xpath("//*[@class='productName']//*[text()='Apple iPhone X']") + ")");
+		
+		Thread.sleep(5000);
 
 
 	}
