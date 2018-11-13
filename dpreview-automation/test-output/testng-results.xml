@@ -148,36 +148,42 @@
     <line>
       <![CDATA[Scrolled to Element By.id: lowlight (By.id: lowlight)]]>
     </line>
+    <line>
+      <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(42) (By.cssSelector: .articleBody > h3:nth-child(42))]]>
+    </line>
+    <line>
+      <![CDATA[Scrolled to Element By.cssSelector: span.next > a:nth-child(1) (By.cssSelector: span.next > a:nth-child(1))]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="209381" started-at="2018-11-12T18:23:56Z" finished-at="2018-11-12T18:27:25Z">
+  <suite name="Default suite" duration-ms="231316" started-at="2018-11-13T07:04:06Z" finished-at="2018-11-13T07:07:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="209381" started-at="2018-11-12T18:23:56Z" finished-at="2018-11-12T18:27:25Z">
+    <test name="Default test" duration-ms="231316" started-at="2018-11-13T07:04:06Z" finished-at="2018-11-13T07:07:57Z">
       <class name="com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeClass" is-config="true" duration-ms="760" started-at="2018-11-12T18:23:56Z" finished-at="2018-11-12T18:23:56Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeClass" is-config="true" duration-ms="773" started-at="2018-11-13T07:04:06Z" finished-at="2018-11-13T07:04:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-12T18:23:56Z" finished-at="2018-11-12T18:23:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginLinkTest()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="loginLinkTest" duration-ms="17129" started-at="2018-11-12T18:23:56Z" description="Testing the validation of the Login link" finished-at="2018-11-12T18:24:14Z">
+        <test-method status="PASS" signature="loginLinkTest()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="loginLinkTest" duration-ms="17138" started-at="2018-11-13T07:04:07Z" description="Testing the validation of the Login link" finished-at="2018-11-13T07:04:24Z">
           <reporter-output>
             <line>
               <![CDATA[Browsing to URL: https://www.dpreview.com]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginLinkTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:24:14Z" finished-at="2018-11-12T18:24:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:24:14Z" finished-at="2018-11-12T18:24:14Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:04:07Z" finished-at="2018-11-13T07:04:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginDetails()[pri:1, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="loginDetails" duration-ms="10013" started-at="2018-11-12T18:24:14Z" description="Typing the login details" finished-at="2018-11-12T18:24:24Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:04:24Z" finished-at="2018-11-13T07:04:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:04:24Z" finished-at="2018-11-13T07:04:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="loginDetails()[pri:1, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="loginDetails" duration-ms="9491" started-at="2018-11-13T07:04:24Z" description="Typing the login details" finished-at="2018-11-13T07:04:33Z">
           <reporter-output>
             <line>
               <![CDATA[Element is visible: Email input (By.id: ap_email)]]>
@@ -217,11 +223,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginDetails -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:24:24Z" finished-at="2018-11-12T18:24:24Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:04:33Z" finished-at="2018-11-13T07:04:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="hoveringReviewsElement()[pri:2, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="hoveringReviewsElement" duration-ms="574" started-at="2018-11-12T18:24:24Z" description="Hovering over the Reviews element" finished-at="2018-11-12T18:24:24Z">
+        <test-method status="PASS" signature="hoveringReviewsElement()[pri:2, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="hoveringReviewsElement" duration-ms="558" started-at="2018-11-13T07:04:33Z" description="Hovering over the Reviews element" finished-at="2018-11-13T07:04:34Z">
           <reporter-output>
             <line>
               <![CDATA[Element is visible: Search box (By.className: searchBox)]]>
@@ -246,15 +252,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- hoveringReviewsElement -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:24:24Z" finished-at="2018-11-12T18:24:24Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:04:33Z" finished-at="2018-11-13T07:04:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:24:24Z" finished-at="2018-11-12T18:24:24Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:04:34Z" finished-at="2018-11-13T07:04:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="FAIL" signature="orderBy()[pri:3, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="orderBy" duration-ms="10023" started-at="2018-11-12T18:24:24Z" description="Ordering the items in the page" finished-at="2018-11-12T18:24:34Z">
+        <test-method status="FAIL" signature="orderBy()[pri:3, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="orderBy" duration-ms="10017" started-at="2018-11-13T07:04:34Z" description="Ordering the items in the page" finished-at="2018-11-13T07:04:44Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: #reviewIndexOrder
@@ -262,8 +268,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SPEARHEAD-PC', ip: '192.168.17.102', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 2808, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 4b9e1368-d5a2-41fc-84bb-62c9543cb81b
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 12020, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 896daf84-a39b-4eca-a449-0e9f4427d5d4
 *** Element info: {Using=css selector, value=#reviewIndexOrder}]]>
             </message>
             <full-stacktrace>
@@ -272,8 +278,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SPEARHEAD-PC', ip: '192.168.17.102', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 2808, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 4b9e1368-d5a2-41fc-84bb-62c9543cb81b
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 12020, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 896daf84-a39b-4eca-a449-0e9f4427d5d4
 *** Element info: {Using=css selector, value=#reviewIndexOrder}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -321,23 +327,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderBy -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:24:24Z" finished-at="2018-11-12T18:24:24Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:04:34Z" finished-at="2018-11-13T07:04:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-12T18:24:35Z" finished-at="2018-11-12T18:24:35Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:04:44Z" finished-at="2018-11-13T07:04:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:24:35Z" finished-at="2018-11-12T18:24:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="selectingSmartphoneReviews()[pri:3, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="selectingSmartphoneReviews" duration-ms="5201" started-at="2018-11-12T18:24:35Z" description="Selecting the Smartphone reviews link from the Reviews menu" finished-at="2018-11-12T18:24:40Z">
+        <test-method status="PASS" signature="selectingSmartphoneReviews()[pri:3, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="selectingSmartphoneReviews" duration-ms="4953" started-at="2018-11-13T07:04:44Z" description="Selecting the Smartphone reviews link from the Reviews menu" finished-at="2018-11-13T07:04:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectingSmartphoneReviews -->
-        <test-method status="PASS" signature="scrollPage()[pri:4, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="scrollPage" duration-ms="45515" started-at="2018-11-12T18:24:40Z" description="Scrolling the page of the smart phones" finished-at="2018-11-12T18:25:25Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:04:44Z" finished-at="2018-11-13T07:04:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:04:49Z" finished-at="2018-11-13T07:04:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="scrollPage()[pri:4, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="scrollPage" duration-ms="45458" started-at="2018-11-13T07:04:49Z" description="Scrolling the page of the smart phones" finished-at="2018-11-13T07:05:35Z">
           <reporter-output>
             <line>
               <![CDATA[Scrolled to Element By.xpath: //*[@class='name']//*[text()='LG V30 Review'] (By.xpath: //*[@class='name']//*[text()='LG V30 Review'])]]>
@@ -371,50 +381,38 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- scrollPage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:24:40Z" finished-at="2018-11-12T18:24:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:24:40Z" finished-at="2018-11-12T18:24:40Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:04:49Z" finished-at="2018-11-13T07:04:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:25:25Z" finished-at="2018-11-12T18:25:25Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:05:35Z" finished-at="2018-11-13T07:05:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="appleiPhoneXElement()[pri:5, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="appleiPhoneXElement" duration-ms="6315" started-at="2018-11-12T18:25:25Z" description="iPhone X element" finished-at="2018-11-12T18:25:32Z">
+        <test-method status="PASS" signature="appleiPhoneXElement()[pri:5, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="appleiPhoneXElement" duration-ms="10057" started-at="2018-11-13T07:05:35Z" description="iPhone X element" finished-at="2018-11-13T07:05:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appleiPhoneXElement -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:25:25Z" finished-at="2018-11-12T18:25:25Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:05:35Z" finished-at="2018-11-13T07:05:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="appleiPhoneXReviewPage1()[pri:6, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="appleiPhoneXReviewPage1" duration-ms="9471" started-at="2018-11-12T18:25:32Z" description="iPhone X review - page 1" finished-at="2018-11-12T18:25:41Z">
+        <test-method status="PASS" signature="appleiPhoneXReviewPage1()[pri:6, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="appleiPhoneXReviewPage1" duration-ms="10550" started-at="2018-11-13T07:05:45Z" description="iPhone X review - page 1" finished-at="2018-11-13T07:05:55Z">
           <reporter-output>
             <line>
               <![CDATA[Scrolled to Element By.xpath: //*[@class='articleBody']//*[text()='Key Photographic / Video Specifications'] (By.xpath: //*[@class='articleBody']//*[text()='Key Photographic / Video Specifications'])]]>
             </line>
           </reporter-output>
         </test-method> <!-- appleiPhoneXReviewPage1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:25:32Z" finished-at="2018-11-12T18:25:32Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:05:45Z" finished-at="2018-11-13T07:05:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:25:32Z" finished-at="2018-11-12T18:25:32Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:05:45Z" finished-at="2018-11-13T07:05:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:25:41Z" finished-at="2018-11-12T18:25:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-12T18:25:41Z" finished-at="2018-11-12T18:25:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="appleiPhoneXReviewPage2()[pri:7, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="appleiPhoneXReviewPage2" duration-ms="13192" started-at="2018-11-12T18:25:41Z" description="iPhone X review - page 2" finished-at="2018-11-12T18:25:54Z">
+        <test-method status="PASS" signature="appleiPhoneXReviewPage2()[pri:7, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="appleiPhoneXReviewPage2" duration-ms="14500" started-at="2018-11-13T07:05:55Z" description="iPhone X review - page 2" finished-at="2018-11-13T07:06:10Z">
           <reporter-output>
             <line>
               <![CDATA[Scrolled to Element By.xpath: //*[@class='articleBody']//*[text()='Handling and workflow'] (By.xpath: //*[@class='articleBody']//*[text()='Handling and workflow'])]]>
@@ -424,11 +422,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- appleiPhoneXReviewPage2 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:25:54Z" finished-at="2018-11-12T18:25:54Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:05:55Z" finished-at="2018-11-13T07:05:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="appleiPhoneXReviewPage3()[pri:8, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="appleiPhoneXReviewPage3" duration-ms="40064" started-at="2018-11-12T18:25:54Z" description="iPhone X review - page 3" finished-at="2018-11-12T18:26:34Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:05:55Z" finished-at="2018-11-13T07:05:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:06:10Z" finished-at="2018-11-13T07:06:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:06:10Z" finished-at="2018-11-13T07:06:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="appleiPhoneXReviewPage3()[pri:8, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="appleiPhoneXReviewPage3" duration-ms="41062" started-at="2018-11-13T07:06:10Z" description="iPhone X review - page 3" finished-at="2018-11-13T07:06:51Z">
           <reporter-output>
             <line>
               <![CDATA[Scrolled to Element By.xpath: //*[@class='articleBody']//*[text()='Portrait mode'] (By.xpath: //*[@class='articleBody']//*[text()='Portrait mode'])]]>
@@ -453,15 +463,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- appleiPhoneXReviewPage3 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:25:54Z" finished-at="2018-11-12T18:25:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:26:34Z" finished-at="2018-11-12T18:26:34Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-13T07:06:51Z" finished-at="2018-11-13T07:06:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="appleiPhoneXReviewPage4()[pri:9, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="appleiPhoneXReviewPage4" duration-ms="50433" started-at="2018-11-12T18:26:34Z" description="iPhone X review - page 4" finished-at="2018-11-12T18:27:25Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:06:51Z" finished-at="2018-11-13T07:06:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="appleiPhoneXReviewPage4()[pri:9, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="appleiPhoneXReviewPage4" duration-ms="66084" started-at="2018-11-13T07:06:51Z" description="iPhone X review - page 4" finished-at="2018-11-13T07:07:57Z">
           <reporter-output>
             <line>
               <![CDATA[Scrolled to Element By.xpath: //*[@class='articleBody']//*[text()='Image quality'] (By.xpath: //*[@class='articleBody']//*[text()='Image quality'])]]>
@@ -490,41 +500,43 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <line>
               <![CDATA[Scrolled to Element By.id: lowlight (By.id: lowlight)]]>
             </line>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(42) (By.cssSelector: .articleBody > h3:nth-child(42))]]>
+            </line>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: span.next > a:nth-child(1) (By.cssSelector: span.next > a:nth-child(1))]]>
+            </line>
           </reporter-output>
         </test-method> <!-- appleiPhoneXReviewPage4 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:26:34Z" finished-at="2018-11-12T18:26:34Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-13T07:07:57Z" finished-at="2018-11-13T07:07:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:07:57Z" finished-at="2018-11-13T07:07:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="appleiPhoneXReviewPage5()[pri:10, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="appleiPhoneXReviewPage5" duration-ms="1" started-at="2018-11-12T18:27:25Z" description="iPhone X review - page 5" finished-at="2018-11-12T18:27:25Z">
+        <test-method status="PASS" signature="appleiPhoneXReviewPage5()[pri:10, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="appleiPhoneXReviewPage5" duration-ms="1" started-at="2018-11-13T07:07:57Z" description="iPhone X review - page 5" finished-at="2018-11-13T07:07:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appleiPhoneXReviewPage5 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:27:25Z" finished-at="2018-11-12T18:27:25Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-13T07:07:57Z" finished-at="2018-11-13T07:07:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:27:25Z" finished-at="2018-11-12T18:27:25Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:07:57Z" finished-at="2018-11-13T07:07:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="appleiPhoneXReviewPage6()[pri:11, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="appleiPhoneXReviewPage6" duration-ms="1" started-at="2018-11-12T18:27:25Z" description="iPhone X review - page 6" finished-at="2018-11-12T18:27:25Z">
+        <test-method status="PASS" signature="appleiPhoneXReviewPage6()[pri:11, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="appleiPhoneXReviewPage6" duration-ms="1" started-at="2018-11-13T07:07:57Z" description="iPhone X review - page 6" finished-at="2018-11-13T07:07:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appleiPhoneXReviewPage6 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:27:25Z" finished-at="2018-11-12T18:27:25Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-13T07:07:57Z" finished-at="2018-11-13T07:07:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:27:25Z" finished-at="2018-11-12T18:27:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-12T18:27:25Z" finished-at="2018-11-12T18:27:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-12T18:27:25Z" finished-at="2018-11-12T18:27:25Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest@1e88b3c]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-13T07:07:57Z" finished-at="2018-11-13T07:07:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

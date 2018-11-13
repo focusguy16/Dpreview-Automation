@@ -319,11 +319,11 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		WebElement featuresSection = driver.findElement(By.cssSelector(".articleBody > p:nth-child(24) > a:nth-child(1)"));
 		WebElement selfies = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Selfies']"));
 		WebElement lowLight = driver.findElement(By.id("lowlight"));
-		// WebElement panoramaMode = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Panorama mode']"));
-		// WebElement hdrImages = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='JPEG image quality - studio scene']"));
+		WebElement rawCapture = driver.findElement(By.cssSelector(".articleBody > h3:nth-child(42)"));
+		//WebElement dngCapture = driver.findElement(By.xpath("//*[@class='caption imageSwapper']//*[text()='ISO 25 | 1/10 sec | F1.8']"));
 		// WebElement dngMode = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='DNG mode']"));
 		// WebElement waterAndDustResistance = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='IP67 water and dust resistance rating']"));
-		// WebElement nextPage = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
+		WebElement nextPage = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
 		
 		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Image quality']"));  // *** Scrolling to the Image quality headline   ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", imageQuality);
@@ -378,7 +378,23 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		Reports.report("Scrolled to Element " + By.id("lowlight") + " (" + By.id("lowlight") + ")");
 		
 		Thread.sleep(5000);
-
+		
+		driver.findElement(By.cssSelector(".articleBody > h3:nth-child(42)"));  // *** Scrolling to the Raw capture headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", rawCapture);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > h3:nth-child(42)") + " (" + By.cssSelector(".articleBody > h3:nth-child(42)") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));  // *** Scrolling to the DNG capture image ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", nextPage);
+		Reports.report("Scrolled to Element " + By.cssSelector("span.next > a:nth-child(1)") + " (" + By.cssSelector("span.next > a:nth-child(1)") + ")");
+		
+		Thread.sleep(5000);
+		
+		Actions action = new Actions(driver);
+		action.moveToElement(nextPage).build().perform();
+		
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
 	}
 
 	@Test(description = "iPhone X review - page 5", priority = 10)
@@ -389,6 +405,9 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 
 	@Test(description = "iPhone X review - page 6", priority = 11)
 	public void appleiPhoneXReviewPage6() {
+		
+		
+		
 
 
 	}
