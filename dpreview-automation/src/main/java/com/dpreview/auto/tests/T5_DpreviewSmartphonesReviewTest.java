@@ -91,7 +91,7 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
 		driver.findElement(By.xpath("//*[@class='dropdownMenuContent']//*[text()='Smartphone reviews']")).click();
 
-		WebDriverWait wait = new WebDriverWait(driver, 5000);
+		WebDriverWait wait = new WebDriverWait(driver, 3000);
 		wait.until(ExpectedConditions.urlContains("mobilephones"));
 
 		driver.navigate().to("https://www.dpreview.com/reviews?category=mobilephones");

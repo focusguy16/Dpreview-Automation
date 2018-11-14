@@ -1,6 +1,6 @@
 package com.dpreview.auto.tests;
 
-import java.util.List;
+// import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 
 import com.dpreview.auto.infra.config.MainConfig;
 import com.dpreview.auto.infra.pages.DpreviewHomePage;
-import com.dpreview.auto.infra.pages.DpreviewSmartphoneReviewsPage;
+// import com.dpreview.auto.infra.pages.DpreviewSmartphoneReviewsPage;
 import com.dpreview.auto.infra.reports.Reports;
 
 public class T6_DpreviewSmartphonesIndexOrderTest extends BaseTest {
@@ -47,7 +47,7 @@ public class T6_DpreviewSmartphonesIndexOrderTest extends BaseTest {
 		driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
 		driver.findElement(By.xpath("//*[@class='dropdownMenuContent']//*[text()='Smartphone reviews']")).click();
 
-		WebDriverWait wait = new WebDriverWait(driver, 3000);
+		WebDriverWait wait = new WebDriverWait(driver, 5000);
 		wait.until(ExpectedConditions.urlContains("mobilephones"));
 
 		driver.navigate().to("https://www.dpreview.com/reviews?category=mobilephones");
@@ -68,9 +68,12 @@ public class T6_DpreviewSmartphonesIndexOrderTest extends BaseTest {
 			
 			Thread.sleep(3000);
 			driver.findElement(By.id("reviewIndexOrder")).click();
-			Select dropdown = new Select(driver.findElement(By.id("reviewIndexOrder")));
-			dropdown.selectByIndex(2);
-
+			
+			Select brand = new Select(driver.findElement(By.id("reviewIndexOrder")));
+			brand.selectByIndex(2);
+			
+			WebDriverWait wait = new WebDriverWait(driver, 3000);
+			wait.until(ExpectedConditions.elementToBeSelected((WebElement) brand));
 		}
 		catch(Exception e) {
 
@@ -113,5 +116,19 @@ public class T6_DpreviewSmartphonesIndexOrderTest extends BaseTest {
 		Reports.report("Scrolled to Element " + By.cssSelector("#mainContent > h3:nth-child(27) > img:nth-child(1)") + " (" + By.cssSelector("#mainContent > h3:nth-child(27) > img:nth-child(1)") + ")");
 		
 		Thread.sleep(5000);
+	}
+	
+	@Test(description = "Scrolling the page to Sony brand", priority = 6)
+	public void sonyBrand() throws Exception {
+		
+		WebElement sony = driver.findElement(By.cssSelector("#mainContent > h3:nth-child(31) > img:nth-child(1)"));
+		
+		driver.findElement(By.cssSelector("#mainContent > h3:nth-child(31) > img:nth-child(1)"));  // *** Scrolling to the Sony brand   ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", sony);
+		Reports.report("Scrolled to Element " + By.cssSelector("#mainContent > h3:nth-child(31) > img:nth-child(1)") + " (" + By.cssSelector("#mainContent > h3:nth-child(31) > img:nth-child(1)") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.close();
 	}
 }
