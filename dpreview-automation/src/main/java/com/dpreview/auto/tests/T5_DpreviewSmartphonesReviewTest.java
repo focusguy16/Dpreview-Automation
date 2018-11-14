@@ -19,6 +19,12 @@ import com.dpreview.auto.infra.pages.DpreviewSmartphoneReviewsPage;
 import com.dpreview.auto.infra.reports.Reports;
 import com.dpreview.auto.infra.pages.DpreviewHomePage;
 
+/*
+ * --------------------------------------------------------------------------------------------------------------------------------------------------------------
+ * ---------------------------- This test is intended to check and verify the process of reviewing smart phone page by page ------------------------------------ 
+ * -------------------------------------------------------------------------------------------------------------------------------------------------------------
+ */
+
 public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 
 	// ------------------------- Testing the validation of the Login link ------------------------------------------------------------------
@@ -90,31 +96,8 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 
 		driver.navigate().to("https://www.dpreview.com/reviews?category=mobilephones");
 	}
-
-	// --------------------- Testing the index order opening in the page ---------------------------------------------------------------
-
-	@Test(description = "Ordering the items in the page", priority = 3)
-	public void orderBy() {
-
-		WebElement orderBy = driver.findElement(By.cssSelector("#reviewIndexOrder"));
-
-		Actions action = new Actions(driver);
-		action.moveToElement(orderBy).build().perform();
-
-		driver.findElement(By.cssSelector("#reviewIndexOrder")).click();
-
-		Select index = new Select(orderBy);
-		index.selectByIndex(2);
-
-		WebElement firstIndex = index.getFirstSelectedOption();
-		System.out.println("First element = " + firstIndex.getText());
-
-		List<WebElement> listOptions = index.getOptions();
-		for (WebElement webElement : listOptions) {
-			System.out.println("options - " + webElement.getText());
-		}
-
-	}
+	
+	// --------------------- Testing and reviewing the Smart phones page ------------------------------------------------
 
 	@Test(description = "Scrolling the page of the smart phones", priority = 4)
 	public void scrollPage() throws Exception {
@@ -189,6 +172,9 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		Reports.report("Scrolled to Element " + By.xpath("//*[@id='mainContent']//*[text()='Reviews and previews']") + " (" + By.xpath("//*[@id='mainContent']//*[text()='Reviews and previews']") + ")");
 	}
 
+	
+	// --------------------- Testing the selection of Apple iPhone X smart phone ------------------------------------------------
+	
 	@Test(description = "iPhone X element", priority = 5)
 	public void appleiPhoneXElement() {
 
@@ -202,6 +188,9 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		driver.get("https://www.dpreview.com/reviews/iphone-x-review");
 	}
 
+	
+	// --------------------- Testing the iPhone X : page 1 review ---------------------------------------------------------------
+	
 	@Test(description = "iPhone X review - page 1:Introduction", priority = 6)
 	public void appleiPhoneXReviewPage1() throws Exception {
 
@@ -220,6 +209,9 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
 	}
 
+	
+	// --------------------- Testing the iPhone X : page 2 review ---------------------------------------------------------------
+	
 	@Test(description = "iPhone X review - page 2:Body and design", priority = 7)
 	public void appleiPhoneXReviewPage2() throws Exception {
 
@@ -245,6 +237,9 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
 	}
 
+	
+	// --------------------- Testing the iPhone X : page 3 review ---------------------------------------------------------------
+	
 	@Test(description = "iPhone X review - page 3:Features", priority = 8)
 	public void appleiPhoneXReviewPage3() throws Exception {
 
@@ -305,6 +300,9 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();	
 	}
 
+	
+	// --------------------- Testing the iPhone X : page 4 review ---------------------------------------------------------------
+	
 	@Test(description = "iPhone X review - page 4:Image quality", priority = 9)
 	public void appleiPhoneXReviewPage4() throws Exception {
 
@@ -394,6 +392,9 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
 	}
 
+	
+	// --------------------- Testing the iPhone X : page 5 review ---------------------------------------------------------------
+	
 	@Test(description = "iPhone X review - page 5:Video", priority = 10)
 	public void appleiPhoneXReviewPage5() throws Exception {
 		
@@ -426,6 +427,9 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
 	}
 
+	
+	// --------------------- Testing the iPhone X : page 6 review ---------------------------------------------------------------
+	
 	@Test(description = "iPhone X review - page 6:Conclusion", priority = 11)
 	public void appleiPhoneXReviewPage6() throws Exception {
 		
