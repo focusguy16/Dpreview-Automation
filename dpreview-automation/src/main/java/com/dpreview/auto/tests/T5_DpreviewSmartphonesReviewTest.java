@@ -437,8 +437,8 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		WebElement preserveHighlights = driver.findElement(By.cssSelector(".articleBody > p:nth-child(17) > a:nth-child(2)"));
 		WebElement video = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Video']"));
 		WebElement theFinalWord = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='The final word']"));
-		WebElement summary = driver.findElement(By.xpath("//*[@class='productName']//*[text()='Apple iPhone X']"));
-		// WebElement inUse = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='In use']"));
+		WebElement summary = driver.findElement(By.xpath("//*[@class='title']//*[text()='Apple iPhone X']"));
+		WebElement sampleGallery = driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Sample Gallery']"));
 		
 		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Conclusion']"));  // *** Scrolling to the Conclusion headline ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", conclusion);
@@ -488,12 +488,18 @@ public class T5_DpreviewSmartphonesReviewTest extends BaseTest {
 		
 		Thread.sleep(5000);
 		
-		driver.findElement(By.xpath("//*[@class='productName']//*[text()='Apple iPhone X']"));  // *** Scrolling to the the summary table ***
+		driver.findElement(By.xpath("//*[@class='title']//*[text()='Apple iPhone X']"));  // *** Scrolling to the the summary table ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", summary);
-		Reports.report("Scrolled to Element " + By.xpath("//*[@class='productName']//*[text()='Apple iPhone X']") + " (" + By.xpath("//*[@class='productName']//*[text()='Apple iPhone X']") + ")");
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='title']//*[text()='Apple iPhone X']") + " (" + By.xpath("//*[@class='title']//*[text()='Apple iPhone X']") + ")");
 		
 		Thread.sleep(5000);
-
-
+		
+		driver.findElement(By.xpath("//*[@class='articleBody']//*[text()='Sample Gallery']"));  // *** Scrolling to the Sample gallery headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", sampleGallery);
+		Reports.report("Scrolled to Element " + By.xpath("//*[@class='articleBody']//*[text()='Sample Gallery']") + " (" + By.xpath("//*[@class='articleBody']//*[text()='Sample Gallery']") + ")");
+		
+		Thread.sleep(5000);
+		
+		driver.close();
 	}
 }
