@@ -13,6 +13,7 @@ public class DpreviewHomePage extends AbstractPage {
 	private static final By2 darkMode = new By2("Dark mode", By.cssSelector("span.option:nth-child(2)"));
 	private static final By2 signinButton = new By2("'Sign in button'", By.id("signInSubmit"));
 	private static final By2 reviewsLink = new By2("'Reviews' link", By.xpath("//*[@class='mainItem']//*[text()='Reviews']"));
+	private static final By2 buyingGuidesLink = new By2("'Buying Guides' link", By.xpath("//*[@class='mainItem']//*[text()='Buying Guides']"));
 
 	public DpreviewHomePage(WebDriver driver) {
 		super("DPReview Home Page", driver, searchBox, goButton, lightMode, darkMode);
@@ -56,6 +57,11 @@ public class DpreviewHomePage extends AbstractPage {
 	
 	public DpreviewSmartphoneReviewsPage hoverOverReviewsLink() {
 		bot.hoverOverElement(reviewsLink);
+		return null;
+	}
+	
+	public DpreviewBuyingGuidesPage hoverOverBuyingGuidesLink() {
+		bot.hoverOverElement(buyingGuidesLink);
 		return null;
 	}
 }

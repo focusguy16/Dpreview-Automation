@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
     <line>
       <![CDATA[Browsing to URL: https://www.dpreview.com]]>
@@ -20,35 +20,29 @@
       <![CDATA[*** On page: DPReview Home Page]]>
     </line>
     <line>
-      <![CDATA[Hover over element: 'Reviews' link (By.xpath: //*[@class='mainItem']//*[text()='Reviews'])]]>
+      <![CDATA[Hover over element: 'Buying Guides' link (By.xpath: //*[@class='mainItem']//*[text()='Buying Guides'])]]>
     </line>
     <line>
-      <![CDATA[Scrolled to Element By.cssSelector: #mainContent > h3:nth-child(7) > img:nth-child(1) (By.cssSelector: #mainContent > h3:nth-child(7) > img:nth-child(1))]]>
+      <![CDATA[Hover over element: 'Buying Guides' link (By.xpath: //*[@class='mainItem']//*[text()='Buying Guides'])]]>
     </line>
     <line>
-      <![CDATA[Scrolled to Element By.cssSelector: #mainContent > h3:nth-child(17) > img:nth-child(1) (By.cssSelector: #mainContent > h3:nth-child(17) > img:nth-child(1))]]>
-    </line>
-    <line>
-      <![CDATA[Scrolled to Element By.cssSelector: #mainContent > h3:nth-child(27) > img:nth-child(1) (By.cssSelector: #mainContent > h3:nth-child(27) > img:nth-child(1))]]>
-    </line>
-    <line>
-      <![CDATA[Scrolled to Element By.cssSelector: #mainContent > h3:nth-child(31) > img:nth-child(1) (By.cssSelector: #mainContent > h3:nth-child(31) > img:nth-child(1))]]>
+      <![CDATA[Scrolled to Element By.id: usecaseSectionTitle (By.id: usecaseSectionTitle)]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="53161" started-at="2018-11-14T17:38:00Z" finished-at="2018-11-14T17:38:53Z">
+  <suite name="Default suite" duration-ms="26391" started-at="2018-11-15T10:24:06Z" finished-at="2018-11-15T10:24:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="53161" started-at="2018-11-14T17:38:00Z" finished-at="2018-11-14T17:38:53Z">
-      <class name="com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="beforeClass" is-config="true" duration-ms="750" started-at="2018-11-14T17:38:00Z" finished-at="2018-11-14T17:38:01Z">
+    <test name="Default test" duration-ms="26391" started-at="2018-11-15T10:24:06Z" finished-at="2018-11-15T10:24:32Z">
+      <class name="com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="beforeClass" is-config="true" duration-ms="750" started-at="2018-11-15T10:24:06Z" finished-at="2018-11-15T10:24:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-14T17:38:01Z" finished-at="2018-11-14T17:38:01Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-15T10:24:07Z" finished-at="2018-11-15T10:24:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="hoveringReviewsElement()[pri:0, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="hoveringReviewsElement" duration-ms="15891" started-at="2018-11-14T17:38:01Z" description="Hovering over the Reviews element" finished-at="2018-11-14T17:38:17Z">
+        <test-method status="PASS" signature="hoveringBuyingGuidesElement()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="hoveringBuyingGuidesElement" duration-ms="16239" started-at="2018-11-15T10:24:07Z" description="Hovering over the Buying Guides element" finished-at="2018-11-15T10:24:23Z">
           <reporter-output>
             <line>
               <![CDATA[Browsing to URL: https://www.dpreview.com]]>
@@ -69,103 +63,49 @@
               <![CDATA[*** On page: DPReview Home Page]]>
             </line>
             <line>
-              <![CDATA[Hover over element: 'Reviews' link (By.xpath: //*[@class='mainItem']//*[text()='Reviews'])]]>
+              <![CDATA[Hover over element: 'Buying Guides' link (By.xpath: //*[@class='mainItem']//*[text()='Buying Guides'])]]>
+            </line>
+            <line>
+              <![CDATA[Hover over element: 'Buying Guides' link (By.xpath: //*[@class='mainItem']//*[text()='Buying Guides'])]]>
             </line>
           </reporter-output>
-        </test-method> <!-- hoveringReviewsElement -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-14T17:38:17Z" finished-at="2018-11-14T17:38:17Z">
+        </test-method> <!-- hoveringBuyingGuidesElement -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-15T10:24:23Z" finished-at="2018-11-15T10:24:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="selectingSmartphoneReviews()[pri:1, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="selectingSmartphoneReviews" duration-ms="5890" started-at="2018-11-14T17:38:17Z" description="Selecting the Smartphone reviews link from the Reviews menu" finished-at="2018-11-14T17:38:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectingSmartphoneReviews -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-14T17:38:17Z" finished-at="2018-11-14T17:38:17Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-15T10:24:23Z" finished-at="2018-11-15T10:24:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-14T17:38:23Z" finished-at="2018-11-14T17:38:23Z">
+        <test-method status="PASS" signature="buyingGuides()[pri:1, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="buyingGuides" duration-ms="4254" started-at="2018-11-15T10:24:23Z" description="Selecting the Buying Guides" finished-at="2018-11-15T10:24:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyingGuides -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-15T10:24:27Z" finished-at="2018-11-15T10:24:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="smartphonesIndexOrder()[pri:2, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="smartphonesIndexOrder" duration-ms="9243" started-at="2018-11-14T17:38:23Z" description="Selecting the Smartphones index order - by Brand" finished-at="2018-11-14T17:38:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- smartphonesIndexOrder -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-14T17:38:23Z" finished-at="2018-11-14T17:38:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-14T17:38:32Z" finished-at="2018-11-14T17:38:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-14T17:38:32Z" finished-at="2018-11-14T17:38:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="blackberryBrand()[pri:3, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="blackberryBrand" duration-ms="5061" started-at="2018-11-14T17:38:32Z" description="Scrolling the page to Blackberry brand" finished-at="2018-11-14T17:38:37Z">
+        <test-method status="PASS" signature="pageScrolling()[pri:2, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="pageScrolling" duration-ms="5045" started-at="2018-11-15T10:24:27Z" description="Scrolling to the page headline" finished-at="2018-11-15T10:24:32Z">
           <reporter-output>
             <line>
-              <![CDATA[Scrolled to Element By.cssSelector: #mainContent > h3:nth-child(7) > img:nth-child(1) (By.cssSelector: #mainContent > h3:nth-child(7) > img:nth-child(1))]]>
+              <![CDATA[Scrolled to Element By.id: usecaseSectionTitle (By.id: usecaseSectionTitle)]]>
             </line>
           </reporter-output>
-        </test-method> <!-- blackberryBrand -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-14T17:38:37Z" finished-at="2018-11-14T17:38:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-14T17:38:37Z" finished-at="2018-11-14T17:38:37Z">
+        </test-method> <!-- pageScrolling -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-15T10:24:27Z" finished-at="2018-11-15T10:24:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="microsoftBrand()[pri:4, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="microsoftBrand" duration-ms="5043" started-at="2018-11-14T17:38:37Z" description="Scrolling the page to Microsoft brand" finished-at="2018-11-14T17:38:42Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Scrolled to Element By.cssSelector: #mainContent > h3:nth-child(17) > img:nth-child(1) (By.cssSelector: #mainContent > h3:nth-child(17) > img:nth-child(1))]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- microsoftBrand -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-14T17:38:42Z" finished-at="2018-11-14T17:38:42Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-15T10:24:32Z" finished-at="2018-11-15T10:24:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-14T17:38:42Z" finished-at="2018-11-14T17:38:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="panasonicBrand()[pri:5, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="panasonicBrand" duration-ms="5047" started-at="2018-11-14T17:38:42Z" description="Scrolling the page to Panasonic brand" finished-at="2018-11-14T17:38:47Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Scrolled to Element By.cssSelector: #mainContent > h3:nth-child(27) > img:nth-child(1) (By.cssSelector: #mainContent > h3:nth-child(27) > img:nth-child(1))]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- panasonicBrand -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-14T17:38:47Z" finished-at="2018-11-14T17:38:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-14T17:38:47Z" finished-at="2018-11-14T17:38:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="sonyBrand()[pri:6, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="sonyBrand" duration-ms="6010" started-at="2018-11-14T17:38:47Z" description="Scrolling the page to Sony brand" finished-at="2018-11-14T17:38:53Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Scrolled to Element By.cssSelector: #mainContent > h3:nth-child(31) > img:nth-child(1) (By.cssSelector: #mainContent > h3:nth-child(31) > img:nth-child(1))]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- sonyBrand -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-14T17:38:53Z" finished-at="2018-11-14T17:38:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest@1caeb3e]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-14T17:38:53Z" finished-at="2018-11-14T17:38:53Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-15T10:24:32Z" finished-at="2018-11-15T10:24:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.dpreview.auto.tests.T6_DpreviewSmartphonesIndexOrderTest -->
+      </class> <!-- com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

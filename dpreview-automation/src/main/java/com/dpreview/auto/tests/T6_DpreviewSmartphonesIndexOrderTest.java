@@ -1,13 +1,10 @@
 package com.dpreview.auto.tests;
 
-// import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-// import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-// import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -16,8 +13,13 @@ import org.testng.annotations.Test;
 
 import com.dpreview.auto.infra.config.MainConfig;
 import com.dpreview.auto.infra.pages.DpreviewHomePage;
-// import com.dpreview.auto.infra.pages.DpreviewSmartphoneReviewsPage;
 import com.dpreview.auto.infra.reports.Reports;
+
+/*
+ * --------------------------------------------------------------------------------------------------------------------------------------------------------------
+ * ---------------------------- This test is intended to check and verify the selection of smart phones by brand names ------------------------------------------ 
+ * --------------------------------------------------------------------------------------------------------------------------------------------------------------
+ */
 
 public class T6_DpreviewSmartphonesIndexOrderTest extends BaseTest {
 
