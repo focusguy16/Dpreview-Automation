@@ -30,7 +30,7 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 		DpreviewBuyingGuidesPage dpreviewBuyingGuidesPage = dpreviewHomePage.hoverOverBuyingGuidesLink();
 	}
 
-	/*
+	
 	// --------------------- Testing the Best cameras for sports and action link from the Buying Guides menu -----------------------------------
 
 	@Test(description = "Selecting the Best cameras for sports and action link from the Buying Guides menu", priority = 1)
@@ -54,9 +54,9 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		driver.navigate().to("https://www.dpreview.com/reviews/buying-guide-best-cameras-for-sports-and-action");
 	}
-	*/
+	
 
-	@Test(description = "Selecting the Buying Guides", priority = 1)
+	@Test(description = "Selecting the Buying Guides", priority = 2)
 	public void buyingGuides() {
 		
 		WebElement buyingGuides = driver.findElement(By.cssSelector("a.mainItem:nth-child(4) > span:nth-child(1)"));
@@ -67,15 +67,26 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 		driver.findElement(By.cssSelector("a.mainItem:nth-child(4) > span:nth-child(1)")).click();
 	}
 	
-	@Test(description = "Scrolling to the page headline", priority = 2)
+	@Test(description = "Scrolling to the page headline", priority = 3)
 	public void pageScrolling() throws Exception {
 
 		WebElement camerasUseCase = driver.findElement(By.id("usecaseSectionTitle"));
 
-		driver.findElement(By.id("usecaseSectionTitle"));  // *** Scrolling the Cameras Use Case headline ***
+		driver.findElement(By.id("usecaseSectionTitle"));  // *** Scrolling to the Cameras Use Case headline ***
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", camerasUseCase);
 		Reports.report("Scrolled to Element " + By.id("usecaseSectionTitle") + " (" + By.id("usecaseSectionTitle") + ")");
 
 		Thread.sleep(5000);
+	}
+	
+	@Test(description = "Selecting the Best cameras for sports and action guide", priority = 4)
+	public void sportsAndAction() {
+		
+		WebElement sportsAndAction = driver.findElement(By.cssSelector("div.cardsContainer:nth-child(6) > a:nth-child(8)"));
+		
+		Actions action = new Actions(driver);
+		action.moveToElement(sportsAndAction).build().perform();
+		
+		driver.findElement(By.cssSelector("div.cardsContainer:nth-child(6) > a:nth-child(8)")).click();
 	}
 }
