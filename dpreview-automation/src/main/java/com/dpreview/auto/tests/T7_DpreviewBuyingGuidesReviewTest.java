@@ -30,7 +30,7 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 		DpreviewBuyingGuidesPage dpreviewBuyingGuidesPage = dpreviewHomePage.hoverOverBuyingGuidesLink();
 	}
 
-	
+
 	// --------------------- Testing the Best cameras for sports and action link from the Buying Guides menu -----------------------------------
 
 	@Test(description = "Selecting the Best cameras for sports and action link from the Buying Guides menu", priority = 1)
@@ -42,10 +42,10 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 		action.moveToElement(camerasSportsAction).build().perform();
 
 		driver.findElement(By.linkText("Best cameras for sports and action")).isSelected();
-		
+
 		WebDriverWait wait1 = new WebDriverWait(driver, 3000);
 		wait1.until(ExpectedConditions.elementToBeSelected(camerasSportsAction));
-		
+
 		// driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
 		driver.findElement(By.linkText("Best cameras for sports and action")).click();
 
@@ -54,19 +54,18 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		driver.navigate().to("https://www.dpreview.com/reviews/buying-guide-best-cameras-for-sports-and-action");
 	}
-	
 
 	@Test(description = "Selecting the Buying Guides", priority = 2)
 	public void buyingGuides() {
-		
+
 		WebElement buyingGuides = driver.findElement(By.cssSelector("a.mainItem:nth-child(4) > span:nth-child(1)"));
-		
+
 		Actions action = new Actions(driver);
 		action.moveToElement(buyingGuides).build().perform();
-		
+
 		driver.findElement(By.cssSelector("a.mainItem:nth-child(4) > span:nth-child(1)")).click();
 	}
-	
+
 	@Test(description = "Scrolling to the page headline", priority = 3)
 	public void pageScrolling() throws Exception {
 
@@ -78,15 +77,105 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Selecting the Best cameras for sports and action guide", priority = 4)
 	public void sportsAndAction() {
-		
+
 		WebElement sportsAndAction = driver.findElement(By.cssSelector("div.cardsContainer:nth-child(6) > a:nth-child(8)"));
-		
+
 		Actions action = new Actions(driver);
 		action.moveToElement(sportsAndAction).build().perform();
-		
+
 		driver.findElement(By.cssSelector("div.cardsContainer:nth-child(6) > a:nth-child(8)")).click();
 	}
+
+	// ---------------------------- Best cameras for sports and action guide - Page 1: Introduction ---------------------------------------
+	
+	@Test(description = "Scrolling to the Best cameras for sports and action guide headline", priority = 5)
+	public void bestSportsAndActionCamerasHeadline() throws Exception {
+
+		WebElement pageHeadline = driver.findElement(By.cssSelector(".articleHeader"));
+
+		driver.findElement(By.cssSelector(".articleHeader"));  // *** Scrolling to the page headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", pageHeadline);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleHeader") + " (" + By.cssSelector(".articleHeader") + ")");
+
+		Thread.sleep(5000);
+	}
+
+	@Test(description = "Scrolling to the Nikon D5 headline", priority = 6)
+	public void nikonD5() throws Exception {
+
+		WebElement nikonD5 = driver.findElement(By.cssSelector(".articleBody > h3:nth-child(6)"));
+
+		driver.findElement(By.cssSelector(".articleBody > h3:nth-child(6)"));  // *** Scrolling to the Nikon D5 headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", nikonD5);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > h3:nth-child(6)") + " (" + By.cssSelector(".articleBody > h3:nth-child(6)") + ")");
+
+		Thread.sleep(5000);
+	}
+
+	@Test(description = "Scrolling to the Nikon D500 headline", priority = 7)
+	public void nikonD500() throws Exception {
+
+		WebElement nikonD500 = driver.findElement(By.cssSelector(".articleBody > h3:nth-child(11)"));
+
+		driver.findElement(By.cssSelector(".articleBody > h3:nth-child(11)"));  // *** Scrolling to the Nikon D500 headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", nikonD500);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > h3:nth-child(11)") + " (" + By.cssSelector(".articleBody > h3:nth-child(11)") + ")");
+
+		Thread.sleep(5000);
+	}
+	
+	@Test(description = "Next page button", priority = 8)
+	public void page2Button() throws Exception {
+
+		WebElement page2Button = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
+
+		Actions action = new Actions(driver);
+		action.moveToElement(page2Button).build().perform();
+		
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
+	}
+	
+	// ---------------------------- Best cameras for sports and action guide - Page 2: Nikon D5 Guide -------------------------------------
+	
+	@Test(description = "Scrolling to the Nikon D5 Guide headline", priority = 9)
+	public void nikonD5Guide() throws Exception {
+		
+		WebElement nikonD5 = driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));
+
+		driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));  // *** Scrolling to the Nikon D5 guide headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", nikonD5);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > h2:nth-child(1)") + " (" + By.cssSelector(".articleBody > h2:nth-child(1)") + ")");
+
+		Thread.sleep(5000);
+	}
+	
+	@Test(description = "Scrolling to the Nikon D5 Feature Quote", priority = 10)
+	public void nikonD5FeatureQuote() throws Exception {
+		
+		WebElement nikonD5FeatureQuote = driver.findElement(By.cssSelector(".pullQuote"));
+
+		driver.findElement(By.cssSelector(".pullQuote"));  // *** Scrolling to the Nikon D5 Feature Quote ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", nikonD5FeatureQuote);
+		Reports.report("Scrolled to Element " + By.cssSelector(".pullQuote") + " (" + By.cssSelector(".pullQuote") + ")");
+
+		Thread.sleep(5000);
+	}
+	
+	@Test(description = "Next page button", priority = 11)
+	public void page3Button() throws Exception {
+
+		WebElement page3Button = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
+
+		Actions action = new Actions(driver);
+		action.moveToElement(page3Button).build().perform();
+		
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
+	}
+	
+	// ---------------------------- Best cameras for sports and action guide - Page 3: Nikon D500 Guide -----------------------------------
 }
+
+

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+<testng-results skipped="0" failed="1" ignored="0" total="12" passed="11">
   <reporter-output>
     <line>
       <![CDATA[Browsing to URL: https://www.dpreview.com]]>
@@ -28,21 +28,32 @@
     <line>
       <![CDATA[Scrolled to Element By.id: usecaseSectionTitle (By.id: usecaseSectionTitle)]]>
     </line>
+    <line>
+      <![CDATA[Scrolled to Element By.cssSelector: .articleHeader (By.cssSelector: .articleHeader)]]>
+    </line>
+    <line>
+      <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(6) (By.cssSelector: .articleBody > h3:nth-child(6))]]>
+    </line>
+    <line>
+      <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(11) (By.cssSelector: .articleBody > h3:nth-child(11))]]>
+    </line>
+    <line>
+      <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h2:nth-child(1) (By.cssSelector: .articleBody > h2:nth-child(1))]]>
+    </line>
+    <line>
+      <![CDATA[Scrolled to Element By.cssSelector: .pullQuote (By.cssSelector: .pullQuote)]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34219" started-at="2018-11-16T10:05:14Z" finished-at="2018-11-16T10:05:48Z">
+  <suite name="Default suite" duration-ms="73254" started-at="2018-11-16T11:14:33Z" finished-at="2018-11-16T11:15:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34219" started-at="2018-11-16T10:05:14Z" finished-at="2018-11-16T10:05:48Z">
+    <test name="Default test" duration-ms="73254" started-at="2018-11-16T11:14:33Z" finished-at="2018-11-16T11:15:46Z">
       <class name="com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="beforeClass" is-config="true" duration-ms="753" started-at="2018-11-16T10:05:14Z" finished-at="2018-11-16T10:05:15Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="beforeClass" is-config="true" duration-ms="757" started-at="2018-11-16T11:14:33Z" finished-at="2018-11-16T11:14:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-16T10:05:15Z" finished-at="2018-11-16T10:05:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="hoveringBuyingGuidesElement()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="hoveringBuyingGuidesElement" duration-ms="16275" started-at="2018-11-16T10:05:15Z" description="Hovering over the Buying Guides element" finished-at="2018-11-16T10:05:31Z">
+        <test-method status="PASS" signature="hoveringBuyingGuidesElement()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="hoveringBuyingGuidesElement" duration-ms="15860" started-at="2018-11-16T11:14:33Z" description="Hovering over the Buying Guides element" finished-at="2018-11-16T11:14:49Z">
           <reporter-output>
             <line>
               <![CDATA[Browsing to URL: https://www.dpreview.com]]>
@@ -70,15 +81,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- hoveringBuyingGuidesElement -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-16T10:05:31Z" finished-at="2018-11-16T10:05:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-16T10:05:31Z" finished-at="2018-11-16T10:05:31Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:14:33Z" finished-at="2018-11-16T11:14:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="selectingCamerasSportsActionLink()[pri:1, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="selectingCamerasSportsActionLink" duration-ms="2526" started-at="2018-11-16T10:05:31Z" description="Selecting the Best cameras for sports and action link from the Buying Guides menu" finished-at="2018-11-16T10:05:33Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:14:49Z" finished-at="2018-11-16T11:14:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="selectingCamerasSportsActionLink()[pri:1, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="selectingCamerasSportsActionLink" duration-ms="2516" started-at="2018-11-16T11:14:49Z" description="Selecting the Best cameras for sports and action link from the Buying Guides menu" finished-at="2018-11-16T11:14:52Z">
           <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
               <![CDATA[The element reference of <a href="/reviews/buying-guide-best-cameras-for-sports-and-action"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
@@ -86,8 +97,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SPEARHEAD-PC', ip: '192.168.17.102', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 880, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: d4e025bb-fae0-4271-a44f-fe565cabde96]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 22920, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 16c35dae-5d53-4865-99ea-9d53a3c082c7]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element reference of <a href="/reviews/buying-guide-best-cameras-for-sports-and-action"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
@@ -95,8 +106,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'SPEARHEAD-PC', ip: '192.168.17.102', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 880, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: d4e025bb-fae0-4271-a44f-fe565cabde96
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 22920, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 16c35dae-5d53-4865-99ea-9d53a3c082c7
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -141,50 +152,153 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectingCamerasSportsActionLink -->
-        <test-method status="PASS" signature="buyingGuides()[pri:2, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="buyingGuides" duration-ms="4493" started-at="2018-11-16T10:05:34Z" description="Selecting the Buying Guides" finished-at="2018-11-16T10:05:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- buyingGuides -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-16T10:05:34Z" finished-at="2018-11-16T10:05:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-16T10:05:34Z" finished-at="2018-11-16T10:05:34Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:14:49Z" finished-at="2018-11-16T11:14:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-16T10:05:38Z" finished-at="2018-11-16T10:05:38Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:14:52Z" finished-at="2018-11-16T11:14:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="pageScrolling()[pri:3, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="pageScrolling" duration-ms="5054" started-at="2018-11-16T10:05:38Z" description="Scrolling to the page headline" finished-at="2018-11-16T10:05:43Z">
+        <test-method status="PASS" signature="buyingGuides()[pri:2, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="buyingGuides" duration-ms="3784" started-at="2018-11-16T11:14:52Z" description="Selecting the Buying Guides" finished-at="2018-11-16T11:14:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyingGuides -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:14:52Z" finished-at="2018-11-16T11:14:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:14:56Z" finished-at="2018-11-16T11:14:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="pageScrolling()[pri:3, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="pageScrolling" duration-ms="5050" started-at="2018-11-16T11:14:56Z" description="Scrolling to the page headline" finished-at="2018-11-16T11:15:01Z">
           <reporter-output>
             <line>
               <![CDATA[Scrolled to Element By.id: usecaseSectionTitle (By.id: usecaseSectionTitle)]]>
             </line>
           </reporter-output>
         </test-method> <!-- pageScrolling -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-16T10:05:38Z" finished-at="2018-11-16T10:05:38Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:14:56Z" finished-at="2018-11-16T11:14:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-16T10:05:43Z" finished-at="2018-11-16T10:05:43Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:15:01Z" finished-at="2018-11-16T11:15:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="sportsAndAction()[pri:4, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="sportsAndAction" duration-ms="4608" started-at="2018-11-16T10:05:43Z" description="Selecting the Best cameras for sports and action guide" finished-at="2018-11-16T10:05:48Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="sportsAndAction()[pri:4, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="sportsAndAction" duration-ms="5361" started-at="2018-11-16T11:15:01Z" description="Selecting the Best cameras for sports and action guide" finished-at="2018-11-16T11:15:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sportsAndAction -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-16T10:05:43Z" finished-at="2018-11-16T10:05:43Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:15:01Z" finished-at="2018-11-16T11:15:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:15:07Z" finished-at="2018-11-16T11:15:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-16T10:05:48Z" finished-at="2018-11-16T10:05:48Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:15:07Z" finished-at="2018-11-16T11:15:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="bestSportsAndActionCamerasHeadline()[pri:5, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="bestSportsAndActionCamerasHeadline" duration-ms="6920" started-at="2018-11-16T11:15:07Z" description="Scrolling to the Best cameras for sports and action guide headline" finished-at="2018-11-16T11:15:13Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: .articleHeader (By.cssSelector: .articleHeader)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- bestSportsAndActionCamerasHeadline -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:15:13Z" finished-at="2018-11-16T11:15:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1caeb3e]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-16T10:05:48Z" finished-at="2018-11-16T10:05:48Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:15:13Z" finished-at="2018-11-16T11:15:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="nikonD5()[pri:6, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="nikonD5" duration-ms="5050" started-at="2018-11-16T11:15:13Z" description="Scrolling to the Nikon D5 headline" finished-at="2018-11-16T11:15:19Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(6) (By.cssSelector: .articleBody > h3:nth-child(6))]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- nikonD5 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:15:19Z" finished-at="2018-11-16T11:15:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:15:19Z" finished-at="2018-11-16T11:15:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="nikonD500()[pri:7, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="nikonD500" duration-ms="5047" started-at="2018-11-16T11:15:19Z" description="Scrolling to the Nikon D500 headline" finished-at="2018-11-16T11:15:24Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(11) (By.cssSelector: .articleBody > h3:nth-child(11))]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- nikonD500 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:15:24Z" finished-at="2018-11-16T11:15:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:15:24Z" finished-at="2018-11-16T11:15:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="page2Button()[pri:8, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="page2Button" duration-ms="5316" started-at="2018-11-16T11:15:24Z" description="Next page button" finished-at="2018-11-16T11:15:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- page2Button -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-16T11:15:29Z" finished-at="2018-11-16T11:15:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="nikonD5Guide()[pri:9, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="nikonD5Guide" duration-ms="5126" started-at="2018-11-16T11:15:29Z" description="Scrolling to the Nikon D5 Guide headline" finished-at="2018-11-16T11:15:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h2:nth-child(1) (By.cssSelector: .articleBody > h2:nth-child(1))]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- nikonD5Guide -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:15:29Z" finished-at="2018-11-16T11:15:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:15:34Z" finished-at="2018-11-16T11:15:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:15:34Z" finished-at="2018-11-16T11:15:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="nikonD5FeatureQuote()[pri:10, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="nikonD5FeatureQuote" duration-ms="5044" started-at="2018-11-16T11:15:34Z" description="Scrolling to the Nikon D5 Feature Quote" finished-at="2018-11-16T11:15:39Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: .pullQuote (By.cssSelector: .pullQuote)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- nikonD5FeatureQuote -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-16T11:15:39Z" finished-at="2018-11-16T11:15:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-16T11:15:39Z" finished-at="2018-11-16T11:15:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="page3Button()[pri:11, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="page3Button" duration-ms="6696" started-at="2018-11-16T11:15:39Z" description="Next page button" finished-at="2018-11-16T11:15:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- page3Button -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-16T11:15:46Z" finished-at="2018-11-16T11:15:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-16T11:15:46Z" finished-at="2018-11-16T11:15:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
