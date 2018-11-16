@@ -90,7 +90,7 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 	}
 
 	// ---------------------------- Best cameras for sports and action guide - Page 1: Introduction ---------------------------------------
-	
+
 	@Test(description = "Scrolling to the Best cameras for sports and action guide headline", priority = 5)
 	public void bestSportsAndActionCamerasHeadline() throws Exception {
 
@@ -126,7 +126,7 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Next page button", priority = 8)
 	public void page2Button() throws Exception {
 
@@ -134,15 +134,15 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		Actions action = new Actions(driver);
 		action.moveToElement(page2Button).build().perform();
-		
+
 		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
 	}
-	
+
 	// ---------------------------- Best cameras for sports and action guide - Page 2: Nikon D5 Guide -------------------------------------
-	
+
 	@Test(description = "Scrolling to the Nikon D5 Guide headline", priority = 9)
 	public void nikonD5Guide() throws Exception {
-		
+
 		WebElement nikonD5 = driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));
 
 		driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));  // *** Scrolling to the Nikon D5 guide headline ***
@@ -151,10 +151,10 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Scrolling to the Nikon D5 Feature Quote", priority = 10)
 	public void nikonD5FeatureQuote() throws Exception {
-		
+
 		WebElement nikonD5FeatureQuote = driver.findElement(By.cssSelector(".pullQuote"));
 
 		driver.findElement(By.cssSelector(".pullQuote"));  // *** Scrolling to the Nikon D5 Feature Quote ***
@@ -163,7 +163,7 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Next page button", priority = 11)
 	public void page3Button() throws Exception {
 
@@ -171,11 +171,121 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		Actions action = new Actions(driver);
 		action.moveToElement(page3Button).build().perform();
-		
+
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
+	}
+
+	// ---------------------------- Best cameras for sports and action guide - Page 3: Nikon D500 Guide -----------------------------------
+
+	@Test(description = "Scrolling to the Nikon D500 Guide headline", priority = 12)
+	public void nikonD500Guide() throws Exception {
+
+		WebElement nikonD500Guide = driver.findElement(By.cssSelector(".articleHeader > h1:nth-child(2)"));
+
+		driver.findElement(By.cssSelector(".articleHeader > h1:nth-child(2)"));  // *** Scrolling to the Nikon D500 guide headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", nikonD500Guide);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleHeader > h1:nth-child(2)") + " (" + By.cssSelector(".articleHeader > h1:nth-child(2)") + ")");
+
+		Thread.sleep(5000);
+	}
+
+	@Test(description = "Scrolling to the Nikon D500 Feature Quote", priority = 13)
+	public void nikonD500FeatureQuote() throws Exception {
+
+		WebElement nikonD500FeatureQuote = driver.findElement(By.cssSelector(".pullQuote"));
+
+		driver.findElement(By.cssSelector(".pullQuote"));  // *** Scrolling to the Nikon D500 Feature Quote ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", nikonD500FeatureQuote);
+		Reports.report("Scrolled to Element " + By.cssSelector(".pullQuote") + " (" + By.cssSelector(".pullQuote") + ")");
+
+		Thread.sleep(5000);
+	}
+
+	@Test(description = "Next page button", priority = 14)
+	public void page4Button() throws Exception {
+
+		WebElement page4Button = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
+
+		Actions action = new Actions(driver);
+		action.moveToElement(page4Button).build().perform();
+
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
+	}
+
+	// ---------------------------- Best cameras for sports and action guide - Page 4: Canon EOS 1DX Mark II Guide ------------------------
+
+	@Test(description = "Scrolling to the Canon EOS 1DX Mark II Guide headline", priority = 15)
+	public void canon1DXGuide() throws Exception {
+
+		WebElement canon1DXGuide = driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));
+
+		driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));  // *** Scrolling to the Canon EOS 1DX Mark II headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", canon1DXGuide);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > h2:nth-child(1)") + " (" + By.cssSelector(".articleBody > h2:nth-child(1)") + ")");
+
+		Thread.sleep(5000);
+	}
+	
+	@Test(description = "Scrolling to the Canon EOS 1DX Mark II Feature Quote", priority = 16)
+	public void canon1DXQuote() throws Exception {
+
+		WebElement canon1DXQuote = driver.findElement(By.cssSelector(".pullQuote"));
+
+		driver.findElement(By.cssSelector(".pullQuote"));  // *** Scrolling to the Canon EOS 1DX Mark II Feature Quote ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", canon1DXQuote);
+		Reports.report("Scrolled to Element " + By.cssSelector(".pullQuote") + " (" + By.cssSelector(".pullQuote") + ")");
+
+		Thread.sleep(5000);
+	}
+	
+	@Test(description = "Scrolling to the Canon EOS 1DX Mark II Sample Gallery headline", priority = 17)
+	public void canon1DXSampleGallery() throws Exception {
+
+		WebElement canon1DXSampleGallery = driver.findElement(By.cssSelector(".articleBody > p:nth-child(16) > strong:nth-child(1)"));
+
+		driver.findElement(By.cssSelector(".articleBody > p:nth-child(16) > strong:nth-child(1)"));  // *** Scrolling to the Canon EOS 1DX Mark II Sample Gallery ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", canon1DXSampleGallery);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > p:nth-child(16) > strong:nth-child(1)") + " (" + By.cssSelector(".articleBody > p:nth-child(16) > strong:nth-child(1)") + ")");
+
+		Thread.sleep(5000);
+	}
+	
+	@Test(description = "Next page button", priority = 18)
+	public void page5Button() throws Exception {
+
+		WebElement page5Button = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
+
+		Actions action = new Actions(driver);
+		action.moveToElement(page5Button).build().perform();
+
 		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
 	}
 	
-	// ---------------------------- Best cameras for sports and action guide - Page 3: Nikon D500 Guide -----------------------------------
+	// ---------------------------- Best cameras for sports and action guide - Page 5: Fujifilm X-T3 Guide ------------------------
+	
+	@Test(description = "Scrolling to the Fujifilm X-T3 Guide headline", priority = 19)
+	public void fujifilmXT3Guide() throws Exception {
+
+		WebElement fujifilmXT3Guide = driver.findElement(By.cssSelector(".articleHeader > h1:nth-child(2)"));
+
+		driver.findElement(By.cssSelector(".articleHeader > h1:nth-child(2)"));  // *** Scrolling to the Fujifilm X-T3 Guide headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", fujifilmXT3Guide);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleHeader > h1:nth-child(2)") + " (" + By.cssSelector(".articleHeader > h1:nth-child(2)") + ")");
+
+		Thread.sleep(5000);
+	}
+	
+	@Test(description = "Scrolling to the Fujifilm X-T3 Feature Quote", priority = 20)
+	public void fujifilmXT3Quote() throws Exception {
+
+		WebElement fujifilmXT3Quote = driver.findElement(By.cssSelector(".pullQuote"));
+
+		driver.findElement(By.cssSelector(".pullQuote"));  // *** Scrolling to the Fujifilm X-T3 Feature Quote ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", fujifilmXT3Quote);
+		Reports.report("Scrolled to Element " + By.cssSelector(".pullQuote") + " (" + By.cssSelector(".pullQuote") + ")");
+
+		Thread.sleep(5000);
+	}
 }
 
 
