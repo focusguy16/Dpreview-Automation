@@ -495,6 +495,106 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
 	}
+
+	// ---------------------------- Best cameras for sports and action guide - Page 11: Canon EOS 7D Mark II Guide ------------------------
+
+	@Test(description = "Scrolling to the Canon EOS 7D Mark II headline", priority = 38)
+	public void canonEOS7D_Mark_IIGuide() throws Exception {
+
+		WebElement canonEOS7D_Mark_IIGuide = driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));
+
+		driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));  // *** Scrolling to the Canon EOS 7D Mark II Guide headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", canonEOS7D_Mark_IIGuide);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > h2:nth-child(1)") + " (" + By.cssSelector(".articleBody > h2:nth-child(1)") + ")");
+
+		Thread.sleep(5000);
+	}
+
+	@Test(description = "Scrolling to the Canon EOS 7D Mark II Feature Quote", priority = 39)
+	public void canonEOS7D_Mark_IIQuote() throws Exception {
+
+		WebElement canonEOS7D_Mark_IIQuote = driver.findElement(By.cssSelector(".pullQuote"));
+
+		driver.findElement(By.cssSelector(".pullQuote"));  // *** Scrolling to the Canon EOS 7D Mark II Feature Quote ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", canonEOS7D_Mark_IIQuote);
+		Reports.report("Scrolled to Element " + By.cssSelector(".pullQuote") + " (" + By.cssSelector(".pullQuote") + ")");
+
+		Thread.sleep(5000);
+	}
+
+	@Test(description = "Next page button", priority = 40)
+	public void page12Button() throws Exception {
+
+		WebElement page12Button = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
+
+		Actions action = new Actions(driver);
+		action.moveToElement(page12Button).build().perform();
+
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
+	}
+
+	// ---------------------------- Best cameras for sports and action guide - Page 12: Nikon D7500 Guide ------------------------
+
+	@Test(description = "Scrolling to the Nikon D7500 headline", priority = 41)
+	public void nikon_D7500Guide() throws Exception {
+
+		WebElement nikon_D7500Guide = driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));
+
+		driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));  // *** Scrolling to the Nikon D7500 Guide headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", nikon_D7500Guide);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > h2:nth-child(1)") + " (" + By.cssSelector(".articleBody > h2:nth-child(1)") + ")");
+
+		Thread.sleep(5000);
+	}
+
+	@Test(description = "Scrolling to the Nikon D7500 Feature Quote", priority = 42)
+	public void nikon_D7500Quote() throws Exception {
+
+		WebElement nikon_D7500Quote = driver.findElement(By.cssSelector(".pullQuote"));
+
+		driver.findElement(By.cssSelector(".pullQuote"));  // *** Scrolling to the Nikon D7500 Feature Quote ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", nikon_D7500Quote);
+		Reports.report("Scrolled to Element " + By.cssSelector(".pullQuote") + " (" + By.cssSelector(".pullQuote") + ")");
+
+		Thread.sleep(5000);
+	}
+
+	@Test(description = "Next page button", priority = 43)
+	public void page13Button() throws Exception {
+
+		WebElement page13Button = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
+
+		Actions action = new Actions(driver);
+		action.moveToElement(page13Button).build().perform();
+
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
+	}
+
+	// ---------------------------- Best cameras for sports and action guide - Page 13: Sony Alpha a7R III Guide ------------------------
+
+	@Test(description = "Scrolling to the Sony Alpha a7R III headline", priority = 44)
+	public void sonyAlpha_a7R_IIIGuide() throws Exception {
+
+		WebElement sonyAlpha_a7R_IIIGuide = driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));
+
+		driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));  // *** Scrolling to the Sony Alpha a7R III Guide headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", sonyAlpha_a7R_IIIGuide);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > h2:nth-child(1)") + " (" + By.cssSelector(".articleBody > h2:nth-child(1)") + ")");
+
+		Thread.sleep(5000);
+	}
+
+	@Test(description = "Scrolling to the Sony Alpha a7R III Feature Quote", priority = 45)
+	public void sonyAlpha_a7R_IIIQuote() throws Exception {
+
+		WebElement sonyAlpha_a7R_IIIQuote = driver.findElement(By.cssSelector(".pullQuote"));
+
+		driver.findElement(By.cssSelector(".pullQuote"));  // *** Scrolling to the Sony Alpha a7R III Feature Quote ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", sonyAlpha_a7R_IIIQuote);
+		Reports.report("Scrolled to Element " + By.cssSelector(".pullQuote") + " (" + By.cssSelector(".pullQuote") + ")");
+
+		Thread.sleep(5000);
+	}
 }
 
 
