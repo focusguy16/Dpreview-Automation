@@ -225,7 +225,7 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Scrolling to the Canon EOS 1DX Mark II Feature Quote", priority = 16)
 	public void canon1DXQuote() throws Exception {
 
@@ -237,7 +237,7 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Scrolling to the Canon EOS 1DX Mark II Sample Gallery headline", priority = 17)
 	public void canon1DXSampleGallery() throws Exception {
 
@@ -249,7 +249,7 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Next page button", priority = 18)
 	public void page5Button() throws Exception {
 
@@ -260,9 +260,9 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
 	}
-	
+
 	// ---------------------------- Best cameras for sports and action guide - Page 5: Fujifilm X-T3 Guide ------------------------
-	
+
 	@Test(description = "Scrolling to the Fujifilm X-T3 Guide headline", priority = 19)
 	public void fujifilmXT3Guide() throws Exception {
 
@@ -274,7 +274,7 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Scrolling to the Fujifilm X-T3 Feature Quote", priority = 20)
 	public void fujifilmXT3Quote() throws Exception {
 
@@ -286,7 +286,7 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Next page button", priority = 21)
 	public void page6Button() throws Exception {
 
@@ -297,9 +297,9 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
 	}
-	
+
 	// ---------------------------- Best cameras for sports and action guide - Page 6: Olympus OM-D E-M1 Mark II Guide ------------------------
-	
+
 	@Test(description = "Scrolling to the Olympus OM-D E-M1 Mark II Guide headline", priority = 22)
 	public void olympusOM_D_E_M1_Mark_IIGuide() throws Exception {
 
@@ -311,7 +311,7 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Scrolling to the Olympus OM-D E-M1 Mark II Feature Quote", priority = 23)
 	public void olympusOM_D_E_M1_Mark_IIQuote() throws Exception {
 
@@ -323,7 +323,7 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Next page button", priority = 24)
 	public void page7Button() throws Exception {
 
@@ -331,6 +331,93 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		Actions action = new Actions(driver);
 		action.moveToElement(page7Button).build().perform();
+
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
+	}
+
+	// ---------------------------- Best cameras for sports and action guide - Page 7: Panasonic Lumix DC-G9 Guide ------------------------
+
+	@Test(description = "Scrolling to the Panasonic Lumix DC-G9 Guide headline", priority = 25)
+	public void panasonicLumixDC_G9Guide() throws Exception {
+
+		WebElement panasonicLumixDC_G9Guide = driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));
+
+		driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));  // *** Scrolling to the Panasonic Lumix DC-G9 Guide headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", panasonicLumixDC_G9Guide);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > h2:nth-child(1)") + " (" + By.cssSelector(".articleBody > h2:nth-child(1)") + ")");
+
+		Thread.sleep(5000);
+	}
+
+	@Test(description = "Scrolling to the Panasonic Lumix DC-G9 Feature Quote", priority = 26)
+	public void panasonicLumixDC_G9Quote() throws Exception {
+
+		WebElement panasonicLumixDC_G9Quote = driver.findElement(By.cssSelector(".pullQuote"));
+
+		driver.findElement(By.cssSelector(".pullQuote"));  // *** Scrolling to the Panasonic Lumix DC-G9 Feature Quote ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", panasonicLumixDC_G9Quote);
+		Reports.report("Scrolled to Element " + By.cssSelector(".pullQuote") + " (" + By.cssSelector(".pullQuote") + ")");
+
+		Thread.sleep(5000);
+	}
+
+	@Test(description = "Scrolling to the Panasonic Lumix DC-G9 Sample Gallery headline", priority = 27)
+	public void panasonicLumixDC_G9Gallery() throws Exception {
+
+		WebElement panasonicLumixDC_G9Gallery = driver.findElement(By.cssSelector(".articleBody > p:nth-child(16) > strong:nth-child(1)"));
+
+		driver.findElement(By.cssSelector(".articleBody > p:nth-child(16) > strong:nth-child(1)"));  // *** Scrolling to the Panasonic Lumix DC-G9 Sample Gallery ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", panasonicLumixDC_G9Gallery);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > p:nth-child(16) > strong:nth-child(1)") + " (" + By.cssSelector(".articleBody > p:nth-child(16) > strong:nth-child(1)") + ")");
+
+		Thread.sleep(5000);
+	}
+
+	@Test(description = "Next page button", priority = 28)
+	public void page8Button() throws Exception {
+
+		WebElement page8Button = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
+
+		Actions action = new Actions(driver);
+		action.moveToElement(page8Button).build().perform();
+
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
+	}
+
+	// ---------------------------- Best cameras for sports and action guide - Page 8: Sony a7 III Guide ------------------------
+
+	@Test(description = "Scrolling to the Sony a7 III Guide headline", priority = 29)
+	public void sony_a7_IIIGuide() throws Exception {
+
+		WebElement sony_a7_IIIGuide = driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));
+
+		driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));  // *** Scrolling to the Sony a7 III Guide headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", sony_a7_IIIGuide);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > h2:nth-child(1)") + " (" + By.cssSelector(".articleBody > h2:nth-child(1)") + ")");
+
+		Thread.sleep(5000);
+	}
+
+	@Test(description = "Scrolling to the Sony a7 III Feature Quote", priority = 30)
+	public void sony_a7_IIIQuote() throws Exception {
+
+		WebElement sony_a7_IIIQuote = driver.findElement(By.cssSelector(".pullQuote"));
+
+		driver.findElement(By.cssSelector(".pullQuote"));  // *** Scrolling to the Sony a7 III Feature Quote ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", sony_a7_IIIQuote);
+		Reports.report("Scrolled to Element " + By.cssSelector(".pullQuote") + " (" + By.cssSelector(".pullQuote") + ")");
+
+		Thread.sleep(5000);
+	}
+
+
+	@Test(description = "Next page button", priority = 31)
+	public void page9Button() throws Exception {
+
+		WebElement page9Button = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
+
+		Actions action = new Actions(driver);
+		action.moveToElement(page9Button).build().perform();
 
 		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
 	}
