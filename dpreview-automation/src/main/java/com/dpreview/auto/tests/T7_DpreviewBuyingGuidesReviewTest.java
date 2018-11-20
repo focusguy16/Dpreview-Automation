@@ -421,6 +421,80 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
 	}
+
+	// ---------------------------- Best cameras for sports and action guide - Page 9: Sony a9 Guide ------------------------
+
+	@Test(description = "Scrolling to the Sony a9 Guide headline", priority = 32)
+	public void sony_a9Guide() throws Exception {
+
+		WebElement sony_a9Guide = driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));
+
+		driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));  // *** Scrolling to the Sony a9 Guide headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", sony_a9Guide);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > h2:nth-child(1)") + " (" + By.cssSelector(".articleBody > h2:nth-child(1)") + ")");
+
+		Thread.sleep(5000);
+	}
+
+	@Test(description = "Scrolling to the Sony a9 Feature Quote", priority = 33)
+	public void sony_a9Quote() throws Exception {
+
+		WebElement sony_a9Quote = driver.findElement(By.cssSelector(".pullQuote"));
+
+		driver.findElement(By.cssSelector(".pullQuote"));  // *** Scrolling to the Sony a9 Feature Quote ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", sony_a9Quote);
+		Reports.report("Scrolled to Element " + By.cssSelector(".pullQuote") + " (" + By.cssSelector(".pullQuote") + ")");
+
+		Thread.sleep(5000);
+	}
+
+	@Test(description = "Next page button", priority = 34)
+	public void page10Button() throws Exception {
+
+		WebElement page10Button = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
+
+		Actions action = new Actions(driver);
+		action.moveToElement(page10Button).build().perform();
+
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
+	}
+
+	// ---------------------------- Best cameras for sports and action guide - Page 10: Sony Cyber-shot RX10 IV Guide ------------------------
+
+	@Test(description = "Scrolling to the Sony Cyber-shot RX10 IV Guide headline", priority = 35)
+	public void sonyCyber_shotRX10_IVGuide() throws Exception {
+
+		WebElement sonyCyber_shotRX10_IVGuide = driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));
+
+		driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));  // *** Scrolling to the Sony Cyber-shot RX10 IV Guide headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", sonyCyber_shotRX10_IVGuide);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > h2:nth-child(1)") + " (" + By.cssSelector(".articleBody > h2:nth-child(1)") + ")");
+
+		Thread.sleep(5000);
+	}
+
+	@Test(description = "Scrolling to the Sony Cyber-shot RX10 IV Feature Quote", priority = 36)
+	public void sonyCyber_shotRX10_IVQuote() throws Exception {
+
+		WebElement sonyCyber_shotRX10_IVQuote = driver.findElement(By.cssSelector(".pullQuote"));
+
+		driver.findElement(By.cssSelector(".pullQuote"));  // *** Scrolling to the Sony Cyber-shot RX10 IV Feature Quote ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", sonyCyber_shotRX10_IVQuote);
+		Reports.report("Scrolled to Element " + By.cssSelector(".pullQuote") + " (" + By.cssSelector(".pullQuote") + ")");
+
+		Thread.sleep(5000);
+	}
+
+	@Test(description = "Next page button", priority = 37)
+	public void page11Button() throws Exception {
+
+		WebElement page11Button = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
+
+		Actions action = new Actions(driver);
+		action.moveToElement(page11Button).build().perform();
+
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
+	}
 }
 
 
