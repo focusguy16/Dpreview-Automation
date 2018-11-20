@@ -286,6 +286,54 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
+	
+	@Test(description = "Next page button", priority = 21)
+	public void page6Button() throws Exception {
+
+		WebElement page6Button = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
+
+		Actions action = new Actions(driver);
+		action.moveToElement(page6Button).build().perform();
+
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
+	}
+	
+	// ---------------------------- Best cameras for sports and action guide - Page 6: Olympus OM-D E-M1 Mark II Guide ------------------------
+	
+	@Test(description = "Scrolling to the Olympus OM-D E-M1 Mark II Guide headline", priority = 22)
+	public void olympusOM_D_E_M1_Mark_IIGuide() throws Exception {
+
+		WebElement olympusOM_D_E_M1_Mark_IIGuide = driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));
+
+		driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));  // *** Scrolling to the Olympus OM-D E-M1 Mark II Guide headline ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", olympusOM_D_E_M1_Mark_IIGuide);
+		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > h2:nth-child(1)") + " (" + By.cssSelector(".articleBody > h2:nth-child(1)") + ")");
+
+		Thread.sleep(5000);
+	}
+	
+	@Test(description = "Scrolling to the Olympus OM-D E-M1 Mark II Feature Quote", priority = 23)
+	public void olympusOM_D_E_M1_Mark_IIQuote() throws Exception {
+
+		WebElement olympusOM_D_E_M1_Mark_IIQuote = driver.findElement(By.cssSelector(".pullQuote"));
+
+		driver.findElement(By.cssSelector(".pullQuote"));  // *** Scrolling to the Olympus OM-D E-M1 Mark II Feature Quote ***
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", olympusOM_D_E_M1_Mark_IIQuote);
+		Reports.report("Scrolled to Element " + By.cssSelector(".pullQuote") + " (" + By.cssSelector(".pullQuote") + ")");
+
+		Thread.sleep(5000);
+	}
+	
+	@Test(description = "Next page button", priority = 24)
+	public void page7Button() throws Exception {
+
+		WebElement page7Button = driver.findElement(By.cssSelector("span.next > a:nth-child(1)"));
+
+		Actions action = new Actions(driver);
+		action.moveToElement(page7Button).build().perform();
+
+		driver.findElement(By.cssSelector("span.next > a:nth-child(1)")).click();
+	}
 }
 
 
