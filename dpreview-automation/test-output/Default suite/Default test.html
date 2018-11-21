@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>45/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 20 18:30:08 IST 2018</td>
+<td>Started on:</td><td>Wed Nov 21 12:02:43 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>206 seconds (206697 ms)</td>
+<tr><td>Total time:</td><td>55 seconds (55725 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,29 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.selectingCamerasSportsActionLink()'><b>selectingCamerasSportsActionLink</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Selecting the Best cameras for sports and action link from the Buying Guides menu</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: The element reference of &lt;a href=&quot;/reviews/buying-guide-best-cameras-for-sports-and-action&quot;&gt; is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.hoveringBuyingGuidesElement()'><b>hoveringBuyingGuidesElement</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Hovering over the Buying Guides element<br/>
+<a href="#Output-29840015" onClick='toggleBox("Output-29840015", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29840015" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29840015">
+Browsing to URL: https://www.dpreview.com<br/>
+Element is visible: Search box (By.className: searchBox)<br/>
+Element is visible: 'GO' button (By.className: submitBtn)<br/>
+Element is visible: Light mode (By.cssSelector: span.option:nth-child(1))<br/>
+Element is visible: Dark mode (By.cssSelector: span.option:nth-child(2))<br/>
+*** On page: DPReview Home Page<br/>
+Hover over element: 'Buying Guides' link (By.xpath: //*[@class='mainItem']//*[text()='Buying Guides'])<br/>
+Hover over element: 'Buying Guides' link (By.xpath: //*[@class='mainItem']//*[text()='Buying Guides'])<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@class=&apos;mainItem&apos;]//*[text()=&apos;Buying Guides&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;SPEARHEAD-PC&apos;, ip: &apos;192.168.17.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 16132, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 0cb4fdb1-f743-4326-8086-77912f53769f
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 24024, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2d7a6511-8cb8-42a3-9086-19de12873097
+*** Element info: {Using=xpath, value=//*[@class=&apos;mainItem&apos;]//*[text()=&apos;Buying Guides&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -93,9 +108,13 @@ Session ID: 0cb4fdb1-f743-4326-8086-77912f53769f
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.isSelected(RemoteWebElement.java:140)
-	at com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.selectingCamerasSportsActionLink(T7_DpreviewBuyingGuidesReviewTest.java:44)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.dpreview.auto.infra.web.ActionBot.hoverOverElement(ActionBot.java:131)
+	at com.dpreview.auto.infra.pages.DpreviewHomePage.hoverOverBuyingGuidesLink(DpreviewHomePage.java:65)
+	at com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.hoveringBuyingGuidesElement(T8_DpreviewNikonD5ReviewTest.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -121,14 +140,69 @@ Session ID: 0cb4fdb1-f743-4326-8086-77912f53769f
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace16188705", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace16188705'><pre>org.openqa.selenium.StaleElementReferenceException: The element reference of &lt;a href=&quot;/reviews/buying-guide-best-cameras-for-sports-and-action&quot;&gt; is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+</pre></div><a href='#' onClick='toggleBox("stack-trace29840015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29840015'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@class=&apos;mainItem&apos;]//*[text()=&apos;Buying Guides&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SPEARHEAD-PC&apos;, ip: &apos;192.168.17.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 24024, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2d7a6511-8cb8-42a3-9086-19de12873097
+*** Element info: {Using=xpath, value=//*[@class=&apos;mainItem&apos;]//*[text()=&apos;Buying Guides&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.dpreview.auto.infra.web.ActionBot.hoverOverElement(ActionBot.java:131)
+	at com.dpreview.auto.infra.pages.DpreviewHomePage.hoverOverBuyingGuidesLink(DpreviewHomePage.java:65)
+	at com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.hoveringBuyingGuidesElement(T8_DpreviewNikonD5ReviewTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>23</td>
+<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
+<tr>
+<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.selectingCamerasSportsActionLink()'><b>selectingCamerasSportsActionLink</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Selecting the Best cameras for sports and action link from the Buying Guides menu</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: The element reference of &lt;a href=&quot;/reviews/buying-guide-best-cameras-for-sports-and-action&quot;&gt; is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;SPEARHEAD-PC&apos;, ip: &apos;192.168.17.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 16132, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 0cb4fdb1-f743-4326-8086-77912f53769f
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 24024, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2d7a6511-8cb8-42a3-9086-19de12873097
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -141,7 +215,53 @@ Session ID: 0cb4fdb1-f743-4326-8086-77912f53769f
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
 	at org.openqa.selenium.remote.RemoteWebElement.isSelected(RemoteWebElement.java:140)
-	at com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.selectingCamerasSportsActionLink(T7_DpreviewBuyingGuidesReviewTest.java:44)
+	at com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.selectingCamerasSportsActionLink(T8_DpreviewNikonD5ReviewTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace28153725", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace28153725'><pre>org.openqa.selenium.StaleElementReferenceException: The element reference of &lt;a href=&quot;/reviews/buying-guide-best-cameras-for-sports-and-action&quot;&gt; is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SPEARHEAD-PC&apos;, ip: &apos;192.168.17.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 24024, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2d7a6511-8cb8-42a3-9086-19de12873097
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.isSelected(RemoteWebElement.java:140)
+	at com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.selectingCamerasSportsActionLink(T8_DpreviewNikonD5ReviewTest.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -169,7 +289,7 @@ Session ID: 0cb4fdb1-f743-4326-8086-77912f53769f
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>2</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
+<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -179,454 +299,84 @@ Session ID: 0cb4fdb1-f743-4326-8086-77912f53769f
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.bestSportsAndActionCamerasHeadline()'><b>bestSportsAndActionCamerasHeadline</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Best cameras for sports and action guide headline<br/>
-<a href="#Output-16176139" onClick='toggleBox("Output-16176139", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.bestSportsAndActionCamerasHeadline()'><b>bestSportsAndActionCamerasHeadline</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Scrolling to the Best cameras for sports and action guide headline<br/>
+<a href="#Output-17744926" onClick='toggleBox("Output-17744926", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-16176139" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-16176139">
+<a href="#Output-17744926" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-17744926">
 Scrolled to Element By.cssSelector: .articleHeader (By.cssSelector: .articleHeader)<br/>
 </div>
 </td>
 <td></td>
 <td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
+<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
 <tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.buyingGuides()'><b>buyingGuides</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Selecting the Buying Guides</td>
+<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.buyingGuides()'><b>buyingGuides</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Selecting the Buying Guides</td>
 <td></td>
 <td>3</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
+<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
 <tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.canon1DXGuide()'><b>canon1DXGuide</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Canon EOS 1DX Mark II Guide headline<br/>
-<a href="#Output-31419319" onClick='toggleBox("Output-31419319", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.hoverOverMainMenu()'><b>hoverOverMainMenu</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Hovering over the main review menu<br/>
+<a href="#Output-19833532" onClick='toggleBox("Output-19833532", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-31419319" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-31419319">
-Scrolled to Element By.cssSelector: .articleBody > h2:nth-child(1) (By.cssSelector: .articleBody > h2:nth-child(1))<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.canon1DXQuote()'><b>canon1DXQuote</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Canon EOS 1DX Mark II Feature Quote<br/>
-<a href="#Output-7454976" onClick='toggleBox("Output-7454976", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-7454976" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-7454976">
-Scrolled to Element By.cssSelector: .pullQuote (By.cssSelector: .pullQuote)<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.canon1DXSampleGallery()'><b>canon1DXSampleGallery</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Canon EOS 1DX Mark II Sample Gallery headline<br/>
-<a href="#Output-29089099" onClick='toggleBox("Output-29089099", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-29089099" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-29089099">
-Scrolled to Element By.cssSelector: .articleBody > p:nth-child(16) > strong:nth-child(1) (By.cssSelector: .articleBody > p:nth-child(16) > strong:nth-child(1))<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.canonEOS7D_Mark_IIGuide()'><b>canonEOS7D_Mark_IIGuide</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Canon EOS 7D Mark II headline<br/>
-<a href="#Output-13764277" onClick='toggleBox("Output-13764277", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-13764277" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-13764277">
-Scrolled to Element By.cssSelector: .articleBody > h2:nth-child(1) (By.cssSelector: .articleBody > h2:nth-child(1))<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.canonEOS7D_Mark_IIQuote()'><b>canonEOS7D_Mark_IIQuote</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Canon EOS 7D Mark II Feature Quote<br/>
-<a href="#Output-28305717" onClick='toggleBox("Output-28305717", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-28305717" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-28305717">
-Scrolled to Element By.cssSelector: .pullQuote (By.cssSelector: .pullQuote)<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.fujifilmXT3Guide()'><b>fujifilmXT3Guide</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Fujifilm X-T3 Guide headline<br/>
-<a href="#Output-27739580" onClick='toggleBox("Output-27739580", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-27739580" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-27739580">
-Scrolled to Element By.cssSelector: .articleHeader > h1:nth-child(2) (By.cssSelector: .articleHeader > h1:nth-child(2))<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.fujifilmXT3Quote()'><b>fujifilmXT3Quote</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Fujifilm X-T3 Feature Quote<br/>
-<a href="#Output-9715336" onClick='toggleBox("Output-9715336", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-9715336" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-9715336">
-Scrolled to Element By.cssSelector: .pullQuote (By.cssSelector: .pullQuote)<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.hoveringBuyingGuidesElement()'><b>hoveringBuyingGuidesElement</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Hovering over the Buying Guides element<br/>
-<a href="#Output-12991609" onClick='toggleBox("Output-12991609", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-12991609" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-12991609">
-Browsing to URL: https://www.dpreview.com<br/>
+<a href="#Output-19833532" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19833532">
 Element is visible: Search box (By.className: searchBox)<br/>
 Element is visible: 'GO' button (By.className: submitBtn)<br/>
 Element is visible: Light mode (By.cssSelector: span.option:nth-child(1))<br/>
 Element is visible: Dark mode (By.cssSelector: span.option:nth-child(2))<br/>
 *** On page: DPReview Home Page<br/>
-Hover over element: 'Buying Guides' link (By.xpath: //*[@class='mainItem']//*[text()='Buying Guides'])<br/>
-Hover over element: 'Buying Guides' link (By.xpath: //*[@class='mainItem']//*[text()='Buying Guides'])<br/>
+Hover over element: Nikon D5 Review Main Menu (By.xpath: //td/div/div/*[@class='pageTitle'])<br/>
+Hover over element: Nikon D5 Review Main Menu (By.xpath: //td/div/div/*[@class='pageTitle'])<br/>
 </div>
 </td>
 <td></td>
-<td>13</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
+<td>0</td>
+<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
 <tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.nikonD5()'><b>nikonD5</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Nikon D5 headline<br/>
-<a href="#Output-5893879" onClick='toggleBox("Output-5893879", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.nikonD5()'><b>nikonD5</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Scrolling to the Nikon D5 headline<br/>
+<a href="#Output-8312572" onClick='toggleBox("Output-8312572", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-5893879" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-5893879">
+<a href="#Output-8312572" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-8312572">
 Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(6) (By.cssSelector: .articleBody > h3:nth-child(6))<br/>
 </div>
 </td>
 <td></td>
 <td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
+<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
 <tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.nikonD500()'><b>nikonD500</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Nikon D500 headline<br/>
-<a href="#Output-4312935" onClick='toggleBox("Output-4312935", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.nikonD5Link()'><b>nikonD5Link</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Clicking on Nikon D5 link</td>
+<td></td>
+<td>3</td>
+<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
+<tr>
+<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.nikonD5Review()'><b>nikonD5Review</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Validating the Nikon D5 Review URL</td>
+<td></td>
+<td>0</td>
+<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
+<tr>
+<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.nikonD5ReviewLink()'><b>nikonD5ReviewLink</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Clicking on Nikon D5 Review link</td>
+<td></td>
+<td>0</td>
+<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
+<tr>
+<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.pageScrolling()'><b>pageScrolling</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Scrolling to the page headline<br/>
+<a href="#Output-32898392" onClick='toggleBox("Output-32898392", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-4312935" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-4312935">
-Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(11) (By.cssSelector: .articleBody > h3:nth-child(11))<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.nikonD500FeatureQuote()'><b>nikonD500FeatureQuote</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Nikon D500 Feature Quote<br/>
-<a href="#Output-13820939" onClick='toggleBox("Output-13820939", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-13820939" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-13820939">
-Scrolled to Element By.cssSelector: .pullQuote (By.cssSelector: .pullQuote)<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.nikonD500Guide()'><b>nikonD500Guide</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Nikon D500 Guide headline<br/>
-<a href="#Output-22699420" onClick='toggleBox("Output-22699420", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-22699420" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-22699420">
-Scrolled to Element By.cssSelector: .articleHeader > h1:nth-child(2) (By.cssSelector: .articleHeader > h1:nth-child(2))<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.nikonD5FeatureQuote()'><b>nikonD5FeatureQuote</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Nikon D5 Feature Quote<br/>
-<a href="#Output-22674132" onClick='toggleBox("Output-22674132", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-22674132" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-22674132">
-Scrolled to Element By.cssSelector: .pullQuote (By.cssSelector: .pullQuote)<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.nikonD5Guide()'><b>nikonD5Guide</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Nikon D5 Guide headline<br/>
-<a href="#Output-14897015" onClick='toggleBox("Output-14897015", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-14897015" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-14897015">
-Scrolled to Element By.cssSelector: .articleBody > h2:nth-child(1) (By.cssSelector: .articleBody > h2:nth-child(1))<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.nikon_D7500Guide()'><b>nikon_D7500Guide</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Nikon D7500 headline<br/>
-<a href="#Output-14528191" onClick='toggleBox("Output-14528191", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-14528191" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-14528191">
-Scrolled to Element By.cssSelector: .articleBody > h2:nth-child(1) (By.cssSelector: .articleBody > h2:nth-child(1))<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.nikon_D7500Quote()'><b>nikon_D7500Quote</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Nikon D7500 Feature Quote<br/>
-<a href="#Output-8202262" onClick='toggleBox("Output-8202262", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-8202262" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-8202262">
-Scrolled to Element By.cssSelector: .pullQuote (By.cssSelector: .pullQuote)<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.olympusOM_D_E_M1_Mark_IIGuide()'><b>olympusOM_D_E_M1_Mark_IIGuide</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Olympus OM-D E-M1 Mark II Guide headline<br/>
-<a href="#Output-21567920" onClick='toggleBox("Output-21567920", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-21567920" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-21567920">
-Scrolled to Element By.cssSelector: .articleBody > h2:nth-child(1) (By.cssSelector: .articleBody > h2:nth-child(1))<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.olympusOM_D_E_M1_Mark_IIQuote()'><b>olympusOM_D_E_M1_Mark_IIQuote</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Olympus OM-D E-M1 Mark II Feature Quote<br/>
-<a href="#Output-20835010" onClick='toggleBox("Output-20835010", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-20835010" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-20835010">
-Scrolled to Element By.cssSelector: .pullQuote (By.cssSelector: .pullQuote)<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.page10Button()'><b>page10Button</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Next page button</td>
-<td></td>
-<td>2</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.page11Button()'><b>page11Button</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Next page button</td>
-<td></td>
-<td>2</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.page12Button()'><b>page12Button</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Next page button</td>
-<td></td>
-<td>2</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.page13Button()'><b>page13Button</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Next page button</td>
-<td></td>
-<td>2</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.page2Button()'><b>page2Button</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Next page button</td>
-<td></td>
-<td>1</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.page3Button()'><b>page3Button</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Next page button</td>
-<td></td>
-<td>2</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.page4Button()'><b>page4Button</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Next page button</td>
-<td></td>
-<td>2</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.page5Button()'><b>page5Button</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Next page button</td>
-<td></td>
-<td>2</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.page6Button()'><b>page6Button</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Next page button</td>
-<td></td>
-<td>2</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.page7Button()'><b>page7Button</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Next page button</td>
-<td></td>
-<td>4</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.page8Button()'><b>page8Button</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Next page button</td>
-<td></td>
-<td>2</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.page9Button()'><b>page9Button</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Next page button</td>
-<td></td>
-<td>2</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.pageScrolling()'><b>pageScrolling</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the page headline<br/>
-<a href="#Output-12363867" onClick='toggleBox("Output-12363867", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-12363867" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-12363867">
+<a href="#Output-32898392" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-32898392">
 Scrolled to Element By.id: usecaseSectionTitle (By.id: usecaseSectionTitle)<br/>
 </div>
 </td>
 <td></td>
 <td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
+<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
 <tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.panasonicLumixDC_G9Gallery()'><b>panasonicLumixDC_G9Gallery</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Panasonic Lumix DC-G9 Sample Gallery headline<br/>
-<a href="#Output-9507717" onClick='toggleBox("Output-9507717", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-9507717" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-9507717">
-Scrolled to Element By.cssSelector: .articleBody > p:nth-child(16) > strong:nth-child(1) (By.cssSelector: .articleBody > p:nth-child(16) > strong:nth-child(1))<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.panasonicLumixDC_G9Guide()'><b>panasonicLumixDC_G9Guide</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Panasonic Lumix DC-G9 Guide headline<br/>
-<a href="#Output-1242094" onClick='toggleBox("Output-1242094", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1242094" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1242094">
-Scrolled to Element By.cssSelector: .articleBody > h2:nth-child(1) (By.cssSelector: .articleBody > h2:nth-child(1))<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.panasonicLumixDC_G9Quote()'><b>panasonicLumixDC_G9Quote</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Panasonic Lumix DC-G9 Feature Quote<br/>
-<a href="#Output-3815885" onClick='toggleBox("Output-3815885", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-3815885" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-3815885">
-Scrolled to Element By.cssSelector: .pullQuote (By.cssSelector: .pullQuote)<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.sonyAlpha_a7R_IIIGuide()'><b>sonyAlpha_a7R_IIIGuide</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Sony Alpha a7R III headline<br/>
-<a href="#Output-32541871" onClick='toggleBox("Output-32541871", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-32541871" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-32541871">
-Scrolled to Element By.cssSelector: .articleBody > h2:nth-child(1) (By.cssSelector: .articleBody > h2:nth-child(1))<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.sonyAlpha_a7R_IIIQuote()'><b>sonyAlpha_a7R_IIIQuote</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Sony Alpha a7R III Feature Quote<br/>
-<a href="#Output-17111644" onClick='toggleBox("Output-17111644", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-17111644" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-17111644">
-Scrolled to Element By.cssSelector: .pullQuote (By.cssSelector: .pullQuote)<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.sonyCyber_shotRX10_IVGuide()'><b>sonyCyber_shotRX10_IVGuide</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Sony Cyber-shot RX10 IV Guide headline<br/>
-<a href="#Output-15260883" onClick='toggleBox("Output-15260883", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-15260883" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-15260883">
-Scrolled to Element By.cssSelector: .articleBody > h2:nth-child(1) (By.cssSelector: .articleBody > h2:nth-child(1))<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.sonyCyber_shotRX10_IVQuote()'><b>sonyCyber_shotRX10_IVQuote</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Sony Cyber-shot RX10 IV Feature Quote<br/>
-<a href="#Output-25572270" onClick='toggleBox("Output-25572270", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-25572270" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-25572270">
-Scrolled to Element By.cssSelector: .pullQuote (By.cssSelector: .pullQuote)<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.sony_a7_IIIGuide()'><b>sony_a7_IIIGuide</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Sony a7 III Guide headline<br/>
-<a href="#Output-32899175" onClick='toggleBox("Output-32899175", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-32899175" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-32899175">
-Scrolled to Element By.cssSelector: .articleBody > h2:nth-child(1) (By.cssSelector: .articleBody > h2:nth-child(1))<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.sony_a7_IIIQuote()'><b>sony_a7_IIIQuote</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Sony a7 III Feature Quote<br/>
-<a href="#Output-13698177" onClick='toggleBox("Output-13698177", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-13698177" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-13698177">
-Scrolled to Element By.cssSelector: .pullQuote (By.cssSelector: .pullQuote)<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.sony_a9Guide()'><b>sony_a9Guide</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Sony a9 Guide headline<br/>
-<a href="#Output-5648038" onClick='toggleBox("Output-5648038", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-5648038" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-5648038">
-Scrolled to Element By.cssSelector: .articleBody > h2:nth-child(1) (By.cssSelector: .articleBody > h2:nth-child(1))<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.sony_a9Quote()'><b>sony_a9Quote</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Scrolling to the Sony a9 Feature Quote<br/>
-<a href="#Output-22310142" onClick='toggleBox("Output-22310142", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-22310142" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-22310142">
-Scrolled to Element By.cssSelector: .pullQuote (By.cssSelector: .pullQuote)<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest.sportsAndAction()'><b>sportsAndAction</b><br>Test class: com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest<br>Test method: Selecting the Best cameras for sports and action guide</td>
+<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.sportsAndAction()'><b>sportsAndAction</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Selecting the Best cameras for sports and action guide</td>
 <td></td>
 <td>3</td>
-<td>com.dpreview.auto.tests.T7_DpreviewBuyingGuidesReviewTest@1e88b3c</td></tr>
+<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
 </table><p>
 </body>
 </html>

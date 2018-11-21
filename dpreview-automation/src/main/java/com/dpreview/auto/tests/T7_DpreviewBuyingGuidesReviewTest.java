@@ -8,12 +8,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import org.testng.annotations.Test;
 
 import com.dpreview.auto.infra.config.MainConfig;
 import com.dpreview.auto.infra.pages.DpreviewBuyingGuidesPage;
 import com.dpreview.auto.infra.pages.DpreviewHomePage;
 import com.dpreview.auto.infra.reports.Reports;
+
+/* **************************************************************************************************************************************************
+ * **************************** This test is intended to check the complete review of Best Sports & Action Cameras **********************************
+ * **************************************************************************************************************************************************
+ */
 
 public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
