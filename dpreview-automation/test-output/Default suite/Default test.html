@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Nov 21 12:02:43 IST 2018</td>
+<td>Started on:</td><td>Fri Nov 23 14:10:36 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>55 seconds (55725 ms)</td>
+<tr><td>Total time:</td><td>121 seconds (121368 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,29 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.hoveringBuyingGuidesElement()'><b>hoveringBuyingGuidesElement</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Hovering over the Buying Guides element<br/>
-<a href="#Output-29840015" onClick='toggleBox("Output-29840015", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-29840015" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-29840015">
-Browsing to URL: https://www.dpreview.com<br/>
-Element is visible: Search box (By.className: searchBox)<br/>
-Element is visible: 'GO' button (By.className: submitBtn)<br/>
-Element is visible: Light mode (By.cssSelector: span.option:nth-child(1))<br/>
-Element is visible: Dark mode (By.cssSelector: span.option:nth-child(2))<br/>
-*** On page: DPReview Home Page<br/>
-Hover over element: 'Buying Guides' link (By.xpath: //*[@class='mainItem']//*[text()='Buying Guides'])<br/>
-Hover over element: 'Buying Guides' link (By.xpath: //*[@class='mainItem']//*[text()='Buying Guides'])<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@class=&apos;mainItem&apos;]//*[text()=&apos;Buying Guides&apos;]
+<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.hoverOverMainMenu()'><b>hoverOverMainMenu</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Hovering over the Nikon D5 Review Main Review menu</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //td/div/div/*[@class=&apos;current&apos;]
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;SPEARHEAD-PC&apos;, ip: &apos;192.168.17.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 24024, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 2d7a6511-8cb8-42a3-9086-19de12873097
-*** Element info: {Using=xpath, value=//*[@class=&apos;mainItem&apos;]//*[text()=&apos;Buying Guides&apos;]}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 28200, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 6fbc6cb5-4d00-420f-aa9c-f25f0d9ee74e
+*** Element info: {Using=xpath, value=//td/div/div/*[@class=&apos;current&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -112,9 +98,7 @@ Session ID: 2d7a6511-8cb8-42a3-9086-19de12873097
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at com.dpreview.auto.infra.web.ActionBot.hoverOverElement(ActionBot.java:131)
-	at com.dpreview.auto.infra.pages.DpreviewHomePage.hoverOverBuyingGuidesLink(DpreviewHomePage.java:65)
-	at com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.hoveringBuyingGuidesElement(T8_DpreviewNikonD5ReviewTest.java:35)
+	at com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.hoverOverMainMenu(T8_DpreviewNikonD5ReviewTest.java:210)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -140,15 +124,15 @@ Session ID: 2d7a6511-8cb8-42a3-9086-19de12873097
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace29840015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace29840015'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@class=&apos;mainItem&apos;]//*[text()=&apos;Buying Guides&apos;]
+</pre></div><a href='#' onClick='toggleBox("stack-trace13734078", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13734078'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //td/div/div/*[@class=&apos;current&apos;]
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;SPEARHEAD-PC&apos;, ip: &apos;192.168.17.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 24024, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 2d7a6511-8cb8-42a3-9086-19de12873097
-*** Element info: {Using=xpath, value=//*[@class=&apos;mainItem&apos;]//*[text()=&apos;Buying Guides&apos;]}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 28200, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 6fbc6cb5-4d00-420f-aa9c-f25f0d9ee74e
+*** Element info: {Using=xpath, value=//td/div/div/*[@class=&apos;current&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -163,9 +147,7 @@ Session ID: 2d7a6511-8cb8-42a3-9086-19de12873097
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at com.dpreview.auto.infra.web.ActionBot.hoverOverElement(ActionBot.java:131)
-	at com.dpreview.auto.infra.pages.DpreviewHomePage.hoverOverBuyingGuidesLink(DpreviewHomePage.java:65)
-	at com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.hoveringBuyingGuidesElement(T8_DpreviewNikonD5ReviewTest.java:35)
+	at com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.hoverOverMainMenu(T8_DpreviewNikonD5ReviewTest.java:210)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -192,7 +174,7 @@ Session ID: 2d7a6511-8cb8-42a3-9086-19de12873097
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>23</td>
+<td>10</td>
 <td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
 <tr>
 <td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.selectingCamerasSportsActionLink()'><b>selectingCamerasSportsActionLink</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Selecting the Best cameras for sports and action link from the Buying Guides menu</td>
@@ -201,8 +183,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;SPEARHEAD-PC&apos;, ip: &apos;192.168.17.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 24024, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 2d7a6511-8cb8-42a3-9086-19de12873097
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 28200, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 6fbc6cb5-4d00-420f-aa9c-f25f0d9ee74e
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -215,7 +197,7 @@ Session ID: 2d7a6511-8cb8-42a3-9086-19de12873097
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
 	at org.openqa.selenium.remote.RemoteWebElement.isSelected(RemoteWebElement.java:140)
-	at com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.selectingCamerasSportsActionLink(T8_DpreviewNikonD5ReviewTest.java:49)
+	at com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.selectingCamerasSportsActionLink(T8_DpreviewNikonD5ReviewTest.java:50)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -241,14 +223,14 @@ Session ID: 2d7a6511-8cb8-42a3-9086-19de12873097
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace28153725", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace28153725'><pre>org.openqa.selenium.StaleElementReferenceException: The element reference of &lt;a href=&quot;/reviews/buying-guide-best-cameras-for-sports-and-action&quot;&gt; is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+</pre></div><a href='#' onClick='toggleBox("stack-trace21403819", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace21403819'><pre>org.openqa.selenium.StaleElementReferenceException: The element reference of &lt;a href=&quot;/reviews/buying-guide-best-cameras-for-sports-and-action&quot;&gt; is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;SPEARHEAD-PC&apos;, ip: &apos;192.168.17.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 24024, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 2d7a6511-8cb8-42a3-9086-19de12873097
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 28200, moz:profile: C:\Users\Daniel\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 6fbc6cb5-4d00-420f-aa9c-f25f0d9ee74e
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -261,7 +243,7 @@ Session ID: 2d7a6511-8cb8-42a3-9086-19de12873097
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
 	at org.openqa.selenium.remote.RemoteWebElement.isSelected(RemoteWebElement.java:140)
-	at com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.selectingCamerasSportsActionLink(T8_DpreviewNikonD5ReviewTest.java:49)
+	at com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.selectingCamerasSportsActionLink(T8_DpreviewNikonD5ReviewTest.java:50)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -300,10 +282,10 @@ Session ID: 2d7a6511-8cb8-42a3-9086-19de12873097
 </tr>
 <tr>
 <td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.bestSportsAndActionCamerasHeadline()'><b>bestSportsAndActionCamerasHeadline</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Scrolling to the Best cameras for sports and action guide headline<br/>
-<a href="#Output-17744926" onClick='toggleBox("Output-17744926", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-6777882" onClick='toggleBox("Output-6777882", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-17744926" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-17744926">
+<a href="#Output-6777882" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6777882">
 Scrolled to Element By.cssSelector: .articleHeader (By.cssSelector: .articleHeader)<br/>
 </div>
 </td>
@@ -313,14 +295,61 @@ Scrolled to Element By.cssSelector: .articleHeader (By.cssSelector: .articleHead
 <tr>
 <td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.buyingGuides()'><b>buyingGuides</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Selecting the Buying Guides</td>
 <td></td>
-<td>3</td>
+<td>6</td>
 <td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
 <tr>
-<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.hoverOverMainMenu()'><b>hoverOverMainMenu</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Hovering over the main review menu<br/>
-<a href="#Output-19833532" onClick='toggleBox("Output-19833532", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.hoveringBuyingGuidesElement()'><b>hoveringBuyingGuidesElement</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Hovering over the Buying Guides element<br/>
+<a href="#Output-29840015" onClick='toggleBox("Output-29840015", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-19833532" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-19833532">
+<a href="#Output-29840015" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29840015">
+Browsing to URL: https://www.dpreview.com<br/>
+Element is visible: Search box (By.className: searchBox)<br/>
+Element is visible: 'GO' button (By.className: submitBtn)<br/>
+Element is visible: Light mode (By.cssSelector: span.option:nth-child(1))<br/>
+Element is visible: Dark mode (By.cssSelector: span.option:nth-child(2))<br/>
+*** On page: DPReview Home Page<br/>
+Hover over element: 'Buying Guides' link (By.xpath: //*[@class='mainItem']//*[text()='Buying Guides'])<br/>
+Hover over element: 'Buying Guides' link (By.xpath: //*[@class='mainItem']//*[text()='Buying Guides'])<br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
+<tr>
+<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.introduction()'><b>introduction</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Introduction</td>
+<td></td>
+<td>7</td>
+<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
+<tr>
+<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.nikonD5()'><b>nikonD5</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Scrolling to the Nikon D5 headline<br/>
+<a href="#Output-2877724" onClick='toggleBox("Output-2877724", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2877724" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2877724">
+Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(6) (By.cssSelector: .articleBody > h3:nth-child(6))<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
+<tr>
+<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.nikonD5Link()'><b>nikonD5Link</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Clicking on Nikon D5 link</td>
+<td></td>
+<td>7</td>
+<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
+<tr>
+<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.nikonD5ReviewButton()'><b>nikonD5ReviewButton</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Clicking on the Nikon D5 Review URL</td>
+<td></td>
+<td>0</td>
+<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
+<tr>
+<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.nikonD5ReviewPage()'><b>nikonD5ReviewPage</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Validating the page: 'Nikon D5 Review'<br/>
+<a href="#Output-25565737" onClick='toggleBox("Output-25565737", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-25565737" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-25565737">
+Browsing to URL: https://www.dpreview.com/reviews/nikon-d5-pro-dslr-review<br/>
 Element is visible: Search box (By.className: searchBox)<br/>
 Element is visible: 'GO' button (By.className: submitBtn)<br/>
 Element is visible: Light mode (By.cssSelector: span.option:nth-child(1))<br/>
@@ -331,41 +360,14 @@ Hover over element: Nikon D5 Review Main Menu (By.xpath: //td/div/div/*[@class='
 </div>
 </td>
 <td></td>
-<td>0</td>
-<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.nikonD5()'><b>nikonD5</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Scrolling to the Nikon D5 headline<br/>
-<a href="#Output-8312572" onClick='toggleBox("Output-8312572", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-8312572" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-8312572">
-Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(6) (By.cssSelector: .articleBody > h3:nth-child(6))<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.nikonD5Link()'><b>nikonD5Link</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Clicking on Nikon D5 link</td>
-<td></td>
-<td>3</td>
-<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.nikonD5Review()'><b>nikonD5Review</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Validating the Nikon D5 Review URL</td>
-<td></td>
-<td>0</td>
-<td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
-<tr>
-<td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.nikonD5ReviewLink()'><b>nikonD5ReviewLink</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Clicking on Nikon D5 Review link</td>
-<td></td>
-<td>0</td>
+<td>20</td>
 <td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
 <tr>
 <td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.pageScrolling()'><b>pageScrolling</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Scrolling to the page headline<br/>
-<a href="#Output-32898392" onClick='toggleBox("Output-32898392", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-30445850" onClick='toggleBox("Output-30445850", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-32898392" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-32898392">
+<a href="#Output-30445850" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30445850">
 Scrolled to Element By.id: usecaseSectionTitle (By.id: usecaseSectionTitle)<br/>
 </div>
 </td>
@@ -375,7 +377,7 @@ Scrolled to Element By.id: usecaseSectionTitle (By.id: usecaseSectionTitle)<br/>
 <tr>
 <td title='com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest.sportsAndAction()'><b>sportsAndAction</b><br>Test class: com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest<br>Test method: Selecting the Best cameras for sports and action guide</td>
 <td></td>
-<td>3</td>
+<td>8</td>
 <td>com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest@1e88b3c</td></tr>
 </table><p>
 </body>

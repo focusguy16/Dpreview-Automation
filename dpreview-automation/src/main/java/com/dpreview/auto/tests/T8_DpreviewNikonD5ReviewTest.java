@@ -3,6 +3,7 @@ package com.dpreview.auto.tests;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -131,54 +132,74 @@ public class T8_DpreviewNikonD5ReviewTest<E> extends BaseTest {
 		driver.findElement(By.cssSelector(".articleBody > ul:nth-child(19) > li:nth-child(1) > strong:nth-child(1) > a:nth-child(1)")).click();
 	}
 
-	@Test(description = "Clicking on Nikon D5 Review link", priority = 8)
-	public void nikonD5ReviewLink() {
-
-		WebElement nikonD5ReviewLink = driver.findElement(By.cssSelector(".scoreContainer > div:nth-child(2) > a:nth-child(1)"));
-
-		Actions action = new Actions(driver);
-		action.moveToElement(nikonD5ReviewLink).build().perform();
-
-		driver.findElement(By.cssSelector(".scoreContainer > div:nth-child(2) > a:nth-child(1)")).click();
-	}
-
 	// ------------------------------------------------ Nikon D5 Review - Page 1: Introduction ------------------------------------------------------
 
-	@Test(description = "Validating the Nikon D5 Review URL", priority = 9)
-	public void nikonD5Review() {
+	@Test(description = "Clicking on the Nikon D5 Review URL", priority = 8)
+	public void nikonD5ReviewButton() {
 
-		List<String> browserTabs = new ArrayList<String>(driver.getWindowHandles()); // driver.getCurrentUrl();
-		driver.switchTo().window(browserTabs.get(1));  // @@@@@@@@@@ Switching to browser tab 2 @@@@@@@@@@@@@@@
+		// List<String> browserTabs = new ArrayList<String>(driver.getWindowHandles()); // Creating new array list for browser tabs
+		// driver.switchTo().window(browserTabs.get(0));  // @@@@@@@@@@ Switching to browser tab 1 @@@@@@@@@@@@@@@
 
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.urlToBe("https://www.dpreview.com/reviews/nikon-d5-pro-dslr-review"));
+		WebElement nikonD5ReviewButton = driver.findElement(By.cssSelector(".scoreContainer > div:nth-child(2) > a:nth-child(1)"));
 
+		Actions action = new Actions(driver);
+		action.moveToElement(nikonD5ReviewButton).build().perform();
+
+		driver.findElement(By.cssSelector(".scoreContainer > div:nth-child(2) > a:nth-child(1)")).click();
+
+		// driver.switchTo().window(browserTabs.get(1));
 	}
 
-	@Test(description = "Hovering over the main review menu", priority = 10)
-	public void hoverOverMainMenu() {
+	@Test(description = "Validating the page: 'Nikon D5 Review'", priority = 9)
+	public void nikonD5ReviewPage() throws Exception {
+
+		browseToUrl("https://www.dpreview.com/reviews/nikon-d5-pro-dslr-review");
+
+		Thread.sleep(5000);
 
 		DpreviewHomePage dpreviewHomePage = new DpreviewHomePage(driver);
 		dpreviewHomePage.hoverOverMainMenu();
 
 		DpreviewNikonD5ReviewPage dpreviewNikonD5ReviewPage = dpreviewHomePage.hoverOverMainMenu();
 
-	}
-
-	/*
-	@Test(description = "Introduction", priority = 11)
-	public void introduction() {
-
-		WebElement introduction = driver.findElement(By.linkText("Introduction"));
-
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.elementToBeSelected(introduction));
-
-		Actions action = new Actions(driver);
-		action.moveToElement(introduction).build().perform();
-
-		driver.findElement(By.linkText("Introduction")).isSelected();
-
+		wait.until(ExpectedConditions.invisibilityOfElementWithText(By.cssSelector(".currentContainer"), " page 1 Introduction"));
 	}
-	*/
+
+	@Test(description = "Hovering over the Nikon D5 Review Main Review menu", priority = 10)
+	public void hoverOverMainMenu() throws Exception {
+
+		WebElement mainMenu = driver.findElement(By.xpath("//td/div/div/*[@class='current']"));
+		
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOf(mainMenu)); 
+
+		DpreviewHomePage dpreviewHomePage = new DpreviewHomePage(driver);
+		dpreviewHomePage.hoverOverMainMenu();
+
+		DpreviewNikonD5ReviewPage dpreviewNikonD5ReviewPage = dpreviewHomePage.hoverOverMainMenu();
+	}
+
+	@Test(description = "Introduction", priority = 11)
+	public void introduction() throws Exception {
+
+		// WebDriverWait wait = new WebDriverWait(driver, 5);
+		// wait.until(ExpectedConditions.elementToBeSelected(introduction));
+		
+		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
+
+		// WebElement introduction = driver.findElement(By.cssSelector("div.current"));
+
+		// Actions action = new Actions(driver);
+		// action.moveToElement(introduction).build().perform();
+		
+		// driver.findElement(By.cssSelector("div.current")).click();
+		
+		// Thread.sleep(5000);
+
+		driver.findElement(By.linkText("1. Introduction")).isSelected();
+
+		driver.findElement(By.linkText("1. Introduction")).click();
+	}
+
 }

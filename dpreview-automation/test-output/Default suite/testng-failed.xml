@@ -3,15 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest">
+      <class name="com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest">
         <methods>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
-          <include name="orderBy"/>
+          <include name="hoverOverMainMenu"/>
           <include name="afterMethod"/>
+          <include name="selectingCamerasSportsActionLink"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.dpreview.auto.tests.T5_DpreviewSmartphonesReviewTest -->
+      </class> <!-- com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

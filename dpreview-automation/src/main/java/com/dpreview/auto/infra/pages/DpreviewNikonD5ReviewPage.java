@@ -7,7 +7,7 @@ import com.dpreview.auto.infra.web.By2;
 
 public class DpreviewNikonD5ReviewPage extends AbstractPage {
 	
-	private static final By2 mainMenu = new By2("Main Menu", By.xpath("//td/div/div/*[@class='pageTitle']"));
+	private static final By2 mainMenu = new By2("Main Menu", By.cssSelector(".currentContainer"));
 
 	public DpreviewNikonD5ReviewPage(WebDriver driver) {
 		super("Nikon D5 Review", driver, mainMenu);
