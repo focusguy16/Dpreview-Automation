@@ -21,7 +21,7 @@ import com.dpreview.auto.infra.pages.DpreviewHomePage;
 import com.dpreview.auto.infra.pages.DpreviewNikonD5ReviewPage;
 import com.dpreview.auto.infra.reports.Reports;
 
-public class T8_DpreviewNikonD5ReviewTest<E> extends BaseTest {
+public class T8_DpreviewNikonD5ReviewTest extends BaseTest {
 
 	// --------------------- Testing the Buying Guides appearance by hovering the Buying Guides element ---------------------------------------
 

@@ -238,28 +238,4 @@ public class T9_DpreviewNikonD5PagesReviewTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
-	@Test(description = "Conclusion Headline", priority = 24)
-	public void conclusionHeadline() throws Exception {
-		
-		WebElement conclusionHeadline = driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));
-
-		driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));  // *** Scrolling to the Conclusion headline ***
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", conclusionHeadline);
-		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > h2:nth-child(1)") + " (" + By.cssSelector(".articleBody > h2:nth-child(1)") + ")");
-
-		Thread.sleep(5000);
-	}
-	
-	@Test(description = "Overall Conclusion", priority = 25)
-	public void overallConclusion() throws Exception {
-		
-		WebElement conclusionHeadline = driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));
-
-		driver.findElement(By.cssSelector(".articleBody > h2:nth-child(1)"));  // *** Scrolling to the Conclusion headline ***
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", conclusionHeadline);
-		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > h2:nth-child(1)") + " (" + By.cssSelector(".articleBody > h2:nth-child(1)") + ")");
-
-		Thread.sleep(5000);
-	}
 }
