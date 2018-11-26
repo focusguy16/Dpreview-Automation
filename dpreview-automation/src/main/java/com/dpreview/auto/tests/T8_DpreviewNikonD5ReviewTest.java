@@ -122,7 +122,7 @@ public class T8_DpreviewNikonD5ReviewTest<E> extends BaseTest {
 	}
 
 	@Test(description = "Clicking on Nikon D5 link", priority = 7)
-	public void nikonD5Link() throws Exception {
+	public void nikonD5Link() {
 
 		WebElement nikonD5Link = driver.findElement(By.cssSelector(".articleBody > ul:nth-child(19) > li:nth-child(1) > strong:nth-child(1) > a:nth-child(1)"));
 
@@ -157,49 +157,7 @@ public class T8_DpreviewNikonD5ReviewTest<E> extends BaseTest {
 
 		Thread.sleep(5000);
 
-		DpreviewHomePage dpreviewHomePage = new DpreviewHomePage(driver);
-		dpreviewHomePage.hoverOverMainMenu();
-
-		DpreviewNikonD5ReviewPage dpreviewNikonD5ReviewPage = dpreviewHomePage.hoverOverMainMenu();
-
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.invisibilityOfElementWithText(By.cssSelector(".currentContainer"), " page 1 Introduction"));
+		wait.until(ExpectedConditions.urlToBe("https://www.dpreview.com/reviews/nikon-d5-pro-dslr-review"));
 	}
-
-	@Test(description = "Hovering over the Nikon D5 Review Main Review menu", priority = 10)
-	public void hoverOverMainMenu() throws Exception {
-
-		WebElement mainMenu = driver.findElement(By.xpath("//td/div/div/*[@class='current']"));
-		
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOf(mainMenu)); 
-
-		DpreviewHomePage dpreviewHomePage = new DpreviewHomePage(driver);
-		dpreviewHomePage.hoverOverMainMenu();
-
-		DpreviewNikonD5ReviewPage dpreviewNikonD5ReviewPage = dpreviewHomePage.hoverOverMainMenu();
-	}
-
-	@Test(description = "Introduction", priority = 11)
-	public void introduction() throws Exception {
-
-		// WebDriverWait wait = new WebDriverWait(driver, 5);
-		// wait.until(ExpectedConditions.elementToBeSelected(introduction));
-		
-		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
-
-		// WebElement introduction = driver.findElement(By.cssSelector("div.current"));
-
-		// Actions action = new Actions(driver);
-		// action.moveToElement(introduction).build().perform();
-		
-		// driver.findElement(By.cssSelector("div.current")).click();
-		
-		// Thread.sleep(5000);
-
-		driver.findElement(By.linkText("1. Introduction")).isSelected();
-
-		driver.findElement(By.linkText("1. Introduction")).click();
-	}
-
 }

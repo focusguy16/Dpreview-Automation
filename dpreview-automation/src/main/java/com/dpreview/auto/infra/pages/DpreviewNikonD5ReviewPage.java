@@ -7,14 +7,22 @@ import com.dpreview.auto.infra.web.By2;
 
 public class DpreviewNikonD5ReviewPage extends AbstractPage {
 	
-	private static final By2 mainMenu = new By2("Main Menu", By.cssSelector(".currentContainer"));
+	private static final By2 nikonD5ReviewMenu = new By2("Nikon D5 Review Menu", By.cssSelector("div.current"));
 
 	public DpreviewNikonD5ReviewPage(WebDriver driver) {
-		super("Nikon D5 Review", driver, mainMenu);
+		super("Nikon D5 Review", driver, nikonD5ReviewMenu);
 	}
 	
-	public void hoverOverMainMenu() {
-		bot.hoverOverElement(mainMenu);
+	public DpreviewNikonD5ReviewPage hoverOverReviewMenu() {
+		bot.hoverOverElement(nikonD5ReviewMenu);
+		return null;
 	}
+	
+	/*
+	public DpreviewNikonD5ReviewPage hoverOverMainMenu() {
+		bot.hoverOverElement(nikonD5ReviewMenu);
+		return null;
+	}
+	*/
 
 }
