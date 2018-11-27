@@ -3,16 +3,23 @@ package com.dpreview.auto.tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.dpreview.auto.infra.config.MainConfig;
 import com.dpreview.auto.infra.pages.DpreviewHomePage;
 import com.dpreview.auto.infra.pages.DpreviewRegistrationPage;
-import com.dpreview.auto.infra.pages.DpreviewSearchResultsPage;
+// import com.dpreview.auto.infra.pages.DpreviewSearchResultsPage;
 
-import com.google.common.base.Throwables;
+// import com.google.common.base.Throwables;
+
+/* ****************************************************************************************************************************************
+ **************** This test is intended to check the Registration process to the DPReview site ********************************************
+ * **************************************************************************************************************************************** 
+ */
 
 public class T1_DpreviewRegistrationTest extends BaseTest {
 
@@ -20,6 +27,9 @@ public class T1_DpreviewRegistrationTest extends BaseTest {
 	public void registrationPageTest() {
 		
 		browseToUrl(MainConfig.baseUrl);
+		
+		WebDriverWait wait = new WebDriverWait(driver, 5);
+		wait.until(ExpectedConditions.urlToBe("https://www.dpreview.com/"));
 		
 		WebElement registrationLink = driver.findElement(By.cssSelector(".userTools > a:nth-child(2)"));
 		

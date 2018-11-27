@@ -1,8 +1,5 @@
 package com.dpreview.auto.tests;
 
-import java.sql.Driver;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -13,6 +10,11 @@ import org.testng.annotations.Test;
 
 import com.dpreview.auto.infra.pages.DpreviewNikonD5ReviewPage;
 import com.dpreview.auto.infra.reports.Reports;
+
+/******************************************************************************************************************************************
+ ******************** This test is checking the full conclusion review of the Nikon D5 camera *********************************************
+ ******************************************************************************************************************************************  
+ */
 
 public class T10_DpreviewNikonD5ReviewConclusionTest extends BaseTest {
 
@@ -96,7 +98,7 @@ public class T10_DpreviewNikonD5ReviewConclusionTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Motorcycle Image Summary", priority = 31)
 	public void motorcycleImageSummary() throws Exception {
 
@@ -108,7 +110,7 @@ public class T10_DpreviewNikonD5ReviewConclusionTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Singer Image Summary", priority = 32)
 	public void singerImageSummary() throws Exception {
 
@@ -120,7 +122,7 @@ public class T10_DpreviewNikonD5ReviewConclusionTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Stills and video image quality", priority = 33)
 	public void stillsAndVideo() throws Exception {
 
@@ -132,7 +134,7 @@ public class T10_DpreviewNikonD5ReviewConclusionTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Man on grass Image Summary", priority = 34)
 	public void manOnGrassImageSummary() throws Exception {
 
@@ -144,7 +146,7 @@ public class T10_DpreviewNikonD5ReviewConclusionTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Woman Image Summary", priority = 35)
 	public void womanImageSummary() throws Exception {
 
@@ -156,7 +158,7 @@ public class T10_DpreviewNikonD5ReviewConclusionTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "The final word", priority = 36)
 	public void theFinalWord() throws Exception {
 
@@ -168,7 +170,7 @@ public class T10_DpreviewNikonD5ReviewConclusionTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Field motorcycle Image Summary", priority = 37)
 	public void fieldMotorcycleImageSummary() throws Exception {
 
@@ -180,7 +182,7 @@ public class T10_DpreviewNikonD5ReviewConclusionTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Nikon D5 Summary Table", priority = 38)
 	public void nikonD5SummaryTable() throws Exception {
 
@@ -192,7 +194,7 @@ public class T10_DpreviewNikonD5ReviewConclusionTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Nikon D5 Conclusion", priority = 39)
 	public void nikonD5Conclusion() throws Exception {
 
@@ -204,7 +206,7 @@ public class T10_DpreviewNikonD5ReviewConclusionTest extends BaseTest {
 
 		Thread.sleep(5000);
 	}
-	
+
 	@Test(description = "Samples Gallery headline", priority = 40)
 	public void samplesGalleryHeadline() throws Exception {
 
@@ -215,7 +217,7 @@ public class T10_DpreviewNikonD5ReviewConclusionTest extends BaseTest {
 		Reports.report("Scrolled to Element " + By.cssSelector(".articleBody > h3:nth-child(44)") + " (" + By.cssSelector(".articleBody > h3:nth-child(44)") + ")");
 
 		Thread.sleep(5000);
-		
+
 		driver.close();
 	}
 }
