@@ -12,7 +12,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.dpreview.auto.infra.config.MainConfig;
@@ -25,6 +28,32 @@ public class T8_DpreviewNikonD5ReviewTest extends BaseTest {
 
 	// --------------------- Testing the Buying Guides appearance by hovering the Buying Guides element ---------------------------------------
 
+	/*
+	@BeforeSuite
+	public void testBeforeSuite() {
+		
+		System.out.println("Test before suite");
+	}
+	
+	@AfterSuite
+	public void testAfterSuite() {
+		
+		
+	}
+	
+	@BeforeTest
+	public void testBeforeTest() {
+		
+		
+	}
+	
+	@AfterTest
+	public void testAfterTest() {
+		
+		
+	}
+	*/
+	
 	@Test(description = "Hovering over the Buying Guides element", priority = 0)
 	public void hoveringBuyingGuidesElement() {
 

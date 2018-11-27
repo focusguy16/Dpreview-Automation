@@ -1,377 +1,327 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="7" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="17" passed="17">
   <reporter-output>
     <line>
-      <![CDATA[Browsing to URL: https://www.dpreview.com]]>
+      <![CDATA[Browsing to URL: https://www.dpreview.com/reviews/nikon-d5-pro-dslr-review/13]]>
     </line>
     <line>
-      <![CDATA[Element is visible: Email input (By.id: ap_email)]]>
+      <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h2:nth-child(1) (By.cssSelector: .articleBody > h2:nth-child(1))]]>
     </line>
     <line>
-      <![CDATA[Element is visible: Password input (By.id: ap_password)]]>
+      <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(3) (By.cssSelector: .articleBody > h3:nth-child(3))]]>
     </line>
     <line>
-      <![CDATA[*** On page: Dpreview login page]]>
+      <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(8) (By.cssSelector: .articleBody > h3:nth-child(8))]]>
     </line>
     <line>
-      <![CDATA[Write 'eagle15e2000@yahoo.com' to element: Email input (By.id: ap_email)]]>
+      <![CDATA[Scrolled to Element By.cssSelector: table.images:nth-child(10) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) (By.cssSelector: table.images:nth-child(10) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1))]]>
     </line>
     <line>
-      <![CDATA[Write 'JazzMusic73!' to element: Password input (By.id: ap_password)]]>
+      <![CDATA[Scrolled to Element By.cssSelector: table.images:nth-child(13) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) (By.cssSelector: table.images:nth-child(13) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1))]]>
     </line>
     <line>
-      <![CDATA[Click on element: Keep me signed in (By.id: remember_me_learn_more_link)]]>
+      <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(16) (By.cssSelector: .articleBody > h3:nth-child(16))]]>
     </line>
     <line>
-      <![CDATA[Click on element: Closing the signed in popup window (By.id: a-popover-header-1)]]>
+      <![CDATA[Scrolled to Element By.cssSelector: table.images:nth-child(20) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) (By.cssSelector: table.images:nth-child(20) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1))]]>
     </line>
     <line>
-      <![CDATA[Click on element: Remember me (By.name: rememberMe)]]>
+      <![CDATA[Scrolled to Element By.cssSelector: table.images:nth-child(23) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) (By.cssSelector: table.images:nth-child(23) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1))]]>
     </line>
     <line>
-      <![CDATA[Click on element: Sign in button (By.id: signInSubmit)]]>
+      <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(26) (By.cssSelector: .articleBody > h3:nth-child(26))]]>
     </line>
     <line>
-      <![CDATA[Element is visible: Search box (By.className: searchBox)]]>
+      <![CDATA[Scrolled to Element By.cssSelector: table.images:nth-child(28) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) (By.cssSelector: table.images:nth-child(28) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1))]]>
     </line>
     <line>
-      <![CDATA[Element is visible: 'GO' button (By.className: submitBtn)]]>
+      <![CDATA[Scrolled to Element By.cssSelector: table.images:nth-child(31) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) (By.cssSelector: table.images:nth-child(31) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1))]]>
     </line>
     <line>
-      <![CDATA[Element is visible: Light mode (By.cssSelector: span.option:nth-child(1))]]>
+      <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(34) (By.cssSelector: .articleBody > h3:nth-child(34))]]>
     </line>
     <line>
-      <![CDATA[Element is visible: Dark mode (By.cssSelector: span.option:nth-child(2))]]>
+      <![CDATA[Scrolled to Element By.cssSelector: table.images:nth-child(37) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) (By.cssSelector: table.images:nth-child(37) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1))]]>
     </line>
     <line>
-      <![CDATA[*** On page: DPReview Home Page]]>
+      <![CDATA[Scrolled to Element By.cssSelector: div.productName (By.cssSelector: div.productName)]]>
     </line>
     <line>
-      <![CDATA[Scrolled to Element By.name: userSettingsGallerySafetyLevelModerate (By.name: userSettingsGallerySafetyLevelModerate)]]>
+      <![CDATA[Scrolled to Element By.cssSelector: .conclusion (By.cssSelector: .conclusion)]]>
+    </line>
+    <line>
+      <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(44) (By.cssSelector: .articleBody > h3:nth-child(44))]]>
     </line>
   </reporter-output>
-  <suite name="02.login" duration-ms="69908" started-at="2018-11-26T23:41:24Z" finished-at="2018-11-26T23:42:34Z">
+  <suite name="Default suite" duration-ms="102118" started-at="2018-11-27T08:47:30Z" finished-at="2018-11-27T08:49:12Z">
     <groups>
     </groups>
-    <test name="Login process" duration-ms="59860" started-at="2018-11-26T23:41:24Z" finished-at="2018-11-26T23:42:24Z">
-      <class name="com.dpreview.auto.tests.T2_DpreviewLoginTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="beforeClass" is-config="true" duration-ms="2145" started-at="2018-11-26T23:41:24Z" finished-at="2018-11-26T23:41:26Z">
+    <test name="Default test" duration-ms="102118" started-at="2018-11-27T08:47:30Z" finished-at="2018-11-27T08:49:12Z">
+      <class name="com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="beforeClass" is-config="true" duration-ms="1871" started-at="2018-11-27T08:47:30Z" finished-at="2018-11-27T08:47:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-26T23:41:26Z" finished-at="2018-11-26T23:41:26Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:47:32Z" finished-at="2018-11-27T08:47:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginPageTest()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="loginPageTest" duration-ms="19624" started-at="2018-11-26T23:41:26Z" description="Testing the validation of the Login page" finished-at="2018-11-26T23:41:46Z">
+        <test-method status="PASS" signature="validatingConclusionPage()[pri:24, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="validatingConclusionPage" duration-ms="15878" started-at="2018-11-27T08:47:32Z" description="Validating the Nikon D5 Review Conclusion URL" finished-at="2018-11-27T08:47:48Z">
           <reporter-output>
             <line>
-              <![CDATA[Browsing to URL: https://www.dpreview.com]]>
+              <![CDATA[Browsing to URL: https://www.dpreview.com/reviews/nikon-d5-pro-dslr-review/13]]>
             </line>
           </reporter-output>
-        </test-method> <!-- loginPageTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-26T23:41:46Z" finished-at="2018-11-26T23:41:46Z">
+        </test-method> <!-- validatingConclusionPage -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:47:48Z" finished-at="2018-11-27T08:47:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-26T23:41:46Z" finished-at="2018-11-26T23:41:46Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:47:48Z" finished-at="2018-11-27T08:47:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginDetails1()[pri:1, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="loginDetails1" duration-ms="32282" started-at="2018-11-26T23:41:46Z" description="Typing the login details" finished-at="2018-11-26T23:42:18Z">
+        <test-method status="PASS" signature="conclusionHeadline()[pri:25, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="conclusionHeadline" duration-ms="5091" started-at="2018-11-27T08:47:48Z" description="Conclusion Headline" finished-at="2018-11-27T08:47:53Z">
           <reporter-output>
             <line>
-              <![CDATA[Element is visible: Email input (By.id: ap_email)]]>
-            </line>
-            <line>
-              <![CDATA[Element is visible: Password input (By.id: ap_password)]]>
-            </line>
-            <line>
-              <![CDATA[*** On page: Dpreview login page]]>
-            </line>
-            <line>
-              <![CDATA[Write 'eagle15e2000@yahoo.com' to element: Email input (By.id: ap_email)]]>
-            </line>
-            <line>
-              <![CDATA[Write 'JazzMusic73!' to element: Password input (By.id: ap_password)]]>
-            </line>
-            <line>
-              <![CDATA[Click on element: Keep me signed in (By.id: remember_me_learn_more_link)]]>
-            </line>
-            <line>
-              <![CDATA[Click on element: Closing the signed in popup window (By.id: a-popover-header-1)]]>
-            </line>
-            <line>
-              <![CDATA[Click on element: Remember me (By.name: rememberMe)]]>
-            </line>
-            <line>
-              <![CDATA[Click on element: Sign in button (By.id: signInSubmit)]]>
-            </line>
-            <line>
-              <![CDATA[Element is visible: Search box (By.className: searchBox)]]>
-            </line>
-            <line>
-              <![CDATA[Element is visible: 'GO' button (By.className: submitBtn)]]>
-            </line>
-            <line>
-              <![CDATA[Element is visible: Light mode (By.cssSelector: span.option:nth-child(1))]]>
-            </line>
-            <line>
-              <![CDATA[Element is visible: Dark mode (By.cssSelector: span.option:nth-child(2))]]>
-            </line>
-            <line>
-              <![CDATA[*** On page: DPReview Home Page]]>
+              <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h2:nth-child(1) (By.cssSelector: .articleBody > h2:nth-child(1))]]>
             </line>
           </reporter-output>
-        </test-method> <!-- loginDetails1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-26T23:42:18Z" finished-at="2018-11-26T23:42:18Z">
+        </test-method> <!-- conclusionHeadline -->
+        <test-method status="PASS" signature="overallConclusion()[pri:26, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="overallConclusion" duration-ms="5057" started-at="2018-11-27T08:47:53Z" description="Overall Conclusion" finished-at="2018-11-27T08:47:58Z">
           <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(3) (By.cssSelector: .articleBody > h3:nth-child(3))]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-26T23:42:18Z" finished-at="2018-11-26T23:42:18Z">
+        </test-method> <!-- overallConclusion -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:47:53Z" finished-at="2018-11-27T08:47:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="enterSettingsTest()[pri:2, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="enterSettingsTest" duration-ms="1851" started-at="2018-11-26T23:42:18Z" description="The user enters to the settings section" finished-at="2018-11-26T23:42:20Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:47:53Z" finished-at="2018-11-27T08:47:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterSettingsTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-26T23:42:20Z" finished-at="2018-11-26T23:42:20Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:47:58Z" finished-at="2018-11-27T08:47:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="userSettingsTest()[pri:3, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="userSettingsTest" duration-ms="2775" started-at="2018-11-26T23:42:20Z" description="The user sets the desired settings of his profile" finished-at="2018-11-26T23:42:23Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="handling()[pri:27, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="handling" duration-ms="5056" started-at="2018-11-27T08:47:58Z" description="Handling" finished-at="2018-11-27T08:48:03Z">
           <reporter-output>
             <line>
-              <![CDATA[Scrolled to Element By.name: userSettingsGallerySafetyLevelModerate (By.name: userSettingsGallerySafetyLevelModerate)]]>
+              <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(8) (By.cssSelector: .articleBody > h3:nth-child(8))]]>
             </line>
           </reporter-output>
-        </test-method> <!-- userSettingsTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-26T23:42:20Z" finished-at="2018-11-26T23:42:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-26T23:42:23Z" finished-at="2018-11-26T23:42:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="navigateToOverviewPage()[pri:4, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="navigateToOverviewPage" duration-ms="991" started-at="2018-11-26T23:42:23Z" description="Navigate to Overview page" finished-at="2018-11-26T23:42:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToOverviewPage -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-26T23:42:23Z" finished-at="2018-11-26T23:42:23Z">
+        </test-method> <!-- handling -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:47:58Z" finished-at="2018-11-27T08:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-26T23:42:24Z" finished-at="2018-11-26T23:42:24Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-27T08:48:03Z" finished-at="2018-11-27T08:48:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-26T23:42:24Z" finished-at="2018-11-26T23:42:24Z">
+        <test-method status="PASS" signature="soccerImageSummary()[pri:28, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="soccerImageSummary" duration-ms="5051" started-at="2018-11-27T08:48:03Z" description="Soccer Image Summary" finished-at="2018-11-27T08:48:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: table.images:nth-child(10) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) (By.cssSelector: table.images:nth-child(10) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1))]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- soccerImageSummary -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:03Z" finished-at="2018-11-27T08:48:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:08Z" finished-at="2018-11-27T08:48:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="dogImageSummary()[pri:29, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="dogImageSummary" duration-ms="5050" started-at="2018-11-27T08:48:08Z" description="Dog Image Summary" finished-at="2018-11-27T08:48:13Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: table.images:nth-child(13) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) (By.cssSelector: table.images:nth-child(13) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1))]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- dogImageSummary -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:08Z" finished-at="2018-11-27T08:48:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:13Z" finished-at="2018-11-27T08:48:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="autofocusAndPerformance()[pri:30, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="autofocusAndPerformance" duration-ms="5049" started-at="2018-11-27T08:48:13Z" description="Autofocus and overall performance" finished-at="2018-11-27T08:48:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(16) (By.cssSelector: .articleBody > h3:nth-child(16))]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- autofocusAndPerformance -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:13Z" finished-at="2018-11-27T08:48:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:18Z" finished-at="2018-11-27T08:48:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:18Z" finished-at="2018-11-27T08:48:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="motorcycleImageSummary()[pri:31, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="motorcycleImageSummary" duration-ms="5052" started-at="2018-11-27T08:48:18Z" description="Motorcycle Image Summary" finished-at="2018-11-27T08:48:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: table.images:nth-child(20) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) (By.cssSelector: table.images:nth-child(20) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1))]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- motorcycleImageSummary -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:23Z" finished-at="2018-11-27T08:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="singerImageSummary()[pri:32, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="singerImageSummary" duration-ms="5044" started-at="2018-11-27T08:48:23Z" description="Singer Image Summary" finished-at="2018-11-27T08:48:28Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: table.images:nth-child(23) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) (By.cssSelector: table.images:nth-child(23) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1))]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- singerImageSummary -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:23Z" finished-at="2018-11-27T08:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:29Z" finished-at="2018-11-27T08:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:29Z" finished-at="2018-11-27T08:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="stillsAndVideo()[pri:33, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="stillsAndVideo" duration-ms="5047" started-at="2018-11-27T08:48:29Z" description="Stills and video image quality" finished-at="2018-11-27T08:48:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(26) (By.cssSelector: .articleBody > h3:nth-child(26))]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- stillsAndVideo -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:34Z" finished-at="2018-11-27T08:48:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="manOnGrassImageSummary()[pri:34, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="manOnGrassImageSummary" duration-ms="5045" started-at="2018-11-27T08:48:34Z" description="Man on grass Image Summary" finished-at="2018-11-27T08:48:39Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: table.images:nth-child(28) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) (By.cssSelector: table.images:nth-child(28) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1))]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- manOnGrassImageSummary -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:34Z" finished-at="2018-11-27T08:48:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-27T08:48:39Z" finished-at="2018-11-27T08:48:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:39Z" finished-at="2018-11-27T08:48:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="womanImageSummary()[pri:35, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="womanImageSummary" duration-ms="5057" started-at="2018-11-27T08:48:39Z" description="Woman Image Summary" finished-at="2018-11-27T08:48:44Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: table.images:nth-child(31) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) (By.cssSelector: table.images:nth-child(31) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1))]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- womanImageSummary -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:44Z" finished-at="2018-11-27T08:48:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:44Z" finished-at="2018-11-27T08:48:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="theFinalWord()[pri:36, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="theFinalWord" duration-ms="5048" started-at="2018-11-27T08:48:44Z" description="The final word" finished-at="2018-11-27T08:48:49Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(34) (By.cssSelector: .articleBody > h3:nth-child(34))]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- theFinalWord -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:49Z" finished-at="2018-11-27T08:48:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="fieldMotorcycleImageSummary()[pri:37, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="fieldMotorcycleImageSummary" duration-ms="5051" started-at="2018-11-27T08:48:49Z" description="Field motorcycle Image Summary" finished-at="2018-11-27T08:48:54Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: table.images:nth-child(37) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) (By.cssSelector: table.images:nth-child(37) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1))]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- fieldMotorcycleImageSummary -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:49Z" finished-at="2018-11-27T08:48:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="nikonD5SummaryTable()[pri:38, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="nikonD5SummaryTable" duration-ms="5050" started-at="2018-11-27T08:48:54Z" description="Nikon D5 Summary Table" finished-at="2018-11-27T08:48:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: div.productName (By.cssSelector: div.productName)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- nikonD5SummaryTable -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:54Z" finished-at="2018-11-27T08:48:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:54Z" finished-at="2018-11-27T08:48:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:59Z" finished-at="2018-11-27T08:48:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="nikonD5Conclusion()[pri:39, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="nikonD5Conclusion" duration-ms="5049" started-at="2018-11-27T08:48:59Z" description="Nikon D5 Conclusion" finished-at="2018-11-27T08:49:04Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: .conclusion (By.cssSelector: .conclusion)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- nikonD5Conclusion -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:48:59Z" finished-at="2018-11-27T08:48:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:49:04Z" finished-at="2018-11-27T08:49:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-27T08:49:04Z" finished-at="2018-11-27T08:49:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="samplesGalleryHeadline()[pri:40, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="samplesGalleryHeadline" duration-ms="8043" started-at="2018-11-27T08:49:04Z" description="Samples Gallery headline" finished-at="2018-11-27T08:49:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolled to Element By.cssSelector: .articleBody > h3:nth-child(44) (By.cssSelector: .articleBody > h3:nth-child(44))]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- samplesGalleryHeadline -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-27T08:49:12Z" finished-at="2018-11-27T08:49:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest@1e88b3c]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-27T08:49:12Z" finished-at="2018-11-27T08:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.dpreview.auto.tests.T2_DpreviewLoginTest -->
-    </test> <!-- Login process -->
-    <test name="Adding Gear" duration-ms="10013" started-at="2018-11-26T23:42:24Z" finished-at="2018-11-26T23:42:34Z">
-      <class name="com.dpreview.auto.tests.T4_DpreviewMyRecentActivityTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.T4_DpreviewMyRecentActivityTest@11053e1]" name="beforeClass" is-config="true" duration-ms="1917" started-at="2018-11-26T23:42:24Z" finished-at="2018-11-26T23:42:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T4_DpreviewMyRecentActivityTest@11053e1]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-26T23:42:26Z" finished-at="2018-11-26T23:42:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="userGearList()[pri:5, instance:com.dpreview.auto.tests.T4_DpreviewMyRecentActivityTest@11053e1]" name="userGearList" duration-ms="2008" started-at="2018-11-26T23:42:26Z" description="The user sets his gear list" finished-at="2018-11-26T23:42:28Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:6962
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'SPEARHEAD-PC', ip: '192.168.17.103', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:6962
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'SPEARHEAD-PC', ip: '192.168.17.103', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-at com.dpreview.auto.tests.T4_DpreviewMyRecentActivityTest.userGearList(T4_DpreviewMyRecentActivityTest.java:18)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:6962
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-... 31 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-at java.net.PlainSocketImpl.connect(Unknown Source)
-at java.net.SocksSocketImpl.connect(Unknown Source)
-at java.net.Socket.connect(Unknown Source)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-... 51 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userGearList -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T4_DpreviewMyRecentActivityTest@11053e1]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-26T23:42:30Z" finished-at="2018-11-26T23:42:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T4_DpreviewMyRecentActivityTest@11053e1]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-26T23:42:30Z" finished-at="2018-11-26T23:42:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="addingGear()[pri:6, instance:com.dpreview.auto.tests.T4_DpreviewMyRecentActivityTest@11053e1]" name="addingGear" duration-ms="2005" started-at="2018-11-26T23:42:30Z" description="Adding gear" finished-at="2018-11-26T23:42:32Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:6962
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'SPEARHEAD-PC', ip: '192.168.17.103', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:6962
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'SPEARHEAD-PC', ip: '192.168.17.103', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-at com.dpreview.auto.tests.T4_DpreviewMyRecentActivityTest.addingGear(T4_DpreviewMyRecentActivityTest.java:31)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:6962
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:242)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-... 31 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-at java.net.PlainSocketImpl.connect(Unknown Source)
-at java.net.SocksSocketImpl.connect(Unknown Source)
-at java.net.Socket.connect(Unknown Source)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-... 51 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addingGear -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.T4_DpreviewMyRecentActivityTest@11053e1]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-26T23:42:34Z" finished-at="2018-11-26T23:42:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T4_DpreviewMyRecentActivityTest@11053e1]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-26T23:42:34Z" finished-at="2018-11-26T23:42:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.dpreview.auto.tests.T4_DpreviewMyRecentActivityTest -->
-    </test> <!-- Adding Gear -->
-  </suite> <!-- 02.login -->
+      </class> <!-- com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

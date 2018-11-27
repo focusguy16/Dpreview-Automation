@@ -1,19 +1,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="04.nikonD5review" verbose="1">
-	<test name="T8">
+	<test name="T8. Nikon D5 General Review">
 		<classes>
 			<class name="com.dpreview.auto.tests.T8_DpreviewNikonD5ReviewTest" />
 		</classes>
 	</test>
 
-	<test name="T9">
+	<test name="T9. Nikon D5 Detailed Review">
 		<classes>
 			<class name="com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest" />
 		</classes>
 	</test>
 
-	<test name="T10">
+	<test name="T10. Nikon D5 Review Conclusion">
 		<classes>
 			<class name="com.dpreview.auto.tests.T10_DpreviewNikonD5ReviewConclusionTest" />
 		</classes>
