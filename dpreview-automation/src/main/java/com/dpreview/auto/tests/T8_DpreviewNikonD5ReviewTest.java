@@ -24,36 +24,15 @@ import com.dpreview.auto.infra.pages.DpreviewHomePage;
 import com.dpreview.auto.infra.pages.DpreviewNikonD5ReviewPage;
 import com.dpreview.auto.infra.reports.Reports;
 
+/* *********************************************************************************************************************************************
+ * ********************** This test is intended to check the process of selecting the Editor's choice camera: the Nikon D5 *********************
+ * *********************************************************************************************************************************************
+ */
+
 public class T8_DpreviewNikonD5ReviewTest extends BaseTest {
 
-	// --------------------- Testing the Buying Guides appearance by hovering the Buying Guides element ---------------------------------------
+	// --------------------- Testing the Buying Guides appearance by hovering over the Buying Guides element -----------------------------------
 
-	/*
-	@BeforeSuite
-	public void testBeforeSuite() {
-		
-		System.out.println("Test before suite");
-	}
-	
-	@AfterSuite
-	public void testAfterSuite() {
-		
-		
-	}
-	
-	@BeforeTest
-	public void testBeforeTest() {
-		
-		
-	}
-	
-	@AfterTest
-	public void testAfterTest() {
-		
-		
-	}
-	*/
-	
 	@Test(description = "Hovering over the Buying Guides element", priority = 0)
 	public void hoveringBuyingGuidesElement() {
 
@@ -188,5 +167,7 @@ public class T8_DpreviewNikonD5ReviewTest extends BaseTest {
 
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.urlToBe("https://www.dpreview.com/reviews/nikon-d5-pro-dslr-review"));
+		
+		driver.close();
 	}
 }

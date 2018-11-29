@@ -10,6 +10,11 @@ import org.testng.annotations.Test;
 import com.dpreview.auto.infra.pages.DpreviewNikonD5ReviewPage;
 import com.dpreview.auto.infra.reports.Reports;
 
+/* *********************************************************************************************************************************************
+ * **************************** This test is checking the Menu review of the Editor's choice camera: The Nikon D5 ****************************** 
+ * *********************************************************************************************************************************************
+ */
+
 public class T9_DpreviewNikonD5PagesReviewTest extends BaseTest {
 
 	@Test(description = "Hovering over the Nikon D5 Review Main Review menu", priority = 10)
@@ -237,5 +242,7 @@ public class T9_DpreviewNikonD5PagesReviewTest extends BaseTest {
 		driver.findElement(By.linkText("13. Conclusion & Samples")).click();
 
 		Thread.sleep(5000);
+		
+		driver.close();
 	}
 }

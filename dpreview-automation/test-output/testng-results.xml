@@ -1,178 +1,429 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="14" passed="14">
   <reporter-output>
     <line>
-      <![CDATA[Browsing to URL: https://www.dpreview.com]]>
+      <![CDATA[Browsing to URL: https://www.dpreview.com/reviews/nikon-d5-pro-dslr-review]]>
     </line>
     <line>
-      <![CDATA[Element is visible: Email input (By.id: ap_email)]]>
+      <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
     </line>
     <line>
-      <![CDATA[Element is visible: Password input (By.id: ap_password)]]>
+      <![CDATA[*** On page: Nikon D5 Review]]>
     </line>
     <line>
-      <![CDATA[*** On page: Dpreview login page]]>
+      <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
     </line>
     <line>
-      <![CDATA[Write 'eagle15@yahoo.com' to element: Email input (By.id: ap_email)]]>
+      <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
     </line>
     <line>
-      <![CDATA[Write 'AlphaBlondie' to element: Password input (By.id: ap_password)]]>
+      <![CDATA[*** On page: Nikon D5 Review]]>
     </line>
     <line>
-      <![CDATA[Click on element: Keep me signed in (By.id: remember_me_learn_more_link)]]>
+      <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
     </line>
     <line>
-      <![CDATA[Click on element: Closing the signed in popup window (By.id: a-popover-header-1)]]>
+      <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
     </line>
     <line>
-      <![CDATA[Click on element: Remember me (By.name: rememberMe)]]>
+      <![CDATA[*** On page: Nikon D5 Review]]>
     </line>
     <line>
-      <![CDATA[Click on element: Sign in button (By.id: signInSubmit)]]>
+      <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
     </line>
     <line>
-      <![CDATA[Not on the expected page: DPReview Home Page]]>
+      <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+    </line>
+    <line>
+      <![CDATA[*** On page: Nikon D5 Review]]>
+    </line>
+    <line>
+      <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+    </line>
+    <line>
+      <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+    </line>
+    <line>
+      <![CDATA[*** On page: Nikon D5 Review]]>
+    </line>
+    <line>
+      <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+    </line>
+    <line>
+      <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+    </line>
+    <line>
+      <![CDATA[*** On page: Nikon D5 Review]]>
+    </line>
+    <line>
+      <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+    </line>
+    <line>
+      <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+    </line>
+    <line>
+      <![CDATA[*** On page: Nikon D5 Review]]>
+    </line>
+    <line>
+      <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+    </line>
+    <line>
+      <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+    </line>
+    <line>
+      <![CDATA[*** On page: Nikon D5 Review]]>
+    </line>
+    <line>
+      <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+    </line>
+    <line>
+      <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+    </line>
+    <line>
+      <![CDATA[*** On page: Nikon D5 Review]]>
+    </line>
+    <line>
+      <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+    </line>
+    <line>
+      <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+    </line>
+    <line>
+      <![CDATA[*** On page: Nikon D5 Review]]>
+    </line>
+    <line>
+      <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+    </line>
+    <line>
+      <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+    </line>
+    <line>
+      <![CDATA[*** On page: Nikon D5 Review]]>
+    </line>
+    <line>
+      <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+    </line>
+    <line>
+      <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+    </line>
+    <line>
+      <![CDATA[*** On page: Nikon D5 Review]]>
+    </line>
+    <line>
+      <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+    </line>
+    <line>
+      <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+    </line>
+    <line>
+      <![CDATA[*** On page: Nikon D5 Review]]>
+    </line>
+    <line>
+      <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="81597" started-at="2018-11-29T17:10:21Z" finished-at="2018-11-29T17:11:42Z">
+  <suite name="Default suite" duration-ms="236721" started-at="2018-11-29T17:34:50Z" finished-at="2018-11-29T17:38:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="81597" started-at="2018-11-29T17:10:21Z" finished-at="2018-11-29T17:11:42Z">
-      <class name="com.dpreview.auto.tests.T3_DpreviewLoginWrongDetailsTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.T3_DpreviewLoginWrongDetailsTest@1caeb3e]" name="beforeClass" is-config="true" duration-ms="1658" started-at="2018-11-29T17:10:21Z" finished-at="2018-11-29T17:10:22Z">
+    <test name="Default test" duration-ms="236721" started-at="2018-11-29T17:34:50Z" finished-at="2018-11-29T17:38:47Z">
+      <class name="com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="beforeClass" is-config="true" duration-ms="1872" started-at="2018-11-29T17:34:50Z" finished-at="2018-11-29T17:34:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T3_DpreviewLoginWrongDetailsTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-29T17:10:22Z" finished-at="2018-11-29T17:10:22Z">
+        <test-method status="PASS" signature="hoverOverMainMenu()[pri:10, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="hoverOverMainMenu" duration-ms="19020" started-at="2018-11-29T17:34:52Z" description="Hovering over the Nikon D5 Review Main Review menu" finished-at="2018-11-29T17:35:11Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Browsing to URL: https://www.dpreview.com/reviews/nikon-d5-pro-dslr-review]]>
+            </line>
+            <line>
+              <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+            <line>
+              <![CDATA[*** On page: Nikon D5 Review]]>
+            </line>
+            <line>
+              <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- hoverOverMainMenu -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:34:52Z" finished-at="2018-11-29T17:34:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginPageTest()[pri:0, instance:com.dpreview.auto.tests.T3_DpreviewLoginWrongDetailsTest@1caeb3e]" name="loginPageTest" duration-ms="16686" started-at="2018-11-29T17:10:22Z" description="Testing the validation of the Login page" finished-at="2018-11-29T17:10:39Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Browsing to URL: https://www.dpreview.com]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginPageTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T3_DpreviewLoginWrongDetailsTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:10:39Z" finished-at="2018-11-29T17:10:39Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:35:11Z" finished-at="2018-11-29T17:35:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="FAIL" signature="loginDetails()[pri:1, instance:com.dpreview.auto.tests.T3_DpreviewLoginWrongDetailsTest@1caeb3e]" name="loginDetails" duration-ms="60347" started-at="2018-11-29T17:10:39Z" description="Typing wrong login details" finished-at="2018-11-29T17:11:39Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.className: searchBox (tried for 25 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: searchBox (tried for 25 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-at com.dpreview.auto.infra.web.ActionBot.waitForElementToBeVisible(ActionBot.java:49)
-at com.dpreview.auto.infra.pages.AbstractPage.assertInPage(AbstractPage.java:32)
-at com.dpreview.auto.infra.pages.AbstractPage.<init>(AbstractPage.java:25)
-at com.dpreview.auto.infra.pages.DpreviewHomePage.<init>(DpreviewHomePage.java:20)
-at com.dpreview.auto.infra.pages.DpreviewLoginPage.clickSigninButton(DpreviewLoginPage.java:49)
-at com.dpreview.auto.tests.T3_DpreviewLoginWrongDetailsTest.loginDetails(T3_DpreviewLoginWrongDetailsTest.java:65)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.className: searchBox
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'SPEARHEAD-PC', ip: '192.168.17.103', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-at java.util.Optional.orElseThrow(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="introduction()[pri:11, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="introduction" duration-ms="11011" started-at="2018-11-29T17:35:11Z" description="Introduction" finished-at="2018-11-29T17:35:22Z">
           <reporter-output>
-            <line>
-              <![CDATA[Element is visible: Email input (By.id: ap_email)]]>
-            </line>
-            <line>
-              <![CDATA[Element is visible: Password input (By.id: ap_password)]]>
-            </line>
-            <line>
-              <![CDATA[*** On page: Dpreview login page]]>
-            </line>
-            <line>
-              <![CDATA[Write 'eagle15@yahoo.com' to element: Email input (By.id: ap_email)]]>
-            </line>
-            <line>
-              <![CDATA[Write 'AlphaBlondie' to element: Password input (By.id: ap_password)]]>
-            </line>
-            <line>
-              <![CDATA[Click on element: Keep me signed in (By.id: remember_me_learn_more_link)]]>
-            </line>
-            <line>
-              <![CDATA[Click on element: Closing the signed in popup window (By.id: a-popover-header-1)]]>
-            </line>
-            <line>
-              <![CDATA[Click on element: Remember me (By.name: rememberMe)]]>
-            </line>
-            <line>
-              <![CDATA[Click on element: Sign in button (By.id: signInSubmit)]]>
-            </line>
-            <line>
-              <![CDATA[Not on the expected page: DPReview Home Page]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- loginDetails -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T3_DpreviewLoginWrongDetailsTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:10:39Z" finished-at="2018-11-29T17:10:39Z">
+        </test-method> <!-- introduction -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:35:11Z" finished-at="2018-11-29T17:35:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T3_DpreviewLoginWrongDetailsTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:11:39Z" finished-at="2018-11-29T17:11:39Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:35:22Z" finished-at="2018-11-29T17:35:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T3_DpreviewLoginWrongDetailsTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:11:39Z" finished-at="2018-11-29T17:11:39Z">
+        <test-method status="PASS" signature="specifications()[pri:12, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="specifications" duration-ms="15964" started-at="2018-11-29T17:35:22Z" description="Specifications" finished-at="2018-11-29T17:35:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+            <line>
+              <![CDATA[*** On page: Nikon D5 Review]]>
+            </line>
+            <line>
+              <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- specifications -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:35:22Z" finished-at="2018-11-29T17:35:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="errorLoginPage()[pri:2, instance:com.dpreview.auto.tests.T3_DpreviewLoginWrongDetailsTest@1caeb3e]" name="errorLoginPage" duration-ms="2651" started-at="2018-11-29T17:11:39Z" description="Validating the error login page" finished-at="2018-11-29T17:11:42Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:35:38Z" finished-at="2018-11-29T17:35:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- errorLoginPage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T3_DpreviewLoginWrongDetailsTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:11:42Z" finished-at="2018-11-29T17:11:42Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="bodyAndDesign()[pri:13, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="bodyAndDesign" duration-ms="16589" started-at="2018-11-29T17:35:38Z" description="Body &amp; Design" finished-at="2018-11-29T17:35:54Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+            <line>
+              <![CDATA[*** On page: Nikon D5 Review]]>
+            </line>
+            <line>
+              <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- bodyAndDesign -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:35:38Z" finished-at="2018-11-29T17:35:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.T3_DpreviewLoginWrongDetailsTest@1caeb3e]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-29T17:11:42Z" finished-at="2018-11-29T17:11:42Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:35:54Z" finished-at="2018-11-29T17:35:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:35:54Z" finished-at="2018-11-29T17:35:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="controlsAndSetup()[pri:14, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="controlsAndSetup" duration-ms="16716" started-at="2018-11-29T17:35:54Z" description="Controls &amp; Setup" finished-at="2018-11-29T17:36:11Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+            <line>
+              <![CDATA[*** On page: Nikon D5 Review]]>
+            </line>
+            <line>
+              <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- controlsAndSetup -->
+        <test-method status="PASS" signature="performance()[pri:15, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="performance" duration-ms="15612" started-at="2018-11-29T17:36:11Z" description="Performance" finished-at="2018-11-29T17:36:27Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+            <line>
+              <![CDATA[*** On page: Nikon D5 Review]]>
+            </line>
+            <line>
+              <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- performance -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:36:11Z" finished-at="2018-11-29T17:36:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:36:11Z" finished-at="2018-11-29T17:36:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-29T17:36:27Z" finished-at="2018-11-29T17:36:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:36:27Z" finished-at="2018-11-29T17:36:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="imageQuality()[pri:16, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="imageQuality" duration-ms="15905" started-at="2018-11-29T17:36:27Z" description="Image Quality" finished-at="2018-11-29T17:36:43Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+            <line>
+              <![CDATA[*** On page: Nikon D5 Review]]>
+            </line>
+            <line>
+              <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- imageQuality -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:36:43Z" finished-at="2018-11-29T17:36:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="lowLightHighISO()[pri:17, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="lowLightHighISO" duration-ms="14733" started-at="2018-11-29T17:36:43Z" description="Low Light &amp; High ISO Image Quality" finished-at="2018-11-29T17:36:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+            <line>
+              <![CDATA[*** On page: Nikon D5 Review]]>
+            </line>
+            <line>
+              <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- lowLightHighISO -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:36:43Z" finished-at="2018-11-29T17:36:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:36:57Z" finished-at="2018-11-29T17:36:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:36:57Z" finished-at="2018-11-29T17:36:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="rawExposureISO()[pri:18, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="rawExposureISO" duration-ms="17253" started-at="2018-11-29T17:36:57Z" description="Raw DR - Exposure Latitude &amp; ISO Invariance" finished-at="2018-11-29T17:37:15Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+            <line>
+              <![CDATA[*** On page: Nikon D5 Review]]>
+            </line>
+            <line>
+              <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- rawExposureISO -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:37:15Z" finished-at="2018-11-29T17:37:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="autofocus()[pri:19, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="autofocus" duration-ms="17271" started-at="2018-11-29T17:37:15Z" description="Autofocus" finished-at="2018-11-29T17:37:32Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+            <line>
+              <![CDATA[*** On page: Nikon D5 Review]]>
+            </line>
+            <line>
+              <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- autofocus -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:37:15Z" finished-at="2018-11-29T17:37:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="realWorldMotocross()[pri:20, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="realWorldMotocross" duration-ms="15524" started-at="2018-11-29T17:37:32Z" description="Real-world Autofocus Performance: Motocross Practice" finished-at="2018-11-29T17:37:48Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+            <line>
+              <![CDATA[*** On page: Nikon D5 Review]]>
+            </line>
+            <line>
+              <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- realWorldMotocross -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:37:32Z" finished-at="2018-11-29T17:37:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:37:32Z" finished-at="2018-11-29T17:37:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:37:48Z" finished-at="2018-11-29T17:37:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:37:48Z" finished-at="2018-11-29T17:37:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="realWorldSoccer()[pri:21, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="realWorldSoccer" duration-ms="18179" started-at="2018-11-29T17:37:48Z" description="Real-world Autofocus Performance: Soccer" finished-at="2018-11-29T17:38:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+            <line>
+              <![CDATA[*** On page: Nikon D5 Review]]>
+            </line>
+            <line>
+              <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- realWorldSoccer -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:38:06Z" finished-at="2018-11-29T17:38:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="video()[pri:22, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="video" duration-ms="16127" started-at="2018-11-29T17:38:06Z" description="Video" finished-at="2018-11-29T17:38:22Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+            <line>
+              <![CDATA[*** On page: Nikon D5 Review]]>
+            </line>
+            <line>
+              <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- video -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:38:06Z" finished-at="2018-11-29T17:38:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:38:22Z" finished-at="2018-11-29T17:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="conclusionAndSamples()[pri:23, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="conclusionAndSamples" duration-ms="24511" started-at="2018-11-29T17:38:22Z" description="Conclusion &amp; Samples" finished-at="2018-11-29T17:38:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Element is visible: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+            <line>
+              <![CDATA[*** On page: Nikon D5 Review]]>
+            </line>
+            <line>
+              <![CDATA[Hover over element: Nikon D5 Review Menu (By.cssSelector: div.current)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- conclusionAndSamples -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:38:22Z" finished-at="2018-11-29T17:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-29T17:38:47Z" finished-at="2018-11-29T17:38:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest@1e88b3c]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-29T17:38:47Z" finished-at="2018-11-29T17:38:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.dpreview.auto.tests.T3_DpreviewLoginWrongDetailsTest -->
+      </class> <!-- com.dpreview.auto.tests.T9_DpreviewNikonD5PagesReviewTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
