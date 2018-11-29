@@ -13,18 +13,25 @@ import org.openqa.selenium.interactions.Actions;
 public class T4_DpreviewMyRecentActivityTest extends BaseTest {
 	
 	@Test(description = "The user sets his gear list", priority = 5)
-	public void userGearList() {
+	public void userGearList() throws Exception {
 		
-		WebElement userGearList = driver.findElement(By.xpath("//*[@class='tabsContainer']//*[text()='Gear']"));   // ("//*[contains(text(),'Gear List')]"));   // ("//*[@class='empty']//*[text()='Gear List']"));
+		browseToUrl("https://www.dpreview.com/members/5763666202/overview");
+		
+		WebElement userGearList = driver.findElement(By.xpath("//*[@class='tabsContainer']//*[text()='Gear']"));
 		
 		Actions action = new Actions(driver);
 		action.moveToElement(userGearList).build().perform();
 		
-		driver.findElement(By.xpath("//*[@class='tabsContainer']//*[text()='Gear']")).click();      //   ("//*[contains(text(),'Gear List')]")).click();
+		driver.findElement(By.xpath("//*[@class='tabsContainer']//*[text()='Gear']")).click(); 
 		
 		driver.navigate().to("https://www.dpreview.com/members/5763666202/gearlist");
+		
+		Thread.sleep(3000);
+		
+		driver.close();
 	}
 	
+	/*
 	@Test(description = "Adding gear", priority = 6)
 	public void addingGear() {
 		
@@ -35,5 +42,6 @@ public class T4_DpreviewMyRecentActivityTest extends BaseTest {
 		
 		driver.findElement(By.xpath("//*[@class='ownIt gearList']//*[text()='Add gear']")).click();
 	}
+	*/
 
 }

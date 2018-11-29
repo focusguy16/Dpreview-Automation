@@ -17,7 +17,7 @@ import com.dpreview.auto.infra.pages.DpreviewHomePage;
 import com.dpreview.auto.infra.reports.Reports;
 
 /* **************************************************************************************************************************************************
- * **************************** This test is intended to check the complete review of Best Sports & Action Cameras **********************************
+ * ************************ This test is intended to check the complete review of Best Sports & Action Cameras category *****************************
  * **************************************************************************************************************************************************
  */
 

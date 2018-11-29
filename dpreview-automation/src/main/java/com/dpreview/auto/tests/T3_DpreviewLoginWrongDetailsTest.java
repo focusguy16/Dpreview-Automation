@@ -12,7 +12,7 @@ import com.dpreview.auto.infra.config.MainConfig;
 import com.dpreview.auto.infra.pages.DpreviewLoginPage;
 
 /* ****************************************************************************************************************************************
- ************************** This test validates the error message that appears when wrong password is typed ******************************* 
+ ************************** This test validates the error message which appears when wrong password is typed ******************************
  * ****************************************************************************************************************************************
  */
 
