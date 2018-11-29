@@ -45,9 +45,7 @@ public class T1_DpreviewRegistrationTest extends BaseTest {
 
 		String yourName = "RetroCamFan";
 		String emailAddress = "focusguy@walla.com";
-		// String yourPassword = "HelloCameraWorld!";
-		// String passwordCheck = "";
-
+		
 		DpreviewRegistrationPage dpreviewRegistrationPage = new DpreviewRegistrationPage(driver);
 		dpreviewRegistrationPage.writeYourNameInput(yourName);
 		Thread.sleep(2000);
@@ -57,13 +55,6 @@ public class T1_DpreviewRegistrationTest extends BaseTest {
 
 		Thread.sleep(2000);
 
-		
-		// dpreviewRegistrationPage.yourPassword.equals(passwordCheck);
-		Thread.sleep(2000);
-
-		// dpreviewRegistrationPage.createYourDpreviewAccount().clickGoButton();
-
-		// driver.close();
 	}
 
 	@Test(description = "Minimum password characters test", priority = 2)
