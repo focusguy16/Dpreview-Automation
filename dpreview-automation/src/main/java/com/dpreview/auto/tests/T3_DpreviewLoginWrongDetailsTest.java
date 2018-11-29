@@ -11,6 +11,11 @@ import org.testng.annotations.Test;
 import com.dpreview.auto.infra.config.MainConfig;
 import com.dpreview.auto.infra.pages.DpreviewLoginPage;
 
+/* ****************************************************************************************************************************************
+ ************************** This test validates the error message that appears when wrong password is typed ******************************* 
+ * ****************************************************************************************************************************************
+ */
+
 public class T3_DpreviewLoginWrongDetailsTest extends BaseTest {
 	
 	// ------------------------- Testing the validation of the Login page ------------------------------------------------------------------
@@ -32,12 +37,12 @@ public class T3_DpreviewLoginWrongDetailsTest extends BaseTest {
 	// ------------------------- Testing the login process with wrong details --------------------------------------------------------------
 	
 		@Test(description = "Typing wrong login details", priority = 1)
-		public void loginDetails1() throws Exception {
+		public void loginDetails() throws Exception {
 			
 			String inputEmail = "eagle15@yahoo.com";
 			String inputPassword = "AlphaBlondie";  // This is a wrong password.
 			
-			WebElement importantMessage = driver.findElement(By.id("authportal-center-section"));
+			WebElement importantMessage = driver.findElement(By.cssSelector(".a-alert-heading"));
 			
 			DpreviewLoginPage dpreviewLoginPage = new DpreviewLoginPage(driver);
 			dpreviewLoginPage.writeToEmailInput(inputEmail);
@@ -63,9 +68,9 @@ public class T3_DpreviewLoginWrongDetailsTest extends BaseTest {
 			
 			assertEquals(true, true); 
 			 
-			importantMessage.findElement(By.id("authportal-center-section")).isEnabled();
+			importantMessage.findElement(By.cssSelector(".a-alert-heading")).isDisplayed();
 			
-			if (importantMessage != null) {
+			if (importantMessage != null ) {
 				
 				System.out.println("There is a wrong detail in the form");
 			}
@@ -74,6 +79,7 @@ public class T3_DpreviewLoginWrongDetailsTest extends BaseTest {
 				System.out.println("The details are correct!");
 			}
 			
+			driver.close();
 		}
 
 }

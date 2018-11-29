@@ -33,7 +33,7 @@ public class T2_DpreviewLoginTest extends BaseTest {
 	}
 	 */
 
-	// ------------------------- Testing the validation of the Login page ------------------------------------------------------------------
+	// ------------------------- Testing the validation of the Login page -----------------------------------------------------------------
 
 	@Test(description = "Testing the validation of the Login page", priority = 0)
 	public void loginPageTest() {
@@ -48,7 +48,7 @@ public class T2_DpreviewLoginTest extends BaseTest {
 		driver.findElement(By.cssSelector(".userTools > a:nth-child(1)")).click();
 	}
 
-	// ------------------------- Testing the login process with valid details --------------------------------------------------------------
+	// ------------------------- Testing the login process with valid details -------------------------------------------------------------
 
 	@Test(description = "Typing the login details", priority = 1)
 	public void loginDetails1() throws Exception {
@@ -111,7 +111,7 @@ public class T2_DpreviewLoginTest extends BaseTest {
 		WebElement galleryViewingSafetyLevel = driver.findElement(By.id("userSettingsGallerySafetyLevelModerate"));
 		WebElement saveChanges = driver.findElement(By.id("settingsFormSubmitButton"));
 
-		// --------------------- Setting the user location ----------------------------------------
+		// --------------------- Setting the user location --------------------------------------------------------------------------------
 
 		Actions action2 = new Actions(driver);
 		action2.moveToElement(location).build().perform();
@@ -127,7 +127,7 @@ public class T2_DpreviewLoginTest extends BaseTest {
 
 		driver.findElements(By.name("profession"));
 
-		// ################## Checking if the input already contains the user profession ####################
+		// ######################## Checking if the input already contains the user profession ############################################
 
 		if(profession == null) {
 
@@ -138,14 +138,14 @@ public class T2_DpreviewLoginTest extends BaseTest {
 			System.out.println("The profession input is already typed");
 		}
 
-		// --------------------- Setting the user's web site input ---------------------------------------
+		// --------------------- Setting the user's web site input ------------------------------------------------------------------------
 
 		Actions action4 = new Actions(driver);
 		action4.moveToElement(website).build().perform();
 
 		driver.findElement(By.name("website"));
 
-		// ############### Checking if the user's web site input is already containing the user web site ################
+		// ######################## Checking if the user's web site input is already containing the user web site #########################
 
 		if(website == null) {
 
@@ -161,20 +161,20 @@ public class T2_DpreviewLoginTest extends BaseTest {
 		Reports.report("Scrolled to Element " + By.name("userSettingsGallerySafetyLevelModerate") + " (" + By.name("userSettingsGallerySafetyLevelModerate") + ")");
 
 
-		// --------------------- Home page Personalization ----------------------------------------- 
+		// --------------------- Home page Personalization --------------------------------------------------------------------------------
 
 		Actions action5 = new Actions(driver);
 		action5.moveToElement(galleryViewingSafetyLevel).build().perform();
 
 
-		// --------------------- Newsletter Subscription -------------------------------------------
+		// --------------------- Newsletter Subscription ----------------------------------------------------------------------------------
 
 		Actions action6 = new Actions(driver);
 		action6.moveToElement(newsSubscription).build().perform();
 
 		driver.findElement(By.xpath("//*[@id='userSettingsSubscribeToNewsletter']")).click();
 
-		// --------------------- Saving the settings changes ---------------------------------------
+		// --------------------- Saving the settings changes ------------------------------------------------------------------------------
 
 		Actions action7 = new Actions(driver);
 		action7.moveToElement(saveChanges).build().perform();
@@ -184,7 +184,7 @@ public class T2_DpreviewLoginTest extends BaseTest {
 		wait.until(ExpectedConditions.urlContains("overview"));
 	}
 
-	// ------------------------- Navigate to the Overview page -------------------------------------
+	// ------------------------- Navigate to the Overview page ----------------------------------------------------------------------------
 
 	@Test(description = "Navigate to Overview page", priority = 4)
 	public void navigateToOverviewPage() {

@@ -25,46 +25,73 @@ public class T1_DpreviewRegistrationTest extends BaseTest {
 
 	@Test(description = "Validation of the registration page", priority = 0)
 	public void registrationPageTest() {
-		
+
 		browseToUrl(MainConfig.baseUrl);
-		
+
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.urlToBe("https://www.dpreview.com/"));
-		
+
 		WebElement registrationLink = driver.findElement(By.cssSelector(".userTools > a:nth-child(2)"));
-		
+
 		Actions action = new Actions(driver);
 		action.moveToElement(registrationLink).build().perform();
-		
+
 		driver.findElement(By.cssSelector(".userTools > a:nth-child(2)")).click();
 
 	}
 
 	@Test (description = "Testing the registration process" , priority = 1)
 	public void registrationProcessTest() throws Exception { 
-		
+
 		String yourName = "RetroCamFan";
 		String emailAddress = "focusguy@walla.com";
-		String yourPassword = "HelloCameraWorld!";
-		String passwordCheck = "";
-		
+		// String yourPassword = "HelloCameraWorld!";
+		// String passwordCheck = "";
+
 		DpreviewRegistrationPage dpreviewRegistrationPage = new DpreviewRegistrationPage(driver);
 		dpreviewRegistrationPage.writeYourNameInput(yourName);
 		Thread.sleep(2000);
-		
+
 		dpreviewRegistrationPage.writeYourEmailAddress(emailAddress);
 		Thread.sleep(2000);
-		
-		dpreviewRegistrationPage.writeYourPassword(yourPassword);
-		// dpreviewRegistrationPage.minimumPasswordChars(minChars);
+
 		Thread.sleep(2000);
+
 		
-		dpreviewRegistrationPage.reEnterYourPassword(passwordCheck);
 		// dpreviewRegistrationPage.yourPassword.equals(passwordCheck);
 		Thread.sleep(2000);
+
+		// dpreviewRegistrationPage.createYourDpreviewAccount().clickGoButton();
+
+		// driver.close();
+	}
+
+	@Test(description = "Minimum password characters test", priority = 2)
+	public void passwordTest() {
+
+		String yourPassword = "HelloCameraWorld!";
+		String passwordCheck = "";  // Re type the password in order to complete the registration process.
+
+		DpreviewRegistrationPage dpreviewRegistrationPage = new DpreviewRegistrationPage(driver);
+
+		if(yourPassword.length() >= 6) {
+
+			dpreviewRegistrationPage.writeYourPassword(yourPassword);
+		}
+		else {
+
+			System.out.println("Minimum password length is 6 characters long");
+		}
 		
-		dpreviewRegistrationPage.createYourDpreviewAccount().clickGoButton();
+		dpreviewRegistrationPage.reEnterYourPassword(passwordCheck);
 		
-		driver.close();
+		if(yourPassword == passwordCheck) {
+			
+			dpreviewRegistrationPage.createYourDpreviewAccount().clickGoButton();
+		}
+		else {
+			
+			System.out.println(" ---------------- Please Re type your password ------------------ ");
+		}
 	}
 }

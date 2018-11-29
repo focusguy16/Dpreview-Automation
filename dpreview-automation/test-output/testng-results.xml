@@ -1,177 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
     <line>
       <![CDATA[Browsing to URL: https://www.dpreview.com]]>
     </line>
     <line>
-      <![CDATA[Element is visible: Email input (By.id: ap_email)]]>
+      <![CDATA[Element is visible: Your name (By.id: ap_customer_name)]]>
     </line>
     <line>
-      <![CDATA[Element is visible: Password input (By.id: ap_password)]]>
+      <![CDATA[*** On page: Dpreview registration page]]>
     </line>
     <line>
-      <![CDATA[*** On page: Dpreview login page]]>
+      <![CDATA[Write 'RetroCamFan' to element: Your name (By.id: ap_customer_name)]]>
     </line>
     <line>
-      <![CDATA[Write 'eagle15e2000@yahoo.com' to element: Email input (By.id: ap_email)]]>
+      <![CDATA[Write 'focusguy@walla.com' to element: Email input (By.id: ap_email)]]>
     </line>
     <line>
-      <![CDATA[Write 'JazzMusic73!' to element: Password input (By.id: ap_password)]]>
+      <![CDATA[Element is visible: Your name (By.id: ap_customer_name)]]>
     </line>
     <line>
-      <![CDATA[Click on element: Keep me signed in (By.id: remember_me_learn_more_link)]]>
+      <![CDATA[*** On page: Dpreview registration page]]>
     </line>
     <line>
-      <![CDATA[Click on element: Closing the signed in popup window (By.id: a-popover-header-1)]]>
+      <![CDATA[Write 'HelloCameraWorld!' to element: Password input (By.id: ap_password)]]>
     </line>
     <line>
-      <![CDATA[Click on element: Remember me (By.name: rememberMe)]]>
-    </line>
-    <line>
-      <![CDATA[Click on element: Sign in button (By.id: signInSubmit)]]>
-    </line>
-    <line>
-      <![CDATA[Element is visible: Search box (By.className: searchBox)]]>
-    </line>
-    <line>
-      <![CDATA[Element is visible: 'GO' button (By.className: submitBtn)]]>
-    </line>
-    <line>
-      <![CDATA[Element is visible: Light mode (By.cssSelector: span.option:nth-child(1))]]>
-    </line>
-    <line>
-      <![CDATA[Element is visible: Dark mode (By.cssSelector: span.option:nth-child(2))]]>
-    </line>
-    <line>
-      <![CDATA[*** On page: DPReview Home Page]]>
-    </line>
-    <line>
-      <![CDATA[Scrolled to Element By.name: userSettingsGallerySafetyLevelModerate (By.name: userSettingsGallerySafetyLevelModerate)]]>
+      <![CDATA[Write '' to element:  (By.id: ap_password_check)]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="57712" started-at="2018-11-27T10:26:18Z" finished-at="2018-11-27T10:27:15Z">
+  <suite name="Default suite" duration-ms="26166" started-at="2018-11-29T06:30:44Z" finished-at="2018-11-29T06:31:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="57712" started-at="2018-11-27T10:26:18Z" finished-at="2018-11-27T10:27:15Z">
-      <class name="com.dpreview.auto.tests.T2_DpreviewLoginTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="beforeClass" is-config="true" duration-ms="1890" started-at="2018-11-27T10:26:18Z" finished-at="2018-11-27T10:26:19Z">
+    <test name="Default test" duration-ms="26166" started-at="2018-11-29T06:30:44Z" finished-at="2018-11-29T06:31:10Z">
+      <class name="com.dpreview.auto.tests.T1_DpreviewRegistrationTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dpreview.auto.tests.T1_DpreviewRegistrationTest@1caeb3e]" name="beforeClass" is-config="true" duration-ms="1862" started-at="2018-11-29T06:30:44Z" finished-at="2018-11-29T06:30:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T10:26:19Z" finished-at="2018-11-27T10:26:19Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T1_DpreviewRegistrationTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T06:30:46Z" finished-at="2018-11-29T06:30:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginPageTest()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="loginPageTest" duration-ms="15283" started-at="2018-11-27T10:26:19Z" description="Testing the validation of the Login page" finished-at="2018-11-27T10:26:35Z">
+        <test-method status="PASS" signature="registrationPageTest()[pri:0, instance:com.dpreview.auto.tests.T1_DpreviewRegistrationTest@1caeb3e]" name="registrationPageTest" duration-ms="15103" started-at="2018-11-29T06:30:46Z" description="Validation of the registration page" finished-at="2018-11-29T06:31:01Z">
           <reporter-output>
             <line>
               <![CDATA[Browsing to URL: https://www.dpreview.com]]>
             </line>
           </reporter-output>
-        </test-method> <!-- loginPageTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-27T10:26:35Z" finished-at="2018-11-27T10:26:35Z">
+        </test-method> <!-- registrationPageTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T1_DpreviewRegistrationTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-29T06:31:01Z" finished-at="2018-11-29T06:31:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="loginDetails1()[pri:1, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="loginDetails1" duration-ms="31566" started-at="2018-11-27T10:26:35Z" description="Typing the login details" finished-at="2018-11-27T10:27:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Element is visible: Email input (By.id: ap_email)]]>
-            </line>
-            <line>
-              <![CDATA[Element is visible: Password input (By.id: ap_password)]]>
-            </line>
-            <line>
-              <![CDATA[*** On page: Dpreview login page]]>
-            </line>
-            <line>
-              <![CDATA[Write 'eagle15e2000@yahoo.com' to element: Email input (By.id: ap_email)]]>
-            </line>
-            <line>
-              <![CDATA[Write 'JazzMusic73!' to element: Password input (By.id: ap_password)]]>
-            </line>
-            <line>
-              <![CDATA[Click on element: Keep me signed in (By.id: remember_me_learn_more_link)]]>
-            </line>
-            <line>
-              <![CDATA[Click on element: Closing the signed in popup window (By.id: a-popover-header-1)]]>
-            </line>
-            <line>
-              <![CDATA[Click on element: Remember me (By.name: rememberMe)]]>
-            </line>
-            <line>
-              <![CDATA[Click on element: Sign in button (By.id: signInSubmit)]]>
-            </line>
-            <line>
-              <![CDATA[Element is visible: Search box (By.className: searchBox)]]>
-            </line>
-            <line>
-              <![CDATA[Element is visible: 'GO' button (By.className: submitBtn)]]>
-            </line>
-            <line>
-              <![CDATA[Element is visible: Light mode (By.cssSelector: span.option:nth-child(1))]]>
-            </line>
-            <line>
-              <![CDATA[Element is visible: Dark mode (By.cssSelector: span.option:nth-child(2))]]>
-            </line>
-            <line>
-              <![CDATA[*** On page: DPReview Home Page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginDetails1 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T10:26:35Z" finished-at="2018-11-27T10:26:35Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T1_DpreviewRegistrationTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T06:31:01Z" finished-at="2018-11-29T06:31:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-27T10:27:06Z" finished-at="2018-11-27T10:27:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T10:27:06Z" finished-at="2018-11-27T10:27:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="enterSettingsTest()[pri:2, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="enterSettingsTest" duration-ms="2046" started-at="2018-11-27T10:27:06Z" description="The user enters to the settings section" finished-at="2018-11-27T10:27:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterSettingsTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-27T10:27:08Z" finished-at="2018-11-27T10:27:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="userSettingsTest()[pri:3, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="userSettingsTest" duration-ms="2720" started-at="2018-11-27T10:27:08Z" description="The user sets the desired settings of his profile" finished-at="2018-11-27T10:27:11Z">
+        <test-method status="PASS" signature="registrationProcessTest()[pri:1, instance:com.dpreview.auto.tests.T1_DpreviewRegistrationTest@1caeb3e]" name="registrationProcessTest" duration-ms="8838" started-at="2018-11-29T06:31:01Z" description="Testing the registration process" finished-at="2018-11-29T06:31:10Z">
           <reporter-output>
             <line>
-              <![CDATA[Scrolled to Element By.name: userSettingsGallerySafetyLevelModerate (By.name: userSettingsGallerySafetyLevelModerate)]]>
+              <![CDATA[Element is visible: Your name (By.id: ap_customer_name)]]>
+            </line>
+            <line>
+              <![CDATA[*** On page: Dpreview registration page]]>
+            </line>
+            <line>
+              <![CDATA[Write 'RetroCamFan' to element: Your name (By.id: ap_customer_name)]]>
+            </line>
+            <line>
+              <![CDATA[Write 'focusguy@walla.com' to element: Email input (By.id: ap_email)]]>
             </line>
           </reporter-output>
-        </test-method> <!-- userSettingsTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T10:27:08Z" finished-at="2018-11-27T10:27:08Z">
+        </test-method> <!-- registrationProcessTest -->
+        <test-method status="PASS" signature="passwordTest()[pri:2, instance:com.dpreview.auto.tests.T1_DpreviewRegistrationTest@1caeb3e]" name="passwordTest" duration-ms="249" started-at="2018-11-29T06:31:10Z" description="Minimum password characters test" finished-at="2018-11-29T06:31:10Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Element is visible: Your name (By.id: ap_customer_name)]]>
+            </line>
+            <line>
+              <![CDATA[*** On page: Dpreview registration page]]>
+            </line>
+            <line>
+              <![CDATA[Write 'HelloCameraWorld!' to element: Password input (By.id: ap_password)]]>
+            </line>
+            <line>
+              <![CDATA[Write '' to element:  (By.id: ap_password_check)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- passwordTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T1_DpreviewRegistrationTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-29T06:31:10Z" finished-at="2018-11-29T06:31:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-27T10:27:11Z" finished-at="2018-11-27T10:27:11Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T1_DpreviewRegistrationTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-29T06:31:10Z" finished-at="2018-11-29T06:31:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="navigateToOverviewPage()[pri:4, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="navigateToOverviewPage" duration-ms="4031" started-at="2018-11-27T10:27:11Z" description="Navigate to Overview page" finished-at="2018-11-27T10:27:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToOverviewPage -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-27T10:27:11Z" finished-at="2018-11-27T10:27:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-27T10:27:15Z" finished-at="2018-11-27T10:27:15Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.dpreview.auto.tests.T1_DpreviewRegistrationTest@1caeb3e]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-29T06:31:10Z" finished-at="2018-11-29T06:31:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.T2_DpreviewLoginTest@1caeb3e]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-27T10:27:15Z" finished-at="2018-11-27T10:27:15Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dpreview.auto.tests.T1_DpreviewRegistrationTest@1caeb3e]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-29T06:31:10Z" finished-at="2018-11-29T06:31:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.dpreview.auto.tests.T2_DpreviewLoginTest -->
+      </class> <!-- com.dpreview.auto.tests.T1_DpreviewRegistrationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
