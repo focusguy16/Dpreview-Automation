@@ -9,10 +9,10 @@ public class MainConfig {
 	public static String browserType;
 	public static String baseUrl;
 	public static String overviewUrl;
+	public static String gearlistUrl;
 	public static int webdriverImplicitWaitInSeconds;
 	public static int webdriverExplicitWaitInSeconds;
 	public static boolean closeBrowserAfterTest;
-	
 	
 	public static void initConfig(String propertiesFilePath) throws Exception {
 		
@@ -24,6 +24,7 @@ public class MainConfig {
 		browserType = prop.getProperty("browser_type");
 		baseUrl = prop.getProperty("base_url");
 		overviewUrl = prop.getProperty("overview_url");
+		gearlistUrl = prop.getProperty("gearlistUrl");
 		webdriverImplicitWaitInSeconds = Integer.parseInt(prop.getProperty("webdriver_implicit_wait_in_seconds"));
 		webdriverExplicitWaitInSeconds = Integer.parseInt(prop.getProperty("webdriver_explicit_wait_in_seconds"));
 		closeBrowserAfterTest = Boolean.parseBoolean(prop.getProperty("close_browser_after_test"));

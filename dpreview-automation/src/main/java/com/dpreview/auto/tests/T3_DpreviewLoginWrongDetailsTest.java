@@ -4,12 +4,14 @@ import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
+// import org.openqa.selenium.interactions.Actions;
 
 import org.testng.annotations.Test;
 
 import com.dpreview.auto.infra.config.MainConfig;
+import com.dpreview.auto.infra.pages.DpreviewHomePage;
 import com.dpreview.auto.infra.pages.DpreviewLoginPage;
+import com.dpreview.auto.infra.reports.Reports;
 
 /* ****************************************************************************************************************************************
  ************************** This test validates the error message which appears when wrong password is typed ******************************
@@ -24,14 +26,10 @@ public class T3_DpreviewLoginWrongDetailsTest extends BaseTest {
 	public void loginPageTest() {
 
 		browseToUrl(MainConfig.baseUrl);
-
-		WebElement loginLink = driver.findElement(By.cssSelector(".userTools > a:nth-child(1)"));
-
-		Actions action = new Actions(driver);
-		action.moveToElement(loginLink).build().perform();
-
-		driver.findElement(By.cssSelector(".userTools > a:nth-child(1)")).click();
-
+		
+		DpreviewHomePage dpreviewHomePage = new DpreviewHomePage(driver);
+		dpreviewHomePage.loginLink();
+		
 	}
 
 	// ------------------------- Testing the login process with wrong details --------------------------------------------------------------
@@ -44,35 +42,27 @@ public class T3_DpreviewLoginWrongDetailsTest extends BaseTest {
 		String inputWrongPassword = "AlphaBlondie";  // This is a wrong password.
 
 		DpreviewLoginPage dpreviewLoginPage = new DpreviewLoginPage(driver);
-		dpreviewLoginPage.writeToEmailInput(inputEmail);
+		dpreviewLoginPage.writeEmail(inputEmail);
 
-		Thread.sleep(5000);
-
-		dpreviewLoginPage.writeToPasswordInput(inputWrongPassword);
-
-		Thread.sleep(5000);
+		dpreviewLoginPage.writePassword(inputWrongPassword);
 
 		dpreviewLoginPage.keepMeSignedInDetails();
-
-		Thread.sleep(10000);
 
 		dpreviewLoginPage.closingSignedInDetailsPopup();
 
 		dpreviewLoginPage.keepMeSignedInCheckbox();
 
-		Thread.sleep(5000);
-
 		dpreviewLoginPage.clickSigninButton();
 
 		if(inputWrongPassword == inputPassword) {
 
-			System.out.println("This is a correct password");
+			Reports.report("This is a correct password");
 
 			browseToUrl(MainConfig.baseUrl);
 		}
 		else {
 
-			System.out.println("This is a wrong password");
+			Reports.report("This is a wrong password");
 		}
 	}
 
@@ -86,9 +76,9 @@ public class T3_DpreviewLoginWrongDetailsTest extends BaseTest {
 
 		if(importantMessage != null && captchaImage != null) {
 
-			System.out.println(" --------------------------- |------------------------------ | ---------------------------- ");
-			System.out.println(" --------------------------- | This is an error login page ! | ---------------------------- ");
-			System.out.println(" --------------------------- |-------------------------------| ---------------------------- ");
+			Reports.report(" --------------------------- |------------------------------ | ---------------------------- ");
+			Reports.report(" --------------------------- | This is an error login page ! | ---------------------------- ");
+			Reports.report(" --------------------------- |-------------------------------| ---------------------------- ");
 		}
 		
 		driver.close();

@@ -2,14 +2,20 @@ package com.dpreview.auto.tests;
 
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 
 import com.dpreview.auto.infra.config.MainConfig;
+import com.dpreview.auto.infra.pages.DpreviewGearList;
+import com.dpreview.auto.infra.pages.DpreviewHomePage;
 import com.dpreview.auto.infra.pages.DpreviewLoginPage;
+import com.dpreview.auto.infra.pages.DpreviewOverviewPage;
+import com.dpreview.auto.infra.pages.DpreviewSettingsPage;
 import com.dpreview.auto.infra.reports.Reports;
 
-import org.openqa.selenium.WebElement;
+// import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -21,167 +27,100 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class T2_DpreviewLoginTest extends BaseTest {
 
-	/*
-	@Test // (dataProvider = "csvParamsProvider")
-	public void loginTest(String loginEmail, String loginPassword) { // DpreviewLoginResult expectedLoginResult) {
-
-		browseToUrl(MainConfig.baseUrl);
-
-		DpreviewHomePage dpreviewHomePage = new DpreviewHomePage(driver);
-		DpreviewSignInPage dpreviewSignInPage = dpreviewHomePage.clickSigninButton();
-
-	}
-	 */
-
 	// ------------------------- Testing the validation of the Login page -----------------------------------------------------------------
 
-	@Test(description = "Testing the validation of the Login page", priority = 0)
-	public void loginPageTest() {
+	@Test(description = "Testing the validation of the Login link", priority = 0)
+	public void loginLinkTest() {
 
 		browseToUrl(MainConfig.baseUrl);
 
-		WebElement loginLink = driver.findElement(By.cssSelector(".userTools > a:nth-child(1)"));
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
-		Actions action = new Actions(driver);
-		action.moveToElement(loginLink).build().perform();
-
-		driver.findElement(By.cssSelector(".userTools > a:nth-child(1)")).click();
+		DpreviewHomePage dpreviewHomePage = new DpreviewHomePage(driver);
+		dpreviewHomePage.loginLink();
 	}
 
 	// ------------------------- Testing the login process with valid details -------------------------------------------------------------
 
 	@Test(description = "Typing the login details", priority = 1)
-	public void loginDetails1() throws Exception {
+	public void loginDetails() throws Exception {
 
 		String inputEmail = "eagle15e2000@yahoo.com";
 		String inputPassword = "JazzMusic73!";
 
 		DpreviewLoginPage dpreviewLoginPage = new DpreviewLoginPage(driver);
-		dpreviewLoginPage.writeToEmailInput(inputEmail);
+		dpreviewLoginPage.writeEmail(inputEmail);
 
-		Thread.sleep(5000);
-
-		dpreviewLoginPage.writeToPasswordInput(inputPassword);
-
-		Thread.sleep(5000);
+		dpreviewLoginPage.writePassword(inputPassword);
 
 		dpreviewLoginPage.keepMeSignedInDetails();
-
-		Thread.sleep(10000);
 
 		dpreviewLoginPage.closingSignedInDetailsPopup();
 
 		dpreviewLoginPage.keepMeSignedInCheckbox();
 
-		Thread.sleep(5000);
-
 		dpreviewLoginPage.clickSigninButton(); 
 	}
 
-	// ------------------------- Testing the Settings of the logged user ------------------------------------------------------------------
+	// ------------------------- Testing the Menu of the logged user ------------------------------------------------------------------
 
-	@Test(description = "The user enters to the settings section", priority = 2)
-	public void enterSettingsTest() {
+	@Test(description = "The user enters to the personal menu", priority = 2)
+	public void enterPersonalMenuTest() {
 
-		WebElement userSettings = driver.findElement(By.id("mainUserBox"));
+		DpreviewHomePage dpreviewHomePage = new DpreviewHomePage(driver);
+		dpreviewHomePage.userMenu();
 
-		Actions action0 = new Actions(driver);
-		action0.moveToElement(userSettings).build().perform();
-
-		driver.findElement(By.id("mainUserBox")).click();
-
-		WebElement settings = driver.findElement(By.cssSelector("div.group:nth-child(1) > a:nth-child(2)"));
-
-		Actions action1 = new Actions(driver);
-		action1.moveToElement(settings).build().perform();
-
-		driver.findElement(By.cssSelector("div.group:nth-child(1) > a:nth-child(2)")).click();
+		dpreviewHomePage.userSettings();
 
 	}
+
+	// --------------------- Testing the user settings --------------------------------------------------------------------------------
 
 	@Test(description = "The user sets the desired settings of his profile", priority = 3)
 	public void userSettingsTest() {
 
-		// --------------------- Testing the user settings --------------------------------------------------------------------------------
+		String inputProfession = "QA Engineer";
+		String inputWebsite = "https://www.linkedin.com/in/daniel-harel-b3a96414/";
 
-		WebElement location = driver.findElement(By.xpath("//*[@id='userSettingsCountry']"));
-		WebElement profession = driver.findElement(By.name("profession"));
-		WebElement newsSubscription = driver.findElement(By.xpath("//*[@id='userSettingsSubscribeToNewsletter']"));
-		WebElement website = driver.findElement(By.name("website"));
-		WebElement galleryViewingSafetyLevel = driver.findElement(By.id("userSettingsGallerySafetyLevelModerate"));
-		WebElement saveChanges = driver.findElement(By.id("settingsFormSubmitButton"));
+		DpreviewSettingsPage dpreviewSettingsPage = new DpreviewSettingsPage(driver);
+		dpreviewSettingsPage.openLocation();
 
-		// --------------------- Setting the user location --------------------------------------------------------------------------------
+		dpreviewSettingsPage.setLocation();
 
-		Actions action2 = new Actions(driver);
-		action2.moveToElement(location).build().perform();
+		dpreviewSettingsPage.writeProfession(inputProfession);
 
-		driver.findElement(By.xpath("//*[@id='userSettingsCountry']")).click();
+		// ######################## Checking if the Profession input is already contain the user profession ###############################
 
-		driver.findElement(By.cssSelector("#userSettingsCountry > option:nth-child(105)")).click();
+		if(inputProfession == null) {
 
-		// --------------------- Setting the user profession ---------------------------------------
-
-		Actions action3 = new Actions(driver);
-		action3.moveToElement(profession).build().perform();
-
-		driver.findElements(By.name("profession"));
-
-		// ######################## Checking if the input already contains the user profession ############################################
-
-		if(profession == null) {
-
-			profession.sendKeys("QA Engineer");
+			dpreviewSettingsPage.writeProfession(inputProfession);
 		}
 		else {
 
-			System.out.println("The profession input is already typed");
+			Reports.report("The profession input is already typed");
 		}
 
-		// --------------------- Setting the user's web site input ------------------------------------------------------------------------
-
-		Actions action4 = new Actions(driver);
-		action4.moveToElement(website).build().perform();
-
-		driver.findElement(By.name("website"));
+		dpreviewSettingsPage.writeWebsite(inputWebsite);
 
 		// ######################## Checking if the user's web site input is already containing the user web site #########################
 
-		if(website == null) {
+		if(inputWebsite == null) {
 
-			website.sendKeys("https://www.linkedin.com/in/daniel-harel-b3a96414/");
+			dpreviewSettingsPage.writeWebsite(inputWebsite); 
 		}
 		else {
 
-			System.out.println("The user's website is already typed");
+			Reports.report("The user's website is already typed");
 		}
 
-		driver.findElement(By.id("userSettingsGallerySafetyLevelModerate"));  // *** Scrolling the page to the galleryViewingSafetyLevel element ***
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", galleryViewingSafetyLevel);
+		dpreviewSettingsPage.gallerySafetyLevel();
+
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", dpreviewSettingsPage.gallerySafetyLevel());
 		Reports.report("Scrolled to Element " + By.name("userSettingsGallerySafetyLevelModerate") + " (" + By.name("userSettingsGallerySafetyLevelModerate") + ")");
 
+		dpreviewSettingsPage.newsletterSubscription();
 
-		// --------------------- Home page Personalization --------------------------------------------------------------------------------
-
-		Actions action5 = new Actions(driver);
-		action5.moveToElement(galleryViewingSafetyLevel).build().perform();
-
-
-		// --------------------- Newsletter Subscription ----------------------------------------------------------------------------------
-
-		Actions action6 = new Actions(driver);
-		action6.moveToElement(newsSubscription).build().perform();
-
-		driver.findElement(By.xpath("//*[@id='userSettingsSubscribeToNewsletter']")).click();
-
-		// --------------------- Saving the settings changes ------------------------------------------------------------------------------
-
-		Actions action7 = new Actions(driver);
-		action7.moveToElement(saveChanges).build().perform();
-
-		driver.findElement(By.id("settingsFormSubmitButton")).click();
-		WebDriverWait wait = new WebDriverWait(driver, 5000);
-		wait.until(ExpectedConditions.urlContains("overview"));
+		dpreviewSettingsPage.saveChanges();
 	}
 
 	// ------------------------- Navigate to the Overview page ----------------------------------------------------------------------------
@@ -190,7 +129,23 @@ public class T2_DpreviewLoginTest extends BaseTest {
 	public void navigateToOverviewPage() {
 
 		driver.navigate().to("https://www.dpreview.com/members/5763666202/overview");
-
-		driver.close();
+	}
+	
+	@Test(description = "Navigate to the user's gear list page", priority = 5)
+	public void gearList() {
+		
+		browseToUrl(MainConfig.overviewUrl);
+		
+		DpreviewOverviewPage dpreviewOverviewPage = new DpreviewOverviewPage(driver);
+		dpreviewOverviewPage.gearList();
+	}
+	
+	@Test(description = "Editing the user's gear list", priority = 6)
+	public void addCurrentGear() {
+		
+		browseToUrl(MainConfig.gearlistUrl);
+		
+		DpreviewGearList dpreviewGearList = new DpreviewGearList(driver);
+		dpreviewGearList.addCurrentGear();
 	}
 }

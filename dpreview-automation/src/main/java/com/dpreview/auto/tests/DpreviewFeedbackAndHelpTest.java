@@ -21,7 +21,6 @@ public class DpreviewFeedbackAndHelpTest extends BaseTest {
 	public void homePage() {
 
 		browseToUrl(MainConfig.baseUrl);
-
 	}
 
 	@Test(description = "Accessing the Feedback page", priority = 1)
@@ -80,9 +79,6 @@ public class DpreviewFeedbackAndHelpTest extends BaseTest {
 		action.moveToElement(discussionsTab).build().perform();
 		
 		driver.findElement(By.xpath("//*[@class='tab left discussion']")).click();
-		
-		Thread.sleep(5000);
-
 	}
 	
 	// --------------------------------------------------- Questions Tab ----------------------------------------
@@ -96,8 +92,5 @@ public class DpreviewFeedbackAndHelpTest extends BaseTest {
 		action.moveToElement(questionsTab).build().perform();
 		
 		driver.findElement(By.xpath("//*[@class='tab left question']")).click();
-		
-		Thread.sleep(5000);
 	}
-
 }

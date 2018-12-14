@@ -3,7 +3,7 @@ package com.dpreview.auto.tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
+// import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -12,9 +12,8 @@ import org.testng.annotations.Test;
 import com.dpreview.auto.infra.config.MainConfig;
 import com.dpreview.auto.infra.pages.DpreviewHomePage;
 import com.dpreview.auto.infra.pages.DpreviewRegistrationPage;
-// import com.dpreview.auto.infra.pages.DpreviewSearchResultsPage;
+import com.dpreview.auto.infra.reports.Reports;
 
-// import com.google.common.base.Throwables;
 
 /* ****************************************************************************************************************************************
  **************** This test is intended to check the Registration process to the DPReview site ********************************************
@@ -28,33 +27,24 @@ public class T1_DpreviewRegistrationTest extends BaseTest {
 
 		browseToUrl(MainConfig.baseUrl);
 
-		WebDriverWait wait = new WebDriverWait(driver, 5);
-		wait.until(ExpectedConditions.urlToBe("https://www.dpreview.com/"));
-
-		WebElement registrationLink = driver.findElement(By.cssSelector(".userTools > a:nth-child(2)"));
-
-		Actions action = new Actions(driver);
-		action.moveToElement(registrationLink).build().perform();
-
-		driver.findElement(By.cssSelector(".userTools > a:nth-child(2)")).click();
-
+		DpreviewHomePage dpreviewHomePage = new DpreviewHomePage(driver);
+		DpreviewRegistrationPage registrationPage = dpreviewHomePage.registrationLink();
+		
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.urlContains("https://login.dpreview.com")); 
+		Assert.assertTrue(dpreviewHomePage.registrationLink().equals(registrationPage));
 	}
 
 	@Test (description = "Testing the registration process" , priority = 1)
 	public void registrationProcessTest() throws Exception { 
 
 		String yourName = "RetroCamFan";
-		String emailAddress = "focusguy@walla.com";
-		
+		String emailAddress = "";     // focusguy@walla.com
+
 		DpreviewRegistrationPage dpreviewRegistrationPage = new DpreviewRegistrationPage(driver);
 		dpreviewRegistrationPage.writeYourNameInput(yourName);
-		Thread.sleep(2000);
-
+		
 		dpreviewRegistrationPage.writeYourEmailAddress(emailAddress);
-		Thread.sleep(2000);
-
-		Thread.sleep(2000);
-
 	}
 
 	@Test(description = "Minimum password characters test", priority = 2)
@@ -71,18 +61,18 @@ public class T1_DpreviewRegistrationTest extends BaseTest {
 		}
 		else {
 
-			System.out.println("Minimum password length is 6 characters long");
+			Reports.report("Minimum password length is 6 characters long");
 		}
-		
+
 		dpreviewRegistrationPage.reEnterYourPassword(passwordCheck);
-		
+
 		if(yourPassword == passwordCheck) {
-			
+
 			dpreviewRegistrationPage.createYourDpreviewAccount().clickGoButton();
 		}
 		else {
-			
-			System.out.println(" ---------------- Please Re type your password ------------------ ");
+
+			Reports.report(" ---------------- Please Re type your password ------------------ ");
 		}
 	}
 }

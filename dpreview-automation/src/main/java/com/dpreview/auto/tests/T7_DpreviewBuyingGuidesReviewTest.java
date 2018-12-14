@@ -1,6 +1,6 @@
 package com.dpreview.auto.tests;
 
-import java.util.concurrent.TimeUnit;
+// import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import com.dpreview.auto.infra.config.MainConfig;
 import com.dpreview.auto.infra.pages.DpreviewBuyingGuidesPage;
-import com.dpreview.auto.infra.pages.DpreviewHomePage;
+// import com.dpreview.auto.infra.pages.DpreviewHomePage;
 import com.dpreview.auto.infra.reports.Reports;
 
 /* **************************************************************************************************************************************************
@@ -30,10 +30,13 @@ public class T7_DpreviewBuyingGuidesReviewTest extends BaseTest {
 
 		browseToUrl(MainConfig.baseUrl);
 
-		DpreviewHomePage dpreviewHomePage = new DpreviewHomePage(driver);
-		dpreviewHomePage.hoverOverBuyingGuidesLink();
+		// DpreviewHomePage dpreviewHomePage = new DpreviewHomePage(driver);
+		// dpreviewHomePage.hoverOverBuyingGuidesLink();
 
-		DpreviewBuyingGuidesPage dpreviewBuyingGuidesPage = dpreviewHomePage.hoverOverBuyingGuidesLink();
+		// DpreviewBuyingGuidesPage dpreviewBuyingGuidesPage = dpreviewHomePage.hoverOverBuyingGuidesLink();
+		
+		DpreviewBuyingGuidesPage dpreviewBuyingGuidesPage = new DpreviewBuyingGuidesPage(driver);
+		dpreviewBuyingGuidesPage.buyingGuidesLink();
 	}
 
 

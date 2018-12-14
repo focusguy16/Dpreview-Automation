@@ -18,33 +18,27 @@ public class DpreviewLoginPage extends AbstractPage {
 		super("Dpreview login page", driver, emailInput, passwordInput);
 	}
 	
-	public void writeToEmailInput(String inputEmail) {
-		
+	public void writeEmail(String inputEmail) {
 		bot.writeToElement(emailInput, inputEmail);
 	}
 	
-	public void writeToPasswordInput(String inputPassword) {
-		
+	public void writePassword(String inputPassword) {
 		bot.writeToElement(passwordInput, inputPassword);
 	}
 	
 	public void keepMeSignedInDetails() {
-		
 		bot.click(keepMeSignedInDetails);
 	}
 	
 	public void closingSignedInDetailsPopup() {
-		
 		bot.click(closingSignedInDetailsPopup);
 	}
 	
 	public void keepMeSignedInCheckbox() {
-		
 		bot.click(keepMeSignedInCheckbox);
 	}
 	
 	public DpreviewHomePage clickSigninButton() {
-		
 		bot.click(signinButton);
 		return new DpreviewHomePage(driver);
 	}
